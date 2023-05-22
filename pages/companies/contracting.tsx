@@ -16,7 +16,12 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 function ContractingCompany() {
   const { t } = useTranslation("common");
 
-  const [project, setProject] = useState({ images: [] });
+  // const [project, setProject] = useState({ images: [], desc: "" });
+
+  const [project, setProject] = useState<{ images: any; desc: string }>({
+    images: [],
+    desc: "",
+  });
 
   const projects = [
     {
