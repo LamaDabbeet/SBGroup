@@ -10,7 +10,9 @@ function MyApp({ Component, pageProps }: MyAppProps) {
 
   if (typeof document !== "undefined") {
     const dir = locale === "ar" ? "rtl" : "ltr";
-   document.querySelector("html").setAttribute("dir", dir);
+    if (document != null) {
+      document?.querySelector("html")?.setAttribute("dir", dir);
+    }
     const fontFamily =
       locale === "ar" ? "'Cairo', sans-serif" : "'Montserrat', sans-serif";
     document
