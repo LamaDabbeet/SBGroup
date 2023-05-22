@@ -561,7 +561,7 @@ export default ContractingCompany;
 
 ContractingCompany.Layout = "Companies";
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: any) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),
