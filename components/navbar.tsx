@@ -116,7 +116,7 @@ function Navbar() {
                       </Menu.Items>
                     </Transition>
                   </Menu>
-                  <Link
+                  {/* <Link
                     href="/careers"
                     className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -135,7 +135,7 @@ function Navbar() {
                     className="text-gray-300  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                   >
                     {t("contact")}
-                  </Link>
+                  </Link> */}
                   <LocaleSwitcher />
                 </div>
               </div>
