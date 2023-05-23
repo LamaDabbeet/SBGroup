@@ -84,6 +84,7 @@ function ContractingCompany() {
               style={{ width: "100%", height: "70vh" }}
             />
           </SwiperSlide>
+
           <SwiperSlide>
             <Image
               src="/images/contracting/slider/slide2.jpg"
