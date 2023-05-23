@@ -67,7 +67,7 @@ export default function Home() {
             </div>
             <Link href="/companies/contracting">
               <Image
-                src="/../public/images/contracting.jpg"
+                src="/images/contracting.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -80,7 +80,7 @@ export default function Home() {
               {t("mixConcrete")}{" "}
             </div>
             <Image
-              src="/../public/images/mix-concrete.jpg"
+              src="/images/mix-concrete.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -92,7 +92,7 @@ export default function Home() {
               {t("transportation")}
             </div>
             <Image
-              src="/../public/images/contracting.jpg"
+              src="/images/contracting.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -104,7 +104,7 @@ export default function Home() {
               {t("quarriesWorks")}
             </div>
             <Image
-              src="/../public/images/contracting.jpg"
+              src="/images/contracting.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"

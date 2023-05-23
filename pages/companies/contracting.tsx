@@ -27,52 +27,52 @@ function ContractingCompany() {
     {
       desc: "1Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
       images: [
-        "/../public/images/project1-1.jpg",
-        "/../public/images/project1-2.jpg",
+        "/images/project1-1.jpg",
+        "/images/project1-2.jpg",
       ],
     },
     {
       desc: "2Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
       images: [
-        "/../public/images/project1-1.jpg",
-        "/../public/images/project1-2.jpg",
-        "/../public/images/project1-3.jpg",
+        "/images/project1-1.jpg",
+        "/images/project1-2.jpg",
+        "/images/project1-3.jpg",
       ],
     },
     {
       desc: "3Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
       images: [
-        "/../public/images/project1-1.jpg",
-        "/../public/images/project1-2.jpg",
-        "/../public/images/project1-3.jpg",
-        "/../public/images/project1-4.jpg",
+        "/images/project1-1.jpg",
+        "/images/project1-2.jpg",
+        "/images/project1-3.jpg",
+        "/images/project1-4.jpg",
       ],
     },
     {
       desc: "4Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. c",
       images: [
-        "/../public/images/project1-1.jpg",
-        "/../public/images/project1-2.jpg",
-        "/../public/images/project1-3.jpg",
-        "/../public/images/project1-4.jpg",
+        "/images/project1-1.jpg",
+        "/images/project1-2.jpg",
+        "/images/project1-3.jpg",
+        "/images/project1-4.jpg",
       ],
     },
     {
       desc: "5Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
       images: [
-        "/../public/images/project1-1.jpg",
-        "/../public/images/project1-2.jpg",
-        "/../public/images/project1-3.jpg",
-        "/../public/images/project1-4.jpg",
+        "/images/project1-1.jpg",
+        "/images/project1-2.jpg",
+        "/images/project1-3.jpg",
+        "/images/project1-4.jpg",
       ],
     },
     {
       desc: "6 Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
       images: [
-        "/../public/images/project1-1.jpg",
-        "/../public/images/project1-2.jpg",
-        "/../public/images/project1-3.jpg",
-        "/../public/images/project1-4.jpg",
+        "/images/project1-1.jpg",
+        "/images/project1-2.jpg",
+        "/images/project1-3.jpg",
+        "/images/project1-4.jpg",
       ],
     },
   ];
@@ -103,7 +103,7 @@ function ContractingCompany() {
         >
           <SwiperSlide>
             <Image
-              src="/../public/images/contracting-header.jpg"
+              src="/images/contracting-header.jpg"
               alt=""
               width={0}
               height={0}
@@ -136,7 +136,7 @@ function ContractingCompany() {
         <div className="lg:flex lg:justify-between lg:space-x-12">
           <div className="lg:w-1/3 w-full lg:mb-0 mb-12">
             <Image
-              src="/../public/images/constructing-design.jpg"
+              src="/images/constructing-design.jpg"
               alt="Constructing Design"
               width={0}
               height={0}
@@ -150,7 +150,7 @@ function ContractingCompany() {
           </div>
           <div className="lg:w-1/3 w-full lg:mb-0 mb-12">
             <Image
-              src="/../public/images/build.jpg"
+              src="/images/build.jpg"
               alt="Build"
               width={0}
               height={0}
@@ -162,7 +162,7 @@ function ContractingCompany() {
           </div>
           <div className="lg:w-1/3 w-full">
             <Image
-              src="/../public/images/general-contracting.jpg"
+              src="/images/general-contracting.jpg"
               alt="General Contracting"
               width={0}
               height={0}
@@ -205,7 +205,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/../public/images/project1.jpg"
+                src="/images/project1.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -219,7 +219,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/../public/images/project2.jpg"
+                src="/images/project2.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -234,7 +234,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/../public/images/project3.jpg"
+                src="/images/project3.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -252,7 +252,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/../public/images/project1.jpg"
+                src="/images/project1.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -267,7 +267,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/../public/images/project2.jpg"
+                src="/images/project2.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -282,7 +282,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/../public/images/project3.jpg"
+                src="/images/project3.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"

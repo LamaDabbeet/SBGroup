@@ -18,7 +18,7 @@ function Navbar() {
             <div className="flex items-center justify-between w-full">
               <div className="flex-shrink-0">
                 <Image
-                  src={"/../public/images/sbg-logo.png"}
+                  src={"/images/sbg-logo.png"}
                   alt="Workflow"
                   width={250}
                   height={300}

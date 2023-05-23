@@ -19,7 +19,7 @@ function CompaniesNavbar() {
               <div className="flex-shrink-0">
                 <Link href="/">
                   <Image
-                    src={"/../public/images/sb-contracting-logo.png"}
+                    src={"/images/sb-contracting-logo.png"}
                     alt="Workflow"
                     width={250}
                     height={300}
@@ -109,7 +109,7 @@ function CompaniesNavbar() {
                       </Menu.Items>
                     </Transition>
                   </Menu>
-                  {/* <Link
+                  <Link
                     href="/careers"
                     className="text-gray-300 hover:text-cyan px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -128,7 +128,7 @@ function CompaniesNavbar() {
                     className="text-gray-300  hover:text-cyan px-3 py-2 rounded-md text-sm font-medium"
                   >
                     {t("contact")}
-                  </Link> */}
+                  </Link>
                   <LocaleSwitcher />
                 </div>
               </div>

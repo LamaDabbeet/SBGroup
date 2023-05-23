@@ -49,7 +49,7 @@ function CompaniesFooter() {
       <div id="main-footer" className="bg-gray-dark px-12 py-16">
         <div className="flex mb-8">
           <Image
-            src="/../public/images/sbg-white-logo.png"
+            src="/images/sbg-white-logo.png"
             width={270}
             height={500}
             alt="Sami Al Baroudi Group White Logo"
@@ -58,7 +58,7 @@ function CompaniesFooter() {
         <div className="lg:flex">
           <div className="lg:w-1/3 w-full mb-8 lg:mb-0">
             <ul>
-              {/* <li>
+              <li>
                 <Link href="/" className="hover:text-cyan">
                   Sami Al Baroudi Contracting Co
                 </Link>
@@ -77,7 +77,7 @@ function CompaniesFooter() {
                 <Link href="/" className="hover:text-cyan">
                   SBD
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           <div className="lg:w-1/3 w-full mb-8 lg:mb-0">
