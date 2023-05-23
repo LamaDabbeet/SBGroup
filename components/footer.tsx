@@ -16,7 +16,7 @@ function Footer() {
     <footer className="bg-gray text-white px-16 py-16">
       <div className="flex mb-16">
         <Image
-          src="/../public/images/sbg-white-logo.png"
+          src="/images/sbg-white-logo.png"
           width={270}
           height={500}
           alt="Sami Al Baroudi Group White Logo"

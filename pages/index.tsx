@@ -1,5 +1,5 @@
 import { Navigation, Autoplay } from "swiper";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,7 +23,7 @@ export default function Home() {
         >
           <SwiperSlide>
             <Image
-              src="/../public/images/main-header.jpg"
+              src="/images/main-header.jpg"
               alt=""
               width={0}
               height={0}
