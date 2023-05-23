@@ -2,7 +2,7 @@ import { GetStaticPaths } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-function NotFoundPage() {
+function ErrorPage() {
   const { t } = useTranslation("common");
 
   return (
@@ -12,8 +12,8 @@ function NotFoundPage() {
   );
 }
 
-export default NotFoundPage;
-NotFoundPage.Layout = "Main";
+export default ErrorPage;
+ErrorPage.Layout = "Main";
 
 export async function getStaticProps({ locale }: any) {
   console.log(`Building slug: ${locale}`);

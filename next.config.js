@@ -10,8 +10,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-    concurrentFeatures: true,
-    serverComponents: true,
+    appDir: false,
   },
 };
 
