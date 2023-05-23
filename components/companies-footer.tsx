@@ -50,8 +50,8 @@ function CompaniesFooter() {
         <div className="flex mb-8">
           <Image
             src="/images/sbg-white-logo.png"
-            width={270}
-            height={500}
+            width={200}
+            height={30}
             alt="Sami Al Baroudi Group White Logo"
           />
         </div>

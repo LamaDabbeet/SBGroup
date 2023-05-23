@@ -9,6 +9,8 @@ import styles from "./home.module.css";
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -18,20 +20,54 @@ export default function Home() {
       <section>
         <Swiper
           navigation={true}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           className="hover:border-b-4 hover:border-b-secondary transition duration-500"
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+          }}
         >
           <SwiperSlide>
             <Image
-              src="/images/main-header.jpg"
+              src="/images/homepage/slider/slide1.jpg"
               alt=""
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "90vh" }}
             />
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/homepage/slider/slide2.jpg"
+              alt=""
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "90vh" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/homepage/slider/slide3.jpg"
+              alt=""
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "90vh" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/homepage/slider/slide4.jpg"
+              alt=""
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "90vh" }}
+            />
+          </SwiperSlide>
         </Swiper>
       </section>
       <section id="about-sbg" className="text-center px-16 py-16">
@@ -65,9 +101,12 @@ export default function Home() {
             <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
               {t("contracting")}
             </div>
-            <Link href="/companies/contracting">
+            <Link
+              href="/companies/contracting"
+              className="hover:cursor-pointer"
+            >
               <Image
-                src="/images/contracting.jpg"
+                src="/images/homepage/sectors/contracting.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -75,36 +114,60 @@ export default function Home() {
               />
             </Link>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="hover:cursor-pointer">
             <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("mixConcrete")}{" "}
+              {t("mixConcrete")}
             </div>
             <Image
-              src="/images/mix-concrete.jpg"
+              src="/images/homepage/sectors/mix-concrete.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"
               className={styles.slider_img}
             />
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("transportation")}
-            </div>
-            <Image
-              src="/images/contracting.jpg"
-              layout="fill"
-              objectFit="cover"
-              alt="Project"
-              className={styles.slider_img}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="hover:cursor-pointer">
             <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
               {t("quarriesWorks")}
             </div>
             <Image
-              src="/images/contracting.jpg"
+              src="/images/homepage/sectors/quarries-works.jpg"
+              layout="fill"
+              objectFit="cover"
+              alt="Project"
+              className={styles.slider_img}
+            />
+          </SwiperSlide>
+          <SwiperSlide className="hover:cursor-pointer">
+            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
+              {t("contracting")}
+            </div>
+            <Image
+              src="/images/homepage/sectors/contracting.jpg"
+              layout="fill"
+              objectFit="cover"
+              alt="Project"
+              className={styles.slider_img}
+            />
+          </SwiperSlide>
+          <SwiperSlide className="hover:cursor-pointer">
+            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
+              {t("development")}
+            </div>
+            <Image
+              src="/images/homepage/sectors/development.jpg"
+              layout="fill"
+              objectFit="cover"
+              alt="Project"
+              className={styles.slider_img}
+            />
+          </SwiperSlide>
+          <SwiperSlide className="hover:cursor-pointer">
+            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
+              {t("design")}
+            </div>
+            <Image
+              src="/images/homepage/sectors/design.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -112,6 +175,22 @@ export default function Home() {
             />
           </SwiperSlide>
         </Swiper>
+      </section>
+      <section id="contact-us" className="h-80 px-16 py-16">
+        <h2 className="text-cyan uppercase text-3xl font-semibold">
+          {t("brochure")}
+        </h2>
+        <p>{t("downloadBrochure")}</p>
+        <ul className="mt-2">
+          <li>
+            {t("arabic")}
+            <FontAwesomeIcon icon={faDownload} className="ms-2" />
+          </li>
+          <li>
+            {t("english")}
+            <FontAwesomeIcon icon={faDownload} className="ms-2" />
+          </li>
+        </ul>
       </section>
     </>
   );

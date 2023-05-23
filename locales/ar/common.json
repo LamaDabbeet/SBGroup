@@ -34,5 +34,10 @@
   "english": "انكليزي",
   "quickLinks": "روابط سريعة",
   "news": "الأخبار",
-  "careers": "وظائف"
+  "careers": "وظائف",
+  "pageNotFound": "الصفحة غير موجودة",
+  "errorPage": "حدث خطأ أثناء تحميل الصفحة",
+  "artouzProject": "جمعية خزانة تعاقد المهندسين",
+  "manahelProject": "جمعية المنهل السكنية",
+  "mostaqellaProject": "جمعية المستقلة السكنية"
 }

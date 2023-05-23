@@ -16,58 +16,26 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 function ContractingCompany() {
   const { t } = useTranslation("common");
 
-  // const [project, setProject] = useState({ images: [], desc: "" });
-
-  const [project, setProject] = useState<{ images: any; desc: string }>({
+  const [project, setProject] = useState<{ images: string[]; desc: string }>({
     images: [],
     desc: "",
   });
 
   const projects = [
     {
-      desc: "1Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
-      images: [
-        "/images/project1-1.jpg",
-        "/images/project1-2.jpg",
-      ],
+      desc: "1Execute thirteen towe",
+      images: ["/images/project1-1.jpg", "/images/project1-2.jpg"],
     },
     {
       desc: "2Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
-      images: [
-        "/images/project1-1.jpg",
-        "/images/project1-2.jpg",
-        "/images/project1-3.jpg",
-      ],
+      images: ["/images/project1-1.jpg"],
     },
     {
       desc: "3Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
-      images: [
-        "/images/project1-1.jpg",
-        "/images/project1-2.jpg",
-        "/images/project1-3.jpg",
-        "/images/project1-4.jpg",
-      ],
+      images: ["/images/project1-1.jpg"],
     },
     {
-      desc: "4Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. c",
-      images: [
-        "/images/project1-1.jpg",
-        "/images/project1-2.jpg",
-        "/images/project1-3.jpg",
-        "/images/project1-4.jpg",
-      ],
-    },
-    {
-      desc: "5Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
-      images: [
-        "/images/project1-1.jpg",
-        "/images/project1-2.jpg",
-        "/images/project1-3.jpg",
-        "/images/project1-4.jpg",
-      ],
-    },
-    {
-      desc: "6 Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
+      desc: "Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
       images: [
         "/images/project1-1.jpg",
         "/images/project1-2.jpg",
@@ -98,20 +66,44 @@ function ContractingCompany() {
       <section>
         <Swiper
           navigation={true}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           className={contractingStyles.header_swiper}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+          }}
         >
           <SwiperSlide>
             <Image
-              src="/images/contracting-header.jpg"
+              src="/images/contracting/slider/slide1.jpg"
               alt=""
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "70vh" }}
             />
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/contracting/slider/slide2.jpg"
+              alt=""
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "70vh" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/contracting/slider/slide3.jpg"
+              alt=""
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "70vh" }}
+            />
+          </SwiperSlide>
         </Swiper>
       </section>
       <section id="about-sbg-contracting" className="text-center px-16 py-16">
@@ -544,11 +536,11 @@ function ContractingCompany() {
         <p>{t("downloadBrochure")}</p>
         <ul className="mt-2">
           <li>
-            Arabic
+            {t("arabic")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
           <li>
-            ِEnglish
+            {t("english")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
         </ul>

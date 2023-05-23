@@ -12,17 +12,17 @@ function CompaniesNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 w-full">
+      <nav className="bg-gray-800 h-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <div className="flex items-center justify-between h-full w-full">
             <div className="flex items-center justify-between w-full">
               <div className="flex-shrink-0">
                 <Link href="/">
                   <Image
                     src={"/images/sb-contracting-logo.png"}
                     alt="Workflow"
-                    width={250}
-                    height={300}
+                    width={140}
+                    height={90}
                   />
                 </Link>
               </div>

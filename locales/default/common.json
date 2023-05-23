@@ -32,6 +32,10 @@
   "whoWeAreDesc3": "The company is also committed to provide turn key projects to the largest customer base in Syria and abroad.",
   "quickLinks": "Quick Links",
   "news": "News",
-  "careers": "Careers"
-
+  "careers": "Careers",
+  "pageNotFound": "Page Not Found",
+  "errorPage": "An error has occured",
+  "artouzProject": "Artouz Engineers Towers",
+  "manahelProject": "Al-Manhal Housing Association",
+  "mostaqellaProject": "Al-Mostaqella Association"
 }

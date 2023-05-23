@@ -7,7 +7,7 @@ function NotFoundPage() {
 
   return (
     <div>
-      <h1>{t("aboutSBGDesc2")}</h1>
+      <h1>{t("pageNotFound")}</h1>
     </div>
   );
 }
@@ -16,7 +16,6 @@ export default NotFoundPage;
 NotFoundPage.Layout = "Main";
 
 export async function getStaticProps({ locale }: any) {
-  console.log(`Building slug: ${locale}`);
 
   return {
     props: {
