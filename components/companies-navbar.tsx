@@ -34,13 +34,33 @@ function CompaniesNavbar() {
                   >
                     {t("aboutSBG")}
                   </Link>
+                  <div>
+                    <button className="peer px-5 py-2 bg-green-600 hover:bg-green-700 text-gray-300 hover:text-cyan">
+                      Dropdown
+                    </button>
 
+                    <div
+                      className="hidden peer-hover:flex hover:flex
+                            w-[200px]
+                            flex-col bg-white drop-shadow-lg"
+                    >
+                      <a className="px-5 py-3 hover:bg-gray-200" href="#">
+                        About Us
+                      </a>
+                      <a className="px-5 py-3 hover:bg-gray-200" href="#">
+                        Contact Us
+                      </a>
+                      <a className="px-5 py-3 hover:bg-gray-200" href="#">
+                        Privacy Policy
+                      </a>
+                    </div>
+                  </div>
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
                       <Menu.Button className="inline-flex w-full justify-center px-4 py-2 text-sm font-medium text-black  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                         {t("groupCompanies")}
                         <ChevronDownIcon
-                          className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+                          className="me-2 -ms-1 h-5 w-5 text-violet-200 hover:text-violet-100"
                           aria-hidden="true"
                         />
                       </Menu.Button>
@@ -54,7 +74,7 @@ function CompaniesNavbar() {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"
                     >
-                      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[100]">
+                      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[100]">
                         <div className="px-1 py-1 ">
                           <Menu.Item>
                             {({ active }) => (

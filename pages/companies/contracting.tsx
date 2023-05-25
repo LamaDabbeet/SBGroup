@@ -12,35 +12,50 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useRouter } from "next/router";
 
 function ContractingCompany() {
   const { t } = useTranslation("common");
-
-  const [project, setProject] = useState<{ images: string[]; desc: string }>({
+  const { locale } = useRouter();
+  const [project, setProject] = useState<{
+    images: string[];
+    englishName: string;
+    arabicName: string;
+  }>({
     images: [],
-    desc: "",
+    arabicName: "",
+    englishName: "",
   });
 
   const projects = [
     {
-      desc: "1Execute thirteen towe",
-      images: ["/images/project1-1.jpg", "/images/project1-2.jpg"],
-    },
-    {
-      desc: "2Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
-      images: ["/images/project1-1.jpg"],
-    },
-    {
-      desc: "3Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
-      images: ["/images/project1-1.jpg"],
-    },
-    {
-      desc: "Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz. ",
+      arabicName: "جمعية المستقلة السكنية",
+      englishName: "Al-Mostaqella Association",
       images: [
-        "/images/project1-1.jpg",
-        "/images/project1-2.jpg",
-        "/images/project1-3.jpg",
-        "/images/project1-4.jpg",
+        "/images/contracting/projects/al-mostaqella/mostaqella-2.jpg",
+        "/images/contracting/projects/al-mostaqella/mostaqella-3.jpg",
+        "/images/contracting/projects/al-mostaqella/mostaqella-4.jpg",
+        "/images/contracting/projects/al-mostaqella/mostaqella-5.jpg",
+      ],
+    },
+    {
+      arabicName: "جمعية خزانة تعاقد المهندسين",
+      englishName: "Artouz Engineers Towers",
+      images: [
+        "/images/contracting/projects/artouz/artouz-1.jpg",
+        "/images/contracting/projects/artouz/artouz-2.jpg",
+        "/images/contracting/projects/artouz/artouz-3.jpg",
+        "/images/contracting/projects/artouz/artouz-5.jpg",
+      ],
+    },
+    {
+      arabicName: "جمعية المنهل السكنية",
+      englishName: "Al-Manhal Housing Association",
+      images: [
+        "/images/contracting/projects/al-manhal/al-manahal-1.jpg",
+        "/images/contracting/projects/al-manhal/al-manahal-2.jpg",
+        "/images/contracting/projects/al-manhal/al-manahal-3.jpg",
+        "/images/contracting/projects/al-manhal/al-manahal-4.jpg",
       ],
     },
   ];
@@ -68,6 +83,7 @@ function ContractingCompany() {
           navigation={true}
           modules={[Navigation, Autoplay]}
           className={contractingStyles.header_swiper}
+          loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: true,
@@ -192,42 +208,28 @@ function ContractingCompany() {
             clickable: true,
           }}
           onClick={openProjectDetails}
-          watchSlidesProgress={true}
           modules={[Navigation, Autoplay]}
         >
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/images/project1.jpg"
+                src="/images/contracting/projects/artouz/main.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
                 className={contractingStyles.image}
               />
               <div className={contractingStyles.overlay}>
-                <div className={contractingStyles.text}>Hello World</div>
+                <div className={contractingStyles.text}>
+                  {t("artouzProject")}
+                </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/images/project2.jpg"
-                layout="fill"
-                objectFit="cover"
-                alt="Project"
-                className={contractingStyles.image}
-              />
-
-              <div className={contractingStyles.overlay}>
-                <div className={contractingStyles.text}>Hello World</div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={contractingStyles.container}>
-              <Image
-                src="/images/project3.jpg"
+                src="/images/contracting/projects/al-manhal/main.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -236,8 +238,7 @@ function ContractingCompany() {
 
               <div className={contractingStyles.overlay}>
                 <div className={contractingStyles.text}>
-                  Execute thirteen towers for the Engineers Retirement Cabinet
-                  Association in Jadaydeh Artouz.
+                  {t("manahelProject")}
                 </div>
               </div>
             </div>
@@ -245,7 +246,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/images/project1.jpg"
+                src="/images/contracting/projects/al-mostaqella/main.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -253,36 +254,9 @@ function ContractingCompany() {
               />
 
               <div className={contractingStyles.overlay}>
-                <div className={contractingStyles.text}>Hello World</div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={contractingStyles.container}>
-              <Image
-                src="/images/project2.jpg"
-                layout="fill"
-                objectFit="cover"
-                alt="Project"
-                className={contractingStyles.image}
-              />
-
-              <div className={contractingStyles.overlay}>
-                <div className={contractingStyles.text}>Hello World</div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={contractingStyles.container}>
-              <Image
-                src="/images/project3.jpg"
-                layout="fill"
-                objectFit="cover"
-                alt="Project"
-                className={contractingStyles.image}
-              />
-              <div className={contractingStyles.overlay}>
-                <div className={contractingStyles.text}>Hello World</div>
+                <div className={contractingStyles.text}>
+                  {t("mostaqellaProject")}
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -297,7 +271,7 @@ function ContractingCompany() {
               transition: "visibility 0.3s, opacity 0.3s ease-in",
               position: "fixed",
               zIndex: 1,
-              paddingTop: "100px",
+              paddingTop: "4%",
               left: 0,
               top: 0,
               width: "100%",
@@ -313,8 +287,8 @@ function ContractingCompany() {
                   backgroundColor: "#fefefe",
                   margin: "auto",
                   border: "1px solid #888",
-                  width: "80%",
-                  height: "70vh",
+                  width: "60%",
+                  height: "40vh",
                   boxShadow: "-20px 20px 50px 15px black",
                 }}
               >
@@ -369,7 +343,9 @@ function ContractingCompany() {
                     className={`${contractingStyles.projectContainer5Tile5} bg-cyan flex items-center justify-center`}
                   >
                     <p className="text-white font-medium px-8">
-                      {project?.desc}
+                      {locale == "en"
+                        ? project.englishName
+                        : project.arabicName}
                     </p>
                   </div>
                 </div>
@@ -388,7 +364,7 @@ function ContractingCompany() {
               transition: "visibility 0.3s, opacity 0.3s ease-in",
               position: "fixed",
               zIndex: 1,
-              paddingTop: "100px",
+              paddingTop: "4%",
               left: 0,
               top: 0,
               width: "100%",
@@ -468,7 +444,7 @@ function ContractingCompany() {
               transition: "visibility 0.3s, opacity 0.3s ease-in",
               position: "fixed",
               zIndex: 1,
-              paddingTop: "100px",
+              paddingTop: "4%",
               left: 0,
               top: 0,
               width: "100%",
