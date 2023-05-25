@@ -425,7 +425,9 @@ function ContractingCompany() {
                     className={`${contractingStyles.projectContainer4Tile4} bg-cyan flex items-center justify-center`}
                   >
                     <p className="text-white font-medium px-8">
-                      {project.desc}
+                      {locale == "en"
+                        ? project.englishName
+                        : project.arabicName}
                     </p>
                   </div>
                 </div>
@@ -495,7 +497,9 @@ function ContractingCompany() {
                     className={`${contractingStyles.projectContainer4Tile4} bg-cyan flex items-center justify-center`}
                   >
                     <p className="text-white font-medium px-8">
-                      {project.desc}
+                      {locale == "en"
+                        ? project.englishName
+                        : project.arabicName}
                     </p>
                   </div>
                 </div>
