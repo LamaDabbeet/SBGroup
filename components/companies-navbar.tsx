@@ -34,27 +34,6 @@ function CompaniesNavbar() {
                   >
                     {t("aboutSBG")}
                   </Link>
-                  <div>
-                    <button className="peer px-5 py-2 bg-green-600 hover:bg-green-700 text-gray-300 hover:text-cyan">
-                      Dropdown
-                    </button>
-
-                    <div
-                      className="hidden peer-hover:flex hover:flex
-                            w-[200px]
-                            flex-col bg-white drop-shadow-lg"
-                    >
-                      <a className="px-5 py-3 hover:bg-gray-200" href="#">
-                        About Us
-                      </a>
-                      <a className="px-5 py-3 hover:bg-gray-200" href="#">
-                        Contact Us
-                      </a>
-                      <a className="px-5 py-3 hover:bg-gray-200" href="#">
-                        Privacy Policy
-                      </a>
-                    </div>
-                  </div>
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
                       <Menu.Button className="inline-flex w-full justify-center px-4 py-2 text-sm font-medium text-black  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">

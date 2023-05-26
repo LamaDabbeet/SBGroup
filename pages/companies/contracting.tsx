@@ -58,21 +58,70 @@ function ContractingCompany() {
         "/images/contracting/projects/al-manhal/al-manahal-4.jpg",
       ],
     },
+    {
+      arabicName: "جمعية المستقلة السكنية",
+      englishName: "Al-Mostaqella Association",
+      images: [
+        "/images/contracting/projects/al-mostaqella/mostaqella-2.jpg",
+        "/images/contracting/projects/al-mostaqella/mostaqella-3.jpg",
+        "/images/contracting/projects/al-mostaqella/mostaqella-4.jpg",
+        "/images/contracting/projects/al-mostaqella/mostaqella-5.jpg",
+      ],
+    },
+    {
+      arabicName: "جمعية خزانة تعاقد المهندسين",
+      englishName: "Artouz Engineers Towers",
+      images: [
+        "/images/contracting/projects/artouz/artouz-1.jpg",
+        "/images/contracting/projects/artouz/artouz-2.jpg",
+        "/images/contracting/projects/artouz/artouz-3.jpg",
+        "/images/contracting/projects/artouz/artouz-5.jpg",
+      ],
+    },
+    {
+      arabicName: "جمعية المنهل السكنية",
+      englishName: "Al-Manhal Housing Association",
+      images: [
+        "/images/contracting/projects/al-manhal/al-manahal-1.jpg",
+        "/images/contracting/projects/al-manhal/al-manahal-2.jpg",
+        "/images/contracting/projects/al-manhal/al-manahal-3.jpg",
+        "/images/contracting/projects/al-manhal/al-manahal-4.jpg",
+      ],
+    },
   ];
   function openProjectDetails(event: any) {
     setProject(projects[event.clickedIndex]);
 
     var modal = document.getElementById("myModal");
-    if (modal) {
+
+    var modalContent = document.getElementById("modal-content");
+    var projectImage = document.getElementById("project-image");
+
+    if (modal && modalContent && projectImage) {
       modal.style.visibility = "visible";
       modal.style.opacity = "1";
+      if (screen.width < 768) {
+        modalContent.style.width = "85%";
+      } else {
+        modalContent.style.width = "60%";
+      }
+      modalContent.style.height = "40vh";
+      modalContent.style.transition = "height 1s ,width 1s";
+      projectImage.style.opacity = "1";
+      projectImage.style.transition = "opacity 1s";
     }
   }
   function closeProjectDetails() {
     var modal = document.getElementById("myModal");
-    if (modal) {
+    var modalContent = document.getElementById("modal-content");
+    var projectImage = document.getElementById("project-image");
+
+    if (modal && modalContent && projectImage) {
       modal.style.visibility = "hidden";
       modal.style.opacity = "0";
+      modalContent.style.width = "0";
+      modalContent.style.height = "0";
+      projectImage.style.opacity = "0";
     }
   }
 
@@ -80,9 +129,8 @@ function ContractingCompany() {
     <>
       <section>
         <Swiper
-          navigation={true}
           modules={[Navigation, Autoplay]}
-          className={contractingStyles.header_swiper}
+          className="lg:h-screen h-auto"
           loop={true}
           autoplay={{
             delay: 2500,
@@ -137,7 +185,7 @@ function ContractingCompany() {
       </section>
       <section
         id="contracting-services"
-        className="lg:w-2/3  w-full m-auto px-16 py-16"
+        className="lg:w-2/3  w-full m-auto px-8 py-16"
       >
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
           {t("services")}
@@ -186,7 +234,7 @@ function ContractingCompany() {
         </div>
       </section>
       <section
-        className="bg-gray-dark w-full px-16 pt-16 pb-8"
+        className="bg-gray-dark w-full lg:px-16 lg:pt-16 lg:pb-8 px-0 pt-16 pb-0"
         id="contracting-projects"
         style={{ height: "60vh" }}
       >
@@ -194,10 +242,8 @@ function ContractingCompany() {
           {t("projects")}
         </h2>
         <Swiper
-          style={{ width: "70%" }}
           className={contractingStyles.projects_swiper}
           centeredSlides={true}
-          slidesPerView={3}
           autoplay={{
             delay: 2500,
             disableOnInteraction: true,
@@ -207,9 +253,38 @@ function ContractingCompany() {
           pagination={{
             clickable: true,
           }}
+          breakpoints={{
+            768: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 2,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+          }}
+          // navigation={true}
           onClick={openProjectDetails}
           modules={[Navigation, Autoplay]}
         >
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/al-mostaqella/main.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+
+              <div className={contractingStyles.overlay}>
+                <div className={contractingStyles.text}>
+                  {t("mostaqellaProject")}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
@@ -260,6 +335,39 @@ function ContractingCompany() {
               </div>
             </div>
           </SwiperSlide>
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/artouz/main.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+              <div className={contractingStyles.overlay}>
+                <div className={contractingStyles.text}>
+                  {t("artouzProject")}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/al-manhal/main.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+
+              <div className={contractingStyles.overlay}>
+                <div className={contractingStyles.text}>
+                  {t("manahelProject")}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
         {project.images.length === 4 ? (
           <div
@@ -282,14 +390,14 @@ function ContractingCompany() {
           >
             {project ? (
               <div
-                className="modal-content"
+                id="modal-content"
                 style={{
                   backgroundColor: "#fefefe",
                   margin: "auto",
                   border: "1px solid #888",
-                  width: "60%",
-                  height: "40vh",
                   boxShadow: "-20px 20px 50px 15px black",
+                  height: 0,
+                  width: 0,
                 }}
               >
                 <div className={contractingStyles.projectDescContainer5}>
@@ -303,14 +411,17 @@ function ContractingCompany() {
                   >
                     <Image
                       alt=""
+                      id="project-image"
                       src={project.images[0]}
                       layout="fill"
                       objectFit="cover"
+                      style={{ opacity: 0 }}
                     ></Image>
                   </div>
                   <div className={contractingStyles.projectContainer5Tile2}>
                     <Image
                       alt=""
+                      className="project-image"
                       src={project.images[1]}
                       height={0}
                       width={0}
@@ -322,6 +433,7 @@ function ContractingCompany() {
                     <Image
                       alt=""
                       src={project.images[2]}
+                      className="project-image"
                       height={0}
                       width={0}
                       sizes="100%"
@@ -333,6 +445,7 @@ function ContractingCompany() {
                     <Image
                       alt=""
                       src={project.images[3]}
+                      className="project-image"
                       height={0}
                       width={0}
                       sizes="100%"
@@ -510,7 +623,10 @@ function ContractingCompany() {
           </div>
         )}
       </section>
-      <section id="contact-us" className="h-80 px-16 py-16">
+      <section
+        id="contact-us"
+        className="h-80 px-16 py-16 flex flex-col justify-center align-start"
+      >
         <h2 className="text-cyan uppercase text-3xl font-semibold">
           {t("brochure")}
         </h2>

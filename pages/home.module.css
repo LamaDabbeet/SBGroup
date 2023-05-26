@@ -1,4 +1,3 @@
-
 .projects_swiper2 {
   height: 100%;
 }
@@ -9,3 +8,6 @@
 .slider_img {
   position: relative !important;
 }
+/* #project-slider img {
+  position: relative !important;
+} */

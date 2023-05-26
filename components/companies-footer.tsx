@@ -14,13 +14,16 @@ function CompaniesFooter() {
 
   return (
     <footer className="text-white ">
-      <div id="top-footer" className="bg-cyan px-12 py-16 flex justify-between">
-        <div>
-          <h1 className="text-3xl font-bold w-2/3">
+      <div
+        id="top-footer"
+        className="bg-cyan px-12 py-16 lg:flex lg:justify-between"
+      >
+        <div className="lg:w-2/3 w-full">
+          <h1 className="lg:text-3xl text-xl font-bold ">
             Sami AlBaroudi Contracting Co
           </h1>
         </div>
-        <div>
+        <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
           <h2>{t("followUs")}</h2>
           <ul className="flex mt-2">
             <li>
@@ -81,10 +84,8 @@ function CompaniesFooter() {
             </ul>
           </div>
           <div className="lg:w-1/3 w-full mb-8 lg:mb-0">
-            <h2 className="text-cyan uppercase font-semibold">
-              {t("quickLinks")}
-            </h2>
-            <ul className="mt-2">
+            <h2 className="text-cyan uppercase font-bold">{t("quickLinks")}</h2>
+            <ul className="mt-4">
               <li>
                 <Link href="/" className="hover:text-cyan" scroll={false}>
                   {t("home")}
@@ -129,10 +130,8 @@ function CompaniesFooter() {
             </ul>
           </div>
           <div className="lg:w-1/3 w-full">
-            <h4 className="text-cyan uppercase font-semibold">
-              {t("contact")}
-            </h4>
-            <ul>
+            <h4 className="text-cyan uppercase font-bold">{t("contact")}</h4>
+            <ul className="mt-4">
               <li>
                 <span>{t("address")}</span>
               </li>

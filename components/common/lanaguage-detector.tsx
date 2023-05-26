@@ -5,7 +5,6 @@ export default function LocaleSwitcher() {
   const router = useRouter();
 
   const { locales, locale: activeLocale } = router;
-  debugger;
   const otherLocales = locales?.filter(
     (locale) => locale !== activeLocale && locale !== "default"
   );

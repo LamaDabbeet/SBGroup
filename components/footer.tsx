@@ -24,8 +24,8 @@ function Footer() {
       </div>
       <div className="lg:flex">
         <div className="lg:w-1/4 w-full mb-8 lg:mb-0">
-          <h4>{t("contact")}</h4>
-          <ul>
+          <h2 className="font-bold">{t("contact")}</h2>
+          <ul className="mt-4">
             <li>
               <span>{t("address")}</span>
             </li>
@@ -43,8 +43,8 @@ function Footer() {
           </ul>
         </div>
         <div className="lg:w-1/4 w-full mb-8 lg:mb-0">
-          <h2>{t("followUs")}</h2>
-          <ul className="flex mt-2">
+          <h2 className="font-bold">{t("followUs")}</h2>
+          <ul className="flex mt-4">
             <li>
               <div className="hover:cursor-pointer bg-white hover:bg-gray p-3.5 duration-200 ease-in border-2 border-white text-gray hover:text-white flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
                 <FontAwesomeIcon icon={faFacebookF} />
@@ -68,8 +68,8 @@ function Footer() {
           </ul>
         </div>
         <div className="lg:w-1/4 w-full">
-          <h4>{t("groupCompanies")}</h4>
-          <ul>
+          <h2 className="font-bold">{t("groupCompanies")}</h2>
+          <ul className="mt-4">
             <li className="hover:text-primary">
               <Link href="/companies/contracting">
                 Sami Al Baroudi Contracting Co

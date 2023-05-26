@@ -19,9 +19,8 @@ export default function Home() {
     <>
       <section>
         <Swiper
-          navigation={true}
           modules={[Navigation, Autoplay]}
-          className="hover:border-b-4 hover:border-b-secondary transition duration-500"
+          className="hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500"
           autoplay={{
             delay: 2500,
             disableOnInteraction: true,
@@ -83,9 +82,9 @@ export default function Home() {
       </section>
       <section className={styles.projects_section2} id="sbg-projects">
         <Swiper
+          id="project-slider"
           className={styles.projects_swiper2}
           centeredSlides={false}
-          slidesPerView={2}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -94,16 +93,27 @@ export default function Home() {
           pagination={{
             clickable: true,
           }}
+          breakpoints={{
+            768: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 2,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+          }}
           watchSlidesProgress={true}
           modules={[Navigation, Autoplay]}
         >
-          <SwiperSlide>
+          <SwiperSlide className="hover:cursor-pointer">
             <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
               {t("contracting")}
             </div>
             <Link
               href="/companies/contracting"
-              className="hover:cursor-pointer"
+              className="hover:cursor-pointer hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500"
             >
               <Image
                 src="/images/homepage/sectors/contracting.jpg"

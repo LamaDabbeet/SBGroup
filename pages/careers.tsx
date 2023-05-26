@@ -5,7 +5,7 @@ function CareersPage() {
   const { t } = useTranslation("common");
 
   return (
-    <div>
+    <div className="h-full flex align-center justify-center">
       <h1>{t("careers")}</h1>
     </div>
   );
