@@ -109,14 +109,14 @@ export default function Home() {
         >
           <SwiperSlide className="hover:cursor-pointer">
             <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("contracting")}
+              {t("transportation")}
             </div>
             <Link
               href="/companies/contracting"
               className="hover:cursor-pointer hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500"
             >
               <Image
-                src="/images/homepage/sectors/contracting.jpg"
+                src="/images/homepage/sectors/transportation.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
