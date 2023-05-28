@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -21,7 +21,7 @@ function CompaniesFooter() {
       >
         <div className="lg:w-2/3 w-full">
           <h1 className="lg:text-3xl text-xl font-bold ">
-            Sami AlBaroudi Contracting Co
+            {t("samiBaroudyContracting")}
           </h1>
         </div>
         <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
@@ -54,8 +54,8 @@ function CompaniesFooter() {
         <div className="flex mb-8">
           <Image
             src="/images/sbg-white-logo.png"
-            width={200}
-            height={30}
+            width={260}
+            height={70}
             alt="Sami Al Baroudi Group White Logo"
           />
         </div>
@@ -63,23 +63,23 @@ function CompaniesFooter() {
           <div className="lg:w-1/3 w-full mb-8 lg:mb-0">
             <ul>
               <li>
-                <Link href="/" className="hover:text-cyan">
-                  Sami Al Baroudi Contracting Co
+                <Link href="/companies/contracting" className="hover:text-cyan">
+                  {t("samiBaroudyContracting")}
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-cyan">
-                  Ready Mix Concrete Co
+                  {t("readyMix")}
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-cyan">
-                  RoadLink
+                  {t("roadLink")}
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-cyan">
-                  SBD
+                  {t("SBD")}
                 </Link>
               </li>
             </ul>

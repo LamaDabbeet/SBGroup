@@ -1,7 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import React, { Fragment, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import LocaleSwitcher from "./common/lanaguage-detector";
@@ -20,8 +20,8 @@ function Navbar() {
                 <Image
                   src={"/images/sbg-logo.png"}
                   alt="Workflow"
-                  width={200}
-                  height={30}
+                  width={240}
+                  height={45}
                 />
               </div>
               <div className="hidden md:block h-full">
@@ -35,11 +35,11 @@ function Navbar() {
                   </Link>
                   <div className="group inline-block relative transition duration-300">
                     <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 inline-flex items-center group-hover:border-t-4 group-hover:border-t-primary transition duration-300">
-                      <span className="mr-1 text-gray px-3 py-2 text-sm font-medium group-hover:text-primary border-t-white border-t-4 ">
+                      <span className="mr-1 text-gray  py-2 text-sm font-medium group-hover:text-primary border-t-white border-t-4 ">
                         {t("groupCompanies")}
                       </span>
                       <ChevronDownIcon
-                        className="ml-2 -mr-1 h-5 w-5 text-gray group-hover:text-primary"
+                        className="-mr-1 h-5 w-5 text-gray group-hover:text-primary"
                         aria-hidden="true"
                       />
                     </button>
@@ -163,35 +163,28 @@ function Navbar() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
-                  href="/companies/contracting"
-                  className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Sami Al Baroudi Contracting Co
-                </Link>
-                <Link
                   href="#"
-                  className="text-gray  text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("about")}
                 </Link>
-
                 <Link
                   href="#"
-                  className="text-gray hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("contact")}
                 </Link>
 
                 <Link
                   href="/news"
-                  className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("news")}
                 </Link>
 
                 <Link
                   href="/careers"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("careers")}
                 </Link>

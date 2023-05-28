@@ -1,7 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import React, { Fragment, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import LocaleSwitcher from "./common/lanaguage-detector";
@@ -29,8 +29,8 @@ function CompaniesNavbar() {
                   <Image
                     src={"/images/sb-contracting-logo.png"}
                     alt="Workflow"
-                    width={140}
-                    height={90}
+                    width={85}
+                    height={38}
                   />
                 </Link>
               </div>
@@ -88,13 +88,13 @@ function CompaniesNavbar() {
                     scroll={false}
                     className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
-                    {t("contact")}
+                    {t("contactUs")}
                   </Link>
                   <LocaleSwitcher hoverColor="cyan" textColor="gray" />
                 </div>
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-2 flex md:hidden ">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -150,14 +150,8 @@ function CompaniesNavbar() {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden" id="mobile-menu">
+            <div className="md:hidden z-10 absolute" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link
-                  href="/companies/contracting"
-                  className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Sami Al Baroudi Contracting Co
-                </Link>
                 <Link
                   href="#"
                   className="text-gray  text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -169,21 +163,21 @@ function CompaniesNavbar() {
                   href="#"
                   className="text-gray hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  {t("contact")}
+                  {t("services")}
                 </Link>
 
                 <Link
                   href="/news"
                   className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  {t("news")}
+                  {t("projects")}
                 </Link>
 
                 <Link
                   href="/careers"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  {t("careers")}
+                  {t("contactUs")}
                 </Link>
               </div>
             </div>

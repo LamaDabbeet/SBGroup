@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -17,8 +17,8 @@ function Footer() {
       <div className="flex mb-16">
         <Image
           src="/images/sbg-white-logo.png"
-          width={210}
-          height={40}
+          width={260}
+          height={70}
           alt="Sami Al Baroudi Group White Logo"
         />
       </div>

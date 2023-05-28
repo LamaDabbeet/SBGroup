@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/router";
 interface INews {
   date: string;
@@ -125,13 +125,13 @@ export default function Home() {
           {t("aboutSBG")}
         </h2>
         <div className="flex justify-center">
-          <div id="about-content" className="w-8/10">
+          <div id="about-content" style={{ width: "80%" }}>
             <p>{t("aboutSBGDesc1")}</p>
             <p>{t("aboutSBGDesc2")}</p>
           </div>
         </div>
       </section>
-      {/* <section style={{ overflow: "hidden" }}>
+      <section style={{ overflow: "hidden" }}>
         <div className="lg:flex lg:justify-center lg:items-center">
           <div className="w-full">
             <Swiper
@@ -140,61 +140,80 @@ export default function Home() {
               loop={true}
               autoplay={{
                 delay: 5000,
-                pauseOnMouseEnter: true,
               }}
               slidesPerView={1}
               centeredSlides={true}
-              // modules={[Autoplay]}
+              modules={[Autoplay]}
               className="mySwiper"
-              style={{ overflow: "hidden" }}
             >
               <SwiperSlide>
                 <div className="flex align-center justify-center m-28">
-                  <div>sfdsfsdfsdfsdfsfsfsfsdf</div>
+                  <div className="w-1/2 flex items-center">
+                    {/* <h2>{t("groupStrategyTitle")}</h2> */}
+                    <p
+                      className="text-primary font-regular text-justify"
+                      style={{ width: "90%" }}
+                    >
+                      {t("groupStrategyDesc")}
+                    </p>
+                  </div>
                   <Image
-                    src="/images/contracting/slider/slide1.jpg"
+                    src="/images/homepage/about/about-1.jpg"
                     alt=""
                     width={0}
                     height={0}
                     sizes="100vw"
                     style={{
-                      width: "100%",
-                      height: "60vh",
-                      overflow: "hidden",
+                      width: "50%",
+                      height: "45vh",
                     }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" flex align-center justify-center m-28">
-                  <div>sfdsfsdfsdfsdfsfsfsfsdf</div>
+                <div className="flex align-center justify-center m-28">
+                  <div className="w-1/2 flex items-center">
+                    {/* <h2>{t("ourValuesTitle")}</h2> */}
+                    <p
+                      className="text-primary font-regular text-justify"
+                      style={{ width: "90%" }}
+                    >
+                      {t("ourValuesDesc")}
+                    </p>
+                  </div>
                   <Image
-                    src="/images/contracting/slider/slide2.jpg"
+                    src="/images/homepage/about/about-2.jpg"
                     alt=""
                     width={0}
                     height={0}
                     sizes="100vw"
                     style={{
-                      width: "100%",
-                      height: "60vh",
-                      overflow: "hidden",
+                      width: "50%",
+                      height: "45vh",
                     }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" flex align-center justify-center m-28">
-                  <div>sfdsfsdfsdfsdfsfsfsfsdf</div>
+                <div className="flex align-center justify-center m-28">
+                  <div className="w-1/2 flex items-center">
+                    {/* <h2>{t("scopOfWorkTitle")}</h2> */}
+                    <p
+                      className="text-primary font-regular text-justify"
+                      style={{ width: "90%" }}
+                    >
+                      {t("scopOfWorkDesc")}
+                    </p>
+                  </div>
                   <Image
-                    src="/images/contracting/slider/slide3.jpg"
+                    src="/images/homepage/about/about-3.jpg"
                     alt=""
                     width={0}
                     height={0}
                     sizes="100vw"
                     style={{
-                      width: "100%",
-                      height: "60vh",
-                      overflow: "hidden",
+                      width: "50%",
+                      height: "45vh",
                     }}
                   />
                 </div>
@@ -202,7 +221,7 @@ export default function Home() {
             </Swiper>
           </div>
         </div>
-      </section> */}
+      </section>
       <section className={styles.projects_section2} id="sbg-projects">
         <Swiper
           id="project-slider"
@@ -306,26 +325,7 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </section>
-      <section
-        id="contact-us"
-        className="h-80 px-16 py-16 flex flex-col justify-center align-start"
-      >
-        <h2 className="text-primary uppercase text-3xl font-semibold">
-          {t("brochure")}
-        </h2>
-        <p>{t("downloadBrochure")}</p>
-        <ul className="mt-2">
-          <li className="hover:text-secondary hover:font-bold hover:cursor-pointer">
-            {t("arabic")}
-            <FontAwesomeIcon icon={faDownload} className="ms-2" />
-          </li>
-          <li className="hover:text-secondary hover:font-bold hover:cursor-pointer">
-            {t("english")}
-            <FontAwesomeIcon icon={faDownload} className="ms-2" />
-          </li>
-        </ul>
-      </section>
-      <section style={{ overflow: "hidden" }}>
+      <section>
         <div className="lg:flex lg:justify-center lg:items-center">
           <div className="lg:w-1/2 w-full">
             <Swiper
@@ -352,8 +352,7 @@ export default function Home() {
                     sizes="100vw"
                     style={{
                       width: "100%",
-                      height: "60vh",
-                      overflow: "hidden",
+                      height: "45vh",
                     }}
                   />
                 </div>
@@ -368,14 +367,13 @@ export default function Home() {
                     sizes="100vw"
                     style={{
                       width: "100%",
-                      height: "60vh",
-                      overflow: "hidden",
+                      height: "45vh",
                     }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" flex align-center justify-center m-28">
+                <div className="flex align-center justify-center m-28">
                   <Image
                     src="/images/contracting/slider/slide3.jpg"
                     alt=""
@@ -384,8 +382,7 @@ export default function Home() {
                     sizes="100vw"
                     style={{
                       width: "100%",
-                      height: "60vh",
-                      overflow: "hidden",
+                      height: "45vh",
                     }}
                   />
                 </div>
@@ -393,14 +390,14 @@ export default function Home() {
             </Swiper>
           </div>
           <div className="lg:w-1/2 w-full">
-            <div style={{ width: "100%", height: "60vh" }} className="ms-12">
+            <div style={{ width: "100%", height: "45vh" }} className="ms-12">
               <h2 className="text-secondary font-bold uppercase text-xl mb-8">
                 {t("latestNews")}
               </h2>
               <div>
                 {news.map((newsItem, index) => {
                   return (
-                    <div className="mb-8">
+                    <div className="mb-4">
                       <p className="text-silver">{newsItem.date}</p>
                       <h3 className="text-primary text-lg">
                         <span
@@ -423,6 +420,25 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section
+        id="contact-us"
+        className="h-80 px-16 py-16 flex flex-col justify-center align-start"
+      >
+        <h2 className="text-primary uppercase text-3xl font-semibold">
+          {t("brochure")}
+        </h2>
+        <p>{t("downloadBrochure")}</p>
+        <ul className="mt-2">
+          <li className="hover:text-secondary hover:font-bold hover:cursor-pointer">
+            {t("arabic")}
+            <FontAwesomeIcon icon={faDownload} className="ms-2" />
+          </li>
+          <li className="hover:text-secondary hover:font-bold hover:cursor-pointer">
+            {t("english")}
+            <FontAwesomeIcon icon={faDownload} className="ms-2" />
+          </li>
+        </ul>
       </section>
     </>
   );
