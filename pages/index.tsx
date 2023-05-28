@@ -25,11 +25,13 @@ export default function Home() {
   const { t } = useTranslation("common");
   const { locale } = useRouter();
 
-  const [swiper, setSwiper] = useState(null);
+  const [swiper, setSwiper] = useState<any>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const handleSlideChange = () => {
-    if (swiper) setCurrentSlideIndex(swiper?.activeIndex);
+    if (swiper) {
+      setCurrentSlideIndex(swiper?.activeIndex);
+    }
   };
 
   const initialNews: INews[] = [
