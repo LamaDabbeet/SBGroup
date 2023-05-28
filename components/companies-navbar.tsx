@@ -61,28 +61,32 @@ function CompaniesNavbar() {
 
                 <div className="ml-10 flex items-baseline space-x-4 h-full">
                   <Link
-                    href="#"
-                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
+                    href="/companies/contracting/#about-sbg-contracting"
+                    scroll={false}
+                    className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
-                    {t("aboutSBG")}
+                    {t("about")}
                   </Link>
                   <Link
-                    href="/careers"
-                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
+                    href="/companies/contracting/#contracting-services"
+                    scroll={false}
+                    className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
-                    {t("careers")}
-                  </Link>
-
-                  <Link
-                    href="/news"
-                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
-                  >
-                    {t("news")}
+                    {t("services")}
                   </Link>
 
                   <Link
-                    href="/contact"
-                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
+                    href="/companies/contracting/#contracting-projects"
+                    scroll={false}
+                    className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
+                  >
+                    {t("projects")}
+                  </Link>
+
+                  <Link
+                    href="/companies/contracting/#contact-us"
+                    scroll={false}
+                    className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
                     {t("contact")}
                   </Link>
