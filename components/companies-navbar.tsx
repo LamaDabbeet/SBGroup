@@ -5,11 +5,19 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import LocaleSwitcher from "./common/lanaguage-detector";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 function CompaniesNavbar() {
   const { t } = useTranslation("common");
 
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
       <nav className="bg-gray-800 h-24">
@@ -26,109 +34,59 @@ function CompaniesNavbar() {
                   />
                 </Link>
               </div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+
+              <div className="hidden md:flex h-24  items-center">
+                <ul className="flex">
+                  <li>
+                    <div className="hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+                      <FontAwesomeIcon icon={faFacebookF} size="sm" />
+                    </div>
+                  </li>
+                  <li>
+                    <div className="hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+                      <FontAwesomeIcon icon={faInstagram} size="sm" />
+                    </div>
+                  </li>
+                  <li>
+                    <div className="hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+                      <FontAwesomeIcon icon={faLinkedinIn} size="sm" />
+                    </div>
+                  </li>
+                  <li>
+                    <div className="hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+                      <FontAwesomeIcon icon={faWhatsapp} size="sm" />
+                    </div>
+                  </li>
+                </ul>
+
+                <div className="ml-10 flex items-baseline space-x-4 h-full">
                   <Link
                     href="#"
-                    className="text-gray-300 hover:text-cyan px-3 py-2 rounded-md text-sm font-medium"
+                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
                     {t("aboutSBG")}
                   </Link>
-                  <Menu as="div" className="relative inline-block text-left">
-                    <div>
-                      <Menu.Button className="inline-flex w-full justify-center px-4 py-2 text-sm font-medium text-black  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                        {t("groupCompanies")}
-                        <ChevronDownIcon
-                          className="me-2 -ms-1 h-5 w-5 text-violet-200 hover:text-violet-100"
-                          aria-hidden="true"
-                        />
-                      </Menu.Button>
-                    </div>
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[100]">
-                        <div className="px-1 py-1 ">
-                          <Menu.Item>
-                            {({ active }) => (
-                              <Link
-                                href="/companies/contracting"
-                                className={`${
-                                  active ? "bg-cyan text-white" : "text-black"
-                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                              >
-                                Sami Al Baroudi Contracting Co
-                              </Link>
-                            )}
-                          </Menu.Item>
-                          <Menu.Item>
-                            {({ active }) => (
-                              <button
-                                className={`${
-                                  active ? "bg-cyan text-white" : "text-black"
-                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                              >
-                                Ready Mix Concrete Co
-                              </button>
-                            )}
-                          </Menu.Item>
-                        </div>
-                        <div>
-                          <Menu.Item>
-                            {({ active }) => (
-                              <button
-                                className={`${
-                                  active ? "bg-cyan text-white" : "text-black"
-                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                              >
-                                RoadLink
-                              </button>
-                            )}
-                          </Menu.Item>
-                        </div>
-                        <div className="px-1 py-1">
-                          <Menu.Item>
-                            {({ active }) => (
-                              <button
-                                className={`${
-                                  active ? "bg-cyan text-white" : "text-black"
-                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                              >
-                                SBD
-                              </button>
-                            )}
-                          </Menu.Item>
-                        </div>
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
                   <Link
                     href="/careers"
-                    className="text-gray-300 hover:text-cyan px-3 py-2 rounded-md text-sm font-medium"
+                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
                     {t("careers")}
                   </Link>
 
                   <Link
                     href="/news"
-                    className="text-gray-300 hover:text-cyan px-3 py-2 rounded-md text-sm font-medium"
+                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
                     {t("news")}
                   </Link>
 
                   <Link
                     href="/contact"
-                    className="text-gray-300  hover:text-cyan px-3 py-2 rounded-md text-sm font-medium"
+                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
                     {t("contact")}
                   </Link>
-                  <LocaleSwitcher />
+                  <LocaleSwitcher color="cyan" />
                 </div>
               </div>
             </div>
@@ -178,7 +136,6 @@ function CompaniesNavbar() {
             </div>
           </div>
         </div>
-
         <Transition
           show={isOpen}
           enter="transition ease-out duration-100 transform"
@@ -191,40 +148,39 @@ function CompaniesNavbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                <Link
+                  href="/companies/contracting"
+                  className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Dashboard
-                </a>
-
-                <a
+                  Sami Al Baroudi Contracting Co
+                </Link>
+                <Link
                   href="#"
+                  className="text-gray  text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  {t("about")}
+                </Link>
+
+                <Link
+                  href="#"
+                  className="text-gray hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  {t("contact")}
+                </Link>
+
+                <Link
+                  href="/news"
+                  className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  {t("news")}
+                </Link>
+
+                <Link
+                  href="/careers"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Team
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  {t("projects")}
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Calendar
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
-                </a>
+                  {t("careers")}
+                </Link>
               </div>
             </div>
           )}

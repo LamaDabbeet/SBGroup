@@ -246,7 +246,6 @@ function ContractingCompany() {
           centeredSlides={true}
           autoplay={{
             delay: 2500,
-            disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
           loop={true}

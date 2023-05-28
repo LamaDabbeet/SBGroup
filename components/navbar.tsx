@@ -28,7 +28,7 @@ function Navbar() {
                 <div className="h-full ml-10 flex items-baseline space-x-4">
                   <Link
                     href="/"
-                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300"
+                    className="h-full flex items-center text-gray px-3 py-2 text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300"
                   >
                     {" "}
                     {t("about")}
@@ -99,7 +99,7 @@ function Navbar() {
                   >
                     {t("contact")}
                   </Link>
-                  <LocaleSwitcher />
+                  <LocaleSwitcher color="primary" />
                 </div>
               </div>
             </div>
@@ -164,27 +164,27 @@ function Navbar() {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
                   href="/companies/contracting"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Sami Al Baroudi Contracting Co
                 </Link>
                 <Link
                   href="#"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray  text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("about")}
                 </Link>
 
                 <Link
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("contact")}
                 </Link>
 
                 <Link
                   href="/news"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("news")}
                 </Link>
