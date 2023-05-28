@@ -120,7 +120,7 @@ function CompaniesFooter() {
               </li>
               <li>
                 <Link
-                  href="/#contact-us"
+                  href="/companies/contracting/#contact-us"
                   className="hover:text-cyan"
                   scroll={false}
                 >
