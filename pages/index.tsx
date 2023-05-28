@@ -56,7 +56,7 @@ export default function Home() {
     <>
       <section>
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           className="hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500"
           autoplay={{
             delay: 2500,
@@ -137,6 +137,7 @@ export default function Home() {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          modules={[Autoplay]}
           loop={true}
           breakpoints={{
             768: {
