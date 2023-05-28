@@ -120,7 +120,7 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </section>
-      <section id="about-sbg" className="text-center px-16 py-16">
+      <section id="about-sbg" className="text-center lg:px-16 py-16 px-0">
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
           {t("aboutSBG")}
         </h2>
@@ -147,75 +147,78 @@ export default function Home() {
               className="mySwiper"
             >
               <SwiperSlide>
-                <div className="flex align-center justify-center m-28">
-                  <div className="w-1/2 flex items-center">
-                    {/* <h2>{t("groupStrategyTitle")}</h2> */}
+                <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
+                  <div className="w-full lg:w-1/2 flex items-center">
                     <p
-                      className="text-primary font-regular text-justify"
+                      className="text-primary font-regular text-justify mb-12 lg:mb-0"
                       style={{ width: "90%" }}
                     >
                       {t("groupStrategyDesc")}
                     </p>
                   </div>
-                  <Image
-                    src="/images/homepage/about/about-1.jpg"
-                    alt=""
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{
-                      width: "50%",
-                      height: "45vh",
-                    }}
-                  />
+                  <div className="w-full lg:w-1/2">
+                    <Image
+                      src="/images/homepage/about/about-1.jpg"
+                      alt=""
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{
+                        height: "45vh",
+                        width: "100%",
+                      }}
+                    />
+                  </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex align-center justify-center m-28">
-                  <div className="w-1/2 flex items-center">
-                    {/* <h2>{t("ourValuesTitle")}</h2> */}
+                <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
+                  <div className="w-full lg:w-1/2 flex items-center">
                     <p
-                      className="text-primary font-regular text-justify"
+                      className="text-primary font-regular text-justify mb-12 lg:mb-0"
                       style={{ width: "90%" }}
                     >
                       {t("ourValuesDesc")}
                     </p>
                   </div>
-                  <Image
-                    src="/images/homepage/about/about-2.jpg"
-                    alt=""
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{
-                      width: "50%",
-                      height: "45vh",
-                    }}
-                  />
+                  <div className="w-full lg:w-1/2">
+                    <Image
+                      src="/images/homepage/about/about-2.jpg"
+                      alt=""
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{
+                        height: "45vh",
+                        width: "100%",
+                      }}
+                    />
+                  </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex align-center justify-center m-28">
-                  <div className="w-1/2 flex items-center">
-                    {/* <h2>{t("scopOfWorkTitle")}</h2> */}
+                <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
+                  <div className="w-full lg:w-1/2 flex items-center">
                     <p
-                      className="text-primary font-regular text-justify"
+                      className="text-primary font-regular text-justify mb-12 lg:mb-0"
                       style={{ width: "90%" }}
                     >
                       {t("scopOfWorkDesc")}
                     </p>
                   </div>
-                  <Image
-                    src="/images/homepage/about/about-3.jpg"
-                    alt=""
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{
-                      width: "50%",
-                      height: "45vh",
-                    }}
-                  />
+                  <div className="w-full lg:w-1/2">
+                    <Image
+                      src="/images/homepage/about/about-3.jpg"
+                      alt=""
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{
+                        height: "45vh",
+                        width: "100%",
+                      }}
+                    />
+                  </div>
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -325,7 +328,7 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </section>
-      <section>
+      <section className="mt-20">
         <div className="lg:flex lg:justify-center lg:items-center">
           <div className="lg:w-1/2 w-full">
             <Swiper
@@ -343,7 +346,7 @@ export default function Home() {
               style={{ overflow: "hidden" }}
             >
               <SwiperSlide>
-                <div className=" flex align-center justify-center m-28">
+                <div className=" flex align-center justify-center lg:m-12 m-8">
                   <Image
                     src="/images/contracting/slider/slide1.jpg"
                     alt=""
@@ -358,7 +361,7 @@ export default function Home() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" flex align-center justify-center m-28">
+                <div className=" flex align-center justify-center lg:m-12 m-8">
                   <Image
                     src="/images/contracting/slider/slide2.jpg"
                     alt=""
@@ -373,7 +376,7 @@ export default function Home() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex align-center justify-center m-28">
+                <div className="flex align-center justify-center lg:m-12 m-8">
                   <Image
                     src="/images/contracting/slider/slide3.jpg"
                     alt=""
@@ -389,8 +392,11 @@ export default function Home() {
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className="lg:w-1/2 w-full">
-            <div style={{ width: "100%", height: "45vh" }} className="ms-12">
+          <div className="lg:w-1/2 w-full overflow-hidden">
+            <div
+              style={{ width: "100%", height: "45vh" }}
+              className="lg:ms-12 ms-8 me-8"
+            >
               <h2 className="text-secondary font-bold uppercase text-xl mb-8">
                 {t("latestNews")}
               </h2>
