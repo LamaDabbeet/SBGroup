@@ -8,6 +8,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "next-i18next";
+import LocaleSwitcher from "./common/lanaguage-detector";
 
 function CompaniesFooter() {
   const { t } = useTranslation("common");
@@ -126,6 +127,10 @@ function CompaniesFooter() {
                 >
                   {t("contactUs")}
                 </Link>
+              </li>
+              <li>
+                {" "}
+                <LocaleSwitcher hoverColor="cyan" textColor="white" />
               </li>
             </ul>
           </div>

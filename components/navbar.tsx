@@ -47,34 +47,34 @@ function Navbar() {
                     <ul className="absolute hidden text-gray-700 pt-1 group-hover:block z-10 bg-white transition duration-300">
                       <li className="">
                         <Link
-                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block whitespace-no-wrap"
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
                           href="/companies/contracting"
                         >
-                          Sami Al Baroudi Contracting Co
+                          {t("samiBaroudyContracting")}{" "}
                         </Link>
                       </li>
                       <li className="">
                         <Link
-                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block whitespace-no-wrap"
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
                           href="#"
                         >
-                          Ready Mix Concrete Co
+                          {t("readyMix")}{" "}
                         </Link>
                       </li>
                       <li className="">
                         <Link
-                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block whitespace-no-wrap"
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
                           href="#"
                         >
-                          RoadLink
+                          {t("roadLink")}
                         </Link>
                       </li>
                       <li className="">
                         <Link
-                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block whitespace-no-wrap"
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
                           href="#"
                         >
-                          SBD
+                          {t("SBD")}
                         </Link>
                       </li>
                     </ul>
@@ -99,7 +99,7 @@ function Navbar() {
                   >
                     {t("contact")}
                   </Link>
-                  <LocaleSwitcher color="primary" />
+                  <LocaleSwitcher hoverColor="primary" textColor="gray" />
                 </div>
               </div>
             </div>

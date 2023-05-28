@@ -90,7 +90,7 @@ function CompaniesNavbar() {
                   >
                     {t("contact")}
                   </Link>
-                  <LocaleSwitcher color="cyan" />
+                  <LocaleSwitcher hoverColor="cyan" textColor="gray" />
                 </div>
               </div>
             </div>

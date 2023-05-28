@@ -18,7 +18,13 @@ export default function LocaleSwitcher(props: any) {
               href={{ pathname, query }}
               as={asPath}
               locale={locale}
-              className={"text-gray hover:text-" + props.color}
+              className={
+                "text-gray hover:text-" +
+                props.hoverColor +
+                " " +
+                "text-" +
+                props.textColor
+              }
             >
               {locale === "en" ? "English" : locale === "ar" ? "عربى" : null}
             </Link>
