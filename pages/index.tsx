@@ -59,7 +59,7 @@ export default function Home() {
           modules={[Navigation]}
           className="hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500"
           autoplay={{
-            delay: 5000,
+            delay: 2500,
             pauseOnMouseEnter: true,
           }}
         >
@@ -257,7 +257,7 @@ export default function Home() {
               onSlideChange={handleSlideChange}
               // loop={true}
               autoplay={{
-                delay: 2500,
+                delay: 5000,
                 pauseOnMouseEnter: true,
               }}
               slidesPerView={1}
