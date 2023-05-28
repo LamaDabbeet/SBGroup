@@ -93,7 +93,7 @@ function CompaniesFooter() {
               </li>
               <li>
                 <Link
-                  href="/#about-sbg-contracting"
+                  href="/companies/contracting/#about-sbg-contracting"
                   className="hover:text-cyan"
                   scroll={false}
                 >
@@ -102,7 +102,7 @@ function CompaniesFooter() {
               </li>
               <li>
                 <Link
-                  href="/#contracting-services"
+                  href="/companies/contracting/#contracting-services"
                   className="hover:text-cyan"
                   scroll={false}
                 >
@@ -111,7 +111,7 @@ function CompaniesFooter() {
               </li>
               <li>
                 <Link
-                  href="/#contracting-projects"
+                  href="/companies/contracting/#contracting-projects"
                   className="hover:text-cyan"
                   scroll={false}
                 >
