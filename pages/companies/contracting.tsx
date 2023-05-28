@@ -1,6 +1,5 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -130,7 +129,7 @@ function ContractingCompany() {
       <section>
         <Swiper
           modules={[Navigation, Autoplay]}
-          className="lg:h-screen h-auto"
+          className="hover:border-b-4 hover:border-b-cyan hover:border-t-cyan border-t-white border-b-white border-b-4  border-t-4 transition duration-500"
           loop={true}
           autoplay={{
             delay: 2500,
@@ -145,7 +144,7 @@ function ContractingCompany() {
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "70vh" }}
+              style={{ width: "100%", height: "90vh" }}
             />
           </SwiperSlide>
 
@@ -156,7 +155,7 @@ function ContractingCompany() {
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "70vh" }}
+              style={{ width: "100%", height: "90vh" }}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -166,7 +165,7 @@ function ContractingCompany() {
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "70vh" }}
+              style={{ width: "100%", height: "90vh" }}
             />
           </SwiperSlide>
         </Swiper>
@@ -246,6 +245,7 @@ function ContractingCompany() {
           centeredSlides={true}
           autoplay={{
             delay: 2500,
+            disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
           loop={true}

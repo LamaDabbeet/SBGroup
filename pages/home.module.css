@@ -13,16 +13,4 @@
   cursor: pointer !important;
   border-bottom-color: yellow !important;
 }
-/* #project-slider img {
-  position: relative !important;
-} */
-#img1:hover {
-  cursor: pointer;
-  border-bottom-color: yellow;
 
-  /* border-b-white border-b-4 transition duration-500 */
-}
-#img1 {
-  border-bottom-color: blue;
-  border-bottom-width: 2rem;
-}
