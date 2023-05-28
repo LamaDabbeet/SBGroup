@@ -114,6 +114,9 @@ export default function Home() {
               sizes="100vw"
               style={{ width: "100%", height: "90vh" }}
             />
+            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
+              {t("mainHeaderTitle")}
+            </p>
           </SwiperSlide>
         </Swiper>
       </section>
@@ -128,6 +131,78 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* <section style={{ overflow: "hidden" }}>
+        <div className="lg:flex lg:justify-center lg:items-center">
+          <div className="w-full">
+            <Swiper
+              onSwiper={setSwiper}
+              onSlideChange={handleSlideChange}
+              loop={true}
+              autoplay={{
+                delay: 5000,
+                pauseOnMouseEnter: true,
+              }}
+              slidesPerView={1}
+              centeredSlides={true}
+              // modules={[Autoplay]}
+              className="mySwiper"
+              style={{ overflow: "hidden" }}
+            >
+              <SwiperSlide>
+                <div className="flex align-center justify-center m-28">
+                  <div>sfdsfsdfsdfsdfsfsfsfsdf</div>
+                  <Image
+                    src="/images/contracting/slider/slide1.jpg"
+                    alt=""
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{
+                      width: "100%",
+                      height: "60vh",
+                      overflow: "hidden",
+                    }}
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" flex align-center justify-center m-28">
+                  <div>sfdsfsdfsdfsdfsfsfsfsdf</div>
+                  <Image
+                    src="/images/contracting/slider/slide2.jpg"
+                    alt=""
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{
+                      width: "100%",
+                      height: "60vh",
+                      overflow: "hidden",
+                    }}
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" flex align-center justify-center m-28">
+                  <div>sfdsfsdfsdfsdfsfsfsfsdf</div>
+                  <Image
+                    src="/images/contracting/slider/slide3.jpg"
+                    alt=""
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{
+                      width: "100%",
+                      height: "60vh",
+                      overflow: "hidden",
+                    }}
+                  />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section> */}
       <section className={styles.projects_section2} id="sbg-projects">
         <Swiper
           id="project-slider"
