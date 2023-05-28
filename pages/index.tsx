@@ -268,7 +268,7 @@ export default function Home() {
               style={{ overflow: "hidden" }}
             >
               <SwiperSlide>
-                <div className="w-4/5 flex align-center justify-center m-28">
+                <div className=" flex align-center justify-center m-28">
                   <Image
                     src="/images/contracting/slider/slide1.jpg"
                     alt=""
@@ -284,7 +284,7 @@ export default function Home() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="w-full flex align-center justify-center m-28">
+                <div className=" flex align-center justify-center m-28">
                   <Image
                     src="/images/contracting/slider/slide2.jpg"
                     alt=""
@@ -300,7 +300,7 @@ export default function Home() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="w-full flex align-center justify-center m-28">
+                <div className=" flex align-center justify-center m-28">
                   <Image
                     src="/images/contracting/slider/slide3.jpg"
                     alt=""
