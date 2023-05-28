@@ -632,11 +632,11 @@ function ContractingCompany() {
         </h2>
         <p>{t("downloadBrochure")}</p>
         <ul className="mt-2">
-          <li>
+          <li className="hover:text-cyan hover:font-bold hover:cursor-pointer">
             {t("arabic")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
-          <li>
+          <li className="hover:text-cyan hover:font-bold hover:cursor-pointer">
             {t("english")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>

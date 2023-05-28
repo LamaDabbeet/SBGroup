@@ -15,7 +15,7 @@ function Navbar() {
       <nav className="bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 w-full">
-            <div className="flex items-center justify-between w-full">
+            <div className="flex items-center justify-between w-full h-full">
               <div className="flex-shrink-0">
                 <Image
                   src={"/images/sbg-logo.png"}
@@ -24,115 +24,78 @@ function Navbar() {
                   height={30}
                 />
               </div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+              <div className="hidden md:block h-full">
+                <div className="h-full ml-10 flex items-baseline space-x-4">
                   <Link
                     href="/"
-                    className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300"
                   >
                     {" "}
                     {t("about")}
                   </Link>
-
-                  <Menu as="div" className="relative inline-block text-left">
-                    <div>
-                      <Menu.Button className="inline-flex w-full justify-center px-4 py-2 text-sm font-medium text-black  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                  <div className="group inline-block relative transition duration-300">
+                    <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 inline-flex items-center group-hover:border-t-4 group-hover:border-t-primary transition duration-300">
+                      <span className="mr-1 text-gray px-3 py-2 text-sm font-medium group-hover:text-primary border-t-white border-t-4 ">
                         {t("groupCompanies")}
-                        <ChevronDownIcon
-                          className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
-                          aria-hidden="true"
-                        />
-                      </Menu.Button>
-                    </div>
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[100]">
-                        <div className="px-1 py-1 ">
-                          <Menu.Item>
-                            {({ active }) => (
-                              <Link
-                                href="/companies/contracting"
-                                className={`${
-                                  active
-                                    ? "bg-primary text-white"
-                                    : "text-black"
-                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                              >
-                                Sami Al Baroudi Contracting Co
-                              </Link>
-                            )}
-                          </Menu.Item>
-                          <Menu.Item>
-                            {({ active }) => (
-                              <button
-                                className={`${
-                                  active
-                                    ? "bg-primary text-white"
-                                    : "text-black"
-                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                              >
-                                Ready Mix Concrete Co
-                              </button>
-                            )}
-                          </Menu.Item>
-                        </div>
-                        <div>
-                          <Menu.Item>
-                            {({ active }) => (
-                              <button
-                                className={`${
-                                  active
-                                    ? "bg-primary text-white"
-                                    : "text-black"
-                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                              >
-                                RoadLink
-                              </button>
-                            )}
-                          </Menu.Item>
-                        </div>
-                        <div className="px-1 py-1">
-                          <Menu.Item>
-                            {({ active }) => (
-                              <button
-                                className={`${
-                                  active
-                                    ? "bg-primary text-white"
-                                    : "text-black"
-                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                              >
-                                SBD
-                              </button>
-                            )}
-                          </Menu.Item>
-                        </div>
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
+                      </span>
+                      <ChevronDownIcon
+                        className="ml-2 -mr-1 h-5 w-5 text-gray group-hover:text-primary"
+                        aria-hidden="true"
+                      />
+                    </button>
+
+                    <ul className="absolute hidden text-gray-700 pt-1 group-hover:block z-10 bg-white transition duration-300">
+                      <li className="">
+                        <Link
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block whitespace-no-wrap"
+                          href="/companies/contracting"
+                        >
+                          Sami Al Baroudi Contracting Co
+                        </Link>
+                      </li>
+                      <li className="">
+                        <Link
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                        >
+                          Ready Mix Concrete Co
+                        </Link>
+                      </li>
+                      <li className="">
+                        <Link
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                        >
+                          RoadLink
+                        </Link>
+                      </li>
+                      <li className="">
+                        <Link
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                        >
+                          SBD
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                   <Link
                     href="/careers"
-                    className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
                     {t("careers")}
                   </Link>
 
                   <Link
                     href="/news"
-                    className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300 text-gray-300 hover:text-primary px-3 py-2  text-sm font-medium"
                   >
                     {t("news")}
                   </Link>
 
                   <Link
                     href="/contact"
-                    className="text-gray-300  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                    className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300 px-3 py-2 r text-sm font-medium"
                   >
                     {t("contact")}
                   </Link>
@@ -199,40 +162,39 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
+                <Link
+                  href="/companies/contracting"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Sami Al Baroudi Contracting Co
+                </Link>
+                <Link
                   href="#"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Dashboard
-                </a>
+                  {t("about")}
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Team
-                </a>
+                  {t("contact")}
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  href="/news"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  {t("projects")}
-                </a>
+                  {t("news")}
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  href="/careers"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Calendar
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
-                </a>
+                  {t("careers")}
+                </Link>
               </div>
             </div>
           )}

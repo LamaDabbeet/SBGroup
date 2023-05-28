@@ -11,7 +11,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
+import "swiper/css/free-mode";
+import "swiper/css/thumbs";
 export default function Home() {
   const { t } = useTranslation("common");
 
@@ -105,16 +106,13 @@ export default function Home() {
             },
           }}
           watchSlidesProgress={true}
-          modules={[Navigation, Autoplay]}
+          modules={[Navigation]}
         >
-          <SwiperSlide className="hover:cursor-pointer">
+          <SwiperSlide className="hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500">
             <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
               {t("transportation")}
             </div>
-            <Link
-              href="/companies/contracting"
-              className="hover:cursor-pointer hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500"
-            >
+            <Link href="/companies/contracting">
               <Image
                 src="/images/homepage/sectors/transportation.jpg"
                 layout="fill"
@@ -187,20 +185,66 @@ export default function Home() {
         </Swiper>
       </section>
       <section id="contact-us" className="h-80 px-16 py-16">
-        <h2 className="text-cyan uppercase text-3xl font-semibold">
+        <h2 className="text-primary uppercase text-3xl font-semibold">
           {t("brochure")}
         </h2>
         <p>{t("downloadBrochure")}</p>
         <ul className="mt-2">
-          <li>
+          <li className="hover:text-secondary hover:font-bold hover:cursor-pointer">
             {t("arabic")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
-          <li>
+          <li className="hover:text-secondary hover:font-bold hover:cursor-pointer">
             {t("english")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
         </ul>
+      </section>
+      <section>
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+          <SwiperSlide>
+            <div className="w-full flex align-center justify-center m-28">
+              <Image
+                className="w-1/2"
+                src="/images/contracting/slider/slide1.jpg"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "50%", height: "70vh" }}
+              />
+              <div className="w-1/2">hgjjhgjjhg</div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full flex align-center justify-center m-28">
+              <Image
+                className="w-1/2"
+                src="/images/contracting/slider/slide1.jpg"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "50%", height: "70vh" }}
+              />
+              <div className="w-1/2">hgjjhgjjhg</div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full flex align-center justify-center m-28">
+              <Image
+                className="w-1/2"
+                src="/images/contracting/slider/slide1.jpg"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "50%", height: "70vh" }}
+              />
+              <div className="w-1/2">hgjjhgjjhg</div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
     </>
   );

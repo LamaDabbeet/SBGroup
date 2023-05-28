@@ -13,7 +13,7 @@ function Footer() {
   const { t } = useTranslation("common");
 
   return (
-    <footer className="bg-gray text-white px-16 py-16">
+    <footer className="bg-silver text-white px-16 py-16">
       <div className="flex mb-16">
         <Image
           src="/images/sbg-white-logo.png"
@@ -46,22 +46,22 @@ function Footer() {
           <h2 className="font-bold">{t("followUs")}</h2>
           <ul className="flex mt-4">
             <li>
-              <div className="hover:cursor-pointer bg-white hover:bg-gray p-3.5 duration-200 ease-in border-2 border-white text-gray hover:text-white flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+              <div className="hover:cursor-pointer bg-white hover:bg-silver p-3.5 duration-200 ease-in border-2 border-white text-silver hover:text-white flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
                 <FontAwesomeIcon icon={faFacebookF} />
               </div>
             </li>
             <li>
-              <div className="hover:cursor-pointer bg-white hover:bg-gray p-3.5 duration-200 ease-in border-2 border-white text-gray hover:text-white flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+              <div className="hover:cursor-pointer bg-white hover:bg-silver p-3.5 duration-200 ease-in border-2 border-white text-silver hover:text-white flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
                 <FontAwesomeIcon icon={faInstagram} />
               </div>
             </li>
             <li>
-              <div className="hover:cursor-pointer bg-white hover:bg-gray p-3.5 duration-200 ease-in border-2 border-white text-gray hover:text-white flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+              <div className="hover:cursor-pointer bg-white hover:bg-silver p-3.5 duration-200 ease-in border-2 border-white text-silver hover:text-white flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </div>
             </li>
             <li>
-              <div className="hover:cursor-pointer bg-white hover:bg-gray p-3.5 duration-200 ease-in border-2 border-white text-gray hover:text-white flex items-center justify-center w-6 h-6 rounded-full hover:cursor-pointer">
+              <div className="hover:cursor-pointer bg-white hover:bg-silver p-3.5 duration-200 ease-in border-2 border-white text-silver hover:text-white flex items-center justify-center w-6 h-6 rounded-full hover:cursor-pointer">
                 <FontAwesomeIcon icon={faWhatsapp} />
               </div>
             </li>
