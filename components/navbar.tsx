@@ -24,7 +24,7 @@ function Navbar() {
                   height={45}
                 />
               </div>
-              <div className="hidden md:block h-full">
+              <div className="hidden md:block h-full transition duration-500">
                 <div className="h-full ml-10 flex items-baseline space-x-4">
                   <Link
                     href="/"
@@ -107,7 +107,7 @@ function Navbar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white"
+                className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white "
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -160,7 +160,7 @@ function Navbar() {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden" id="mobile-menu">
+            <div className="md:hidden h-screen" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
                   href="#"

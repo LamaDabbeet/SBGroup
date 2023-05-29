@@ -139,7 +139,7 @@ export default function Home() {
               onSlideChange={handleSlideChange}
               loop={true}
               autoplay={{
-                delay: 5000,
+                delay: 7000,
               }}
               slidesPerView={1}
               centeredSlides={true}
