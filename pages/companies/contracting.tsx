@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,6 +12,7 @@ import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
+import Header from "@/components/common/header";
 
 function ContractingCompany() {
   const { t } = useTranslation("common");
@@ -127,48 +128,7 @@ function ContractingCompany() {
   return (
     <>
       <section>
-        <Swiper
-          modules={[Navigation, Autoplay]}
-          className="hover:border-b-4 hover:border-b-cyan hover:border-t-cyan border-t-white border-b-white border-b-4  border-t-4 transition duration-500"
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
-            pauseOnMouseEnter: true,
-          }}
-        >
-          <SwiperSlide>
-            <Image
-              src="/images/contracting/slider/slide1.jpg"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "90vh" }}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Image
-              src="/images/contracting/slider/slide2.jpg"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "90vh" }}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src="/images/contracting/slider/slide3.jpg"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "90vh" }}
-            />
-          </SwiperSlide>
-        </Swiper>
+        <Header />
       </section>
       <section id="about-sbg-contracting" className="text-center px-16 py-16">
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
@@ -386,6 +346,7 @@ function ContractingCompany() {
               overflow: "auto",
               backgroundColor: "rgba(0,0,0,0.4)",
             }}
+            className="flex justify-center items-center lg:block"
           >
             {project ? (
               <div
