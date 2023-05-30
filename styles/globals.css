@@ -5,8 +5,8 @@
 html {
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 600px) {
-  #first-arabic-service-block {
+@media only screen and (min-width: 600px) {
+  [dir="rtl"] #first-arabic-service-block {
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
     --tw-space-x-reverse: 0;

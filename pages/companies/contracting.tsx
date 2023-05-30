@@ -167,6 +167,7 @@ function ContractingCompany() {
             </h3>
             <p>{t("constructionDesignDesc")}</p>
           </div>
+
           <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
             <Image
               src="/images/build.jpg"
@@ -207,8 +208,7 @@ function ContractingCompany() {
           className={contractingStyles.projects_swiper}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
+            delay: 3500,
             pauseOnMouseEnter: true,
           }}
           loop={true}
