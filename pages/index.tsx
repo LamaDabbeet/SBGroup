@@ -335,7 +335,7 @@ export default function Home() {
             <Swiper
               onSwiper={setSwiper}
               onSlideChange={handleSlideChange}
-              loop={true}
+              // loop={true}
               autoplay={{
                 delay: 5000,
                 pauseOnMouseEnter: true,
