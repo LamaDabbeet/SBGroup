@@ -73,7 +73,7 @@ export default function Home() {
               style={{ width: "100%", height: "90vh" }}
               className="relative"
             />
-            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
+            <p className="block absolute top-1/3 lg:right-24 right:0 lg:left-0 left-8 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -87,7 +87,7 @@ export default function Home() {
               style={{ width: "100%", height: "90vh" }}
               className="relative"
             />
-            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
+            <p className="block absolute top-1/3 lg:right-24 right:0 lg:left-0 left-8 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -101,7 +101,7 @@ export default function Home() {
               style={{ width: "100%", height: "90vh" }}
               className="relative"
             />
-            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
+            <p className="block absolute top-1/3 lg:right-24 right:0 lg:left-0 left-8 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -114,7 +114,7 @@ export default function Home() {
               sizes="100vw"
               style={{ width: "100%", height: "90vh" }}
             />
-            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
+            <p className="block absolute top-1/3 lg:right-24 right:0 lg:left-0 left-8 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>

@@ -99,7 +99,7 @@ function CompaniesNavbar() {
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
                 className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-cyan focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white"
-                aria-controls="mobile-menu"
+                aria-controls="companies-mobile-menu"
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
@@ -144,41 +144,44 @@ function CompaniesNavbar() {
           show={isOpen}
           enter="transition ease-out duration-100 transform"
           enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
+          enterTo="opacity-100 scale-100 absolute z-10 w-full bg-white"
           leave="transition ease-in duration-75 transform"
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden z-10 absolute" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="md:hidden h-screen" id="companies-mobile-menu">
+              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12">
                 <Link
                   href="#"
-                  className="text-gray  text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("about")}
                 </Link>
 
                 <Link
                   href="#"
-                  className="text-gray hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("services")}
                 </Link>
 
                 <Link
                   href="/news"
-                  className="text-gray  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("projects")}
                 </Link>
 
                 <Link
                   href="/careers"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("contactUs")}
                 </Link>
+                <div className="text-gray block px-3 py-2 rounded-md text-base font-medium">
+                  <LocaleSwitcher></LocaleSwitcher>
+                </div>
               </div>
             </div>
           )}

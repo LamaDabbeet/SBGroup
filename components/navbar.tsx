@@ -5,9 +5,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import LocaleSwitcher from "./common/lanaguage-detector";
+import MobileMenu from "./common/mobile-menu";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+} from "@material-tailwind/react";
 
 function Navbar() {
   const { t } = useTranslation("common");
+  const [open, setOpen] = useState(1);
+
+  const handleOpen = (value: any) => {
+    setOpen(open === value ? 0 : value);
+  };
 
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -25,7 +36,7 @@ function Navbar() {
                 />
               </div>
               <div className="hidden md:block h-full transition duration-500">
-                <div className="h-full ml-10 flex items-baseline space-x-4">
+                <div className="h-full ml-10 flex items-baseline space-x-4 ">
                   <Link
                     href="/"
                     className="h-full flex items-center text-gray px-3 py-2 text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300"
@@ -103,6 +114,7 @@ function Navbar() {
                 </div>
               </div>
             </div>
+            {/* <MobileMenu></MobileMenu>           */}
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -161,13 +173,57 @@ function Navbar() {
         >
           {(ref) => (
             <div className="md:hidden h-screen" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12">
                 <Link
                   href="#"
                   className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("about")}
                 </Link>
+                <Accordion open={open === 1}>
+                  <AccordionHeader onClick={() => handleOpen(1)}>
+                    <span className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
+                      {" "}
+                      {t("groupCompanies")}
+                    </span>
+                  </AccordionHeader>
+                  <AccordionBody>
+                    <ul className="text-gray-700 pt-1 group-hover:block z-10 bg-white transition duration-300">
+                      <li className="">
+                        <Link
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
+                          href="/companies/contracting"
+                        >
+                          {t("samiBaroudyContracting")}{" "}
+                        </Link>
+                      </li>
+                      <li className="">
+                        <Link
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
+                          href="#"
+                        >
+                          {t("readyMix")}{" "}
+                        </Link>
+                      </li>
+                      <li className="">
+                        <Link
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
+                          href="#"
+                        >
+                          {t("roadLink")}
+                        </Link>
+                      </li>
+                      <li className="">
+                        <Link
+                          className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
+                          href="#"
+                        >
+                          {t("SBD")}
+                        </Link>
+                      </li>
+                    </ul>
+                  </AccordionBody>
+                </Accordion>
                 <Link
                   href="#"
                   className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
@@ -188,6 +244,10 @@ function Navbar() {
                 >
                   {t("careers")}
                 </Link>
+
+                <div className="text-gray block px-3 py-2 rounded-md text-base font-medium">
+                  <LocaleSwitcher></LocaleSwitcher>
+                </div>
               </div>
             </div>
           )}

@@ -150,7 +150,7 @@ function ContractingCompany() {
           {t("services")}
         </h2>
         <div className="lg:flex lg:justify-between lg:space-x-12">
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-12">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
             <Image
               src="/images/constructing-design.jpg"
               alt="Constructing Design"
@@ -164,7 +164,7 @@ function ContractingCompany() {
             </h3>
             <p>{t("constructionDesignDesc")}</p>
           </div>
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-12">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
             <Image
               src="/images/build.jpg"
               alt="Build"
