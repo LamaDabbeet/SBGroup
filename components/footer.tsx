@@ -32,7 +32,7 @@ function Footer() {
             <li>
               <a href="tel:+963116116677">
                 {t("callUs")}:
-                <span className="hover:text-primary hover:underline">
+                <span className="hover:text-primary hover:underline" dir="ltr">
                   +963 11 611 6677
                 </span>
               </a>

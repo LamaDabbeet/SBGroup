@@ -59,9 +59,10 @@ export default function Home() {
           modules={[Navigation, Autoplay]}
           className="hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500"
           autoplay={{
-            delay: 2500,
+            delay: 5000,
             pauseOnMouseEnter: true,
           }}
+          loop={true}
         >
           <SwiperSlide className="parent">
             <Image
@@ -73,7 +74,7 @@ export default function Home() {
               style={{ width: "100%", height: "90vh" }}
               className="relative"
             />
-            <p className="block absolute top-1/3 lg:right-24 right:0 lg:left-0 left-8 text-primary font-semibold text-2xl">
+            <p className="block absolute top-1/3 right-24  text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -87,7 +88,7 @@ export default function Home() {
               style={{ width: "100%", height: "90vh" }}
               className="relative"
             />
-            <p className="block absolute top-1/3 lg:right-24 right:0 lg:left-0 left-8 text-primary font-semibold text-2xl">
+            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -101,7 +102,7 @@ export default function Home() {
               style={{ width: "100%", height: "90vh" }}
               className="relative"
             />
-            <p className="block absolute top-1/3 lg:right-24 right:0 lg:left-0 left-8 text-primary font-semibold text-2xl">
+            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -114,7 +115,7 @@ export default function Home() {
               sizes="100vw"
               style={{ width: "100%", height: "90vh" }}
             />
-            <p className="block absolute top-1/3 lg:right-24 right:0 lg:left-0 left-8 text-primary font-semibold text-2xl">
+            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -139,7 +140,7 @@ export default function Home() {
               onSlideChange={handleSlideChange}
               loop={true}
               autoplay={{
-                delay: 7000,
+                delay: 8000,
               }}
               slidesPerView={1}
               centeredSlides={true}
@@ -328,13 +329,13 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </section>
-      <section className="mt-20">
+      <section className="mt-20" id="news">
         <div className="lg:flex lg:justify-center lg:items-center">
           <div className="lg:w-1/2 w-full">
             <Swiper
               onSwiper={setSwiper}
               onSlideChange={handleSlideChange}
-              // loop={true}
+              loop={true}
               autoplay={{
                 delay: 5000,
                 pauseOnMouseEnter: true,

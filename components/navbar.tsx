@@ -11,10 +11,12 @@ import {
   AccordionBody,
   AccordionHeader,
 } from "@material-tailwind/react";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const { t } = useTranslation("common");
   const [open, setOpen] = useState(1);
+  const { locale } = useRouter();
 
   const handleOpen = (value: any) => {
     setOpen(open === value ? 0 : value);
@@ -38,7 +40,8 @@ function Navbar() {
               <div className="hidden md:block h-full transition duration-500">
                 <div className="h-full ml-10 flex items-baseline space-x-4 ">
                   <Link
-                    href="/"
+                    href="/#about-sbg"
+                    scroll={false}
                     className="h-full flex items-center text-gray px-3 py-2 text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300"
                   >
                     {" "}
@@ -46,13 +49,27 @@ function Navbar() {
                   </Link>
                   <div className="group inline-block relative transition duration-300">
                     <button className="bg-gray-300 text-gray-700 font-semibold py-2 px-4 inline-flex items-center group-hover:border-t-4 group-hover:border-t-primary transition duration-300">
-                      <span className="mr-1 text-gray  py-2 text-sm font-medium group-hover:text-primary border-t-white border-t-4 ">
-                        {t("groupCompanies")}
-                      </span>
-                      <ChevronDownIcon
-                        className="-mr-1 h-5 w-5 text-gray group-hover:text-primary"
-                        aria-hidden="true"
-                      />
+                      {locale === "ar" ? (
+                        <>
+                          <span className="ml-1 text-gray  py-2 text-sm font-medium group-hover:text-primary border-t-white border-t-4 ">
+                            {t("groupCompanies")}
+                          </span>
+                          <ChevronDownIcon
+                            className="-ml-1 h-5 w-5 text-gray group-hover:text-primary"
+                            aria-hidden="true"
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <span className="mr-1 text-gray  py-2 text-sm font-medium group-hover:text-primary border-t-white border-t-4 ">
+                            {t("groupCompanies")}
+                          </span>
+                          <ChevronDownIcon
+                            className="-mr-1 h-5 w-5 text-gray group-hover:text-primary"
+                            aria-hidden="true"
+                          />
+                        </>
+                      )}
                     </button>
 
                     <ul className="absolute hidden text-gray-700 pt-1 group-hover:block z-10 bg-white transition duration-300">
@@ -92,20 +109,23 @@ function Navbar() {
                   </div>
                   <Link
                     href="/careers"
+                    scroll={false}
                     className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
                   >
                     {t("careers")}
                   </Link>
 
                   <Link
-                    href="/news"
+                    href="/#news"
+                    scroll={false}
                     className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300 text-gray-300 hover:text-primary px-3 py-2  text-sm font-medium"
                   >
                     {t("news")}
                   </Link>
 
                   <Link
-                    href="/contact"
+                    href="/#contact-us"
+                    scroll={false}
                     className="h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-primary hover:text-primary border-t-white border-t-4 transition duration-300 px-3 py-2 r text-sm font-medium"
                   >
                     {t("contact")}
@@ -114,7 +134,7 @@ function Navbar() {
                 </div>
               </div>
             </div>
-            {/* <MobileMenu></MobileMenu>           */}
+
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -175,7 +195,7 @@ function Navbar() {
             <div className="md:hidden h-screen" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12">
                 <Link
-                  href="#"
+                  href="/#about"
                   className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("about")}
@@ -225,14 +245,14 @@ function Navbar() {
                   </AccordionBody>
                 </Accordion>
                 <Link
-                  href="#"
+                  href="/#contact-us"
                   className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("contact")}
                 </Link>
 
                 <Link
-                  href="/news"
+                  href="/#news"
                   className="text-gray  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("news")}

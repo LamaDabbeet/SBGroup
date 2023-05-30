@@ -143,7 +143,7 @@ function CompaniesFooter() {
               <li>
                 <a href="tel:+963116116677">
                   {t("callUs")}:
-                  <span className="hover:text-cyan hover:underline">
+                  <span className="hover:text-cyan hover:underline" dir="ltr">
                     +963 11 611 6677
                   </span>
                 </a>
