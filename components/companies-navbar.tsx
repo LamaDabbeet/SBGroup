@@ -153,28 +153,28 @@ function CompaniesNavbar() {
             <div className="md:hidden h-screen" id="companies-mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12">
                 <Link
-                  href="#"
+                  href="/#about-sbg-contracting"
                   className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("about")}
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/#contracting-services"
                   className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("services")}
                 </Link>
 
                 <Link
-                  href="/news"
+                  href="/#contracting-projects"
                   className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("projects")}
                 </Link>
 
                 <Link
-                  href="/careers"
+                  href="/#contact-us"
                   className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("contactUs")}
