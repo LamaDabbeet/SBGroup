@@ -152,11 +152,7 @@ function ContractingCompany() {
         <div className="lg:flex lg:justify-between lg:space-x-12">
           <div
             className="lg:w-1/3 w-full lg:mb-0 mb-20"
-            style={{
-              marginRight: "calc(3rem * var(--tw-space-x-reverse))",
-              marginLeft: "calc(3rem * calc(1 - var(--tw-space-x-reverse)))",
-              "--tw-space-x-reverse": "0",
-            }}
+            id="first-arabic-service-block"
           >
             <Image
               src="/images/constructing-design.jpg"
