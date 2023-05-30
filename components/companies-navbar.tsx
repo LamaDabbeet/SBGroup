@@ -155,6 +155,7 @@ function CompaniesNavbar() {
                 <Link
                   href="/#about-sbg-contracting"
                   className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
+                  scroll={false}
                 >
                   {t("about")}
                 </Link>
@@ -162,6 +163,7 @@ function CompaniesNavbar() {
                 <Link
                   href="/#contracting-services"
                   className="text-gray block px-3 py-2 rounded-md text-base font-medium"
+                  scroll={false}
                 >
                   {t("services")}
                 </Link>
@@ -169,6 +171,7 @@ function CompaniesNavbar() {
                 <Link
                   href="/#contracting-projects"
                   className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
+                  scroll={false}
                 >
                   {t("projects")}
                 </Link>
@@ -176,6 +179,7 @@ function CompaniesNavbar() {
                 <Link
                   href="/#contact-us"
                   className="text-gray block px-3 py-2 rounded-md text-base font-medium"
+                  scroll={false}
                 >
                   {t("contactUs")}
                 </Link>

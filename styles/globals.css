@@ -5,11 +5,14 @@
 html {
   scroll-behavior: smooth;
 }
-#first-arabic-service-block {
-  margin-right: calc(3rem * var(--tw-space-x-reverse));
-  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-  --tw-space-x-reverse: 0;
+@media only screen and (max-width: 600px) {
+  #first-arabic-service-block {
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+    --tw-space-x-reverse: 0;
+  }
 }
+
 /* p {
   font-size: 1.25rem;
   color: #006478;
