@@ -1,4 +1,10 @@
-import { Navigation, Autoplay } from "swiper";
+import {
+  Navigation,
+  Autoplay,
+  Zoom,
+  EffectFade,
+  EffectCoverflow,
+} from "swiper";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -13,8 +19,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+// import ProjectsSlider from "@/components/home/projects-slider";
+import ProjectsSlider1 from "@/components/home/projects-slider1";
+import useWindowDimensions from "@/hooks/use-window-dimensions";
+// import ProjectsSlider2 from "@/components/home/projects-slider2";
 interface INews {
   date: string;
   englishTitle: string;
@@ -27,6 +37,8 @@ export default function Home() {
 
   const [swiper, setSwiper] = useState<any>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
+  const { width, height } = useWindowDimensions();
 
   const handleSlideChange = () => {
     if (swiper) {
@@ -65,56 +77,107 @@ export default function Home() {
           loop={true}
         >
           <SwiperSlide className="parent">
-            <Image
-              src="/images/homepage/slider/slide1.jpg"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "90vh" }}
-              className="relative"
-            />
+            {width && width > 760 ? (
+              <Image
+                src="/images/homepage/slider/slide1.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "90vh" }}
+                className="relative"
+              />
+            ) : (
+              <Image
+                src="/images/homepage/slider/mobile/slide1.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "90vh" }}
+                className="relative"
+              />
+            )}
+
             <p className="block absolute top-1/3 right-24  text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
           <SwiperSlide>
-            <Image
-              src="/images/homepage/slider/slide2.jpg"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "90vh" }}
-              className="relative"
-            />
+            {width && width > 760 ? (
+              <Image
+                src="/images/homepage/slider/slide2.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "90vh" }}
+                className="relative"
+              />
+            ) : (
+              <Image
+                src="/images/homepage/slider/mobile/slide2.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "90vh" }}
+                className="relative"
+              />
+            )}
+
             <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
           <SwiperSlide>
-            <Image
-              src="/images/homepage/slider/slide3.jpg"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "90vh" }}
-              className="relative"
-            />
+            {width && width > 760 ? (
+              <Image
+                src="/images/homepage/slider/slide3.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "90vh" }}
+                className="relative"
+              />
+            ) : (
+              <Image
+                src="/images/homepage/slider/mobile/slide3.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "90vh" }}
+                className="relative"
+              />
+            )}
+
             <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
           <SwiperSlide>
-            <Image
-              src="/images/homepage/slider/slide4.jpg"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "90vh" }}
-            />
+            {width && width > 760 ? (
+              <Image
+                src="/images/homepage/slider/slide4.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "90vh" }}
+              />
+            ) : (
+              <Image
+                src="/images/homepage/slider/mobile/slide4.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "90vh" }}
+              />
+            )}
+
             <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
@@ -136,8 +199,8 @@ export default function Home() {
         <div className="lg:flex lg:justify-center lg:items-center">
           <div className="w-full">
             <Swiper
-              onSwiper={setSwiper}
-              onSlideChange={handleSlideChange}
+              // onSwiper={setSwiper}
+              // onSlideChange={handleSlideChange}
               loop={true}
               autoplay={{
                 delay: 8000,
@@ -226,16 +289,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* <section>
+        hgfjhfhjf
+        <ProjectsSlider1></ProjectsSlider1>
+      </section> */}
       <section className={styles.projects_section2} id="sbg-projects">
         <Swiper
           id="project-slider"
           className={styles.projects_swiper2}
-          centeredSlides={false}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
-          modules={[Autoplay]}
+          centeredSlides={true}
+          centeredSlidesBounds={true}
+          modules={[Autoplay, Navigation]}
           loop={true}
           breakpoints={{
             768: {
@@ -250,13 +318,10 @@ export default function Home() {
           }}
           watchSlidesProgress={true}
         >
-          <SwiperSlide className="hover:border-b-4 hover:border-b-secondary border-b-white border-b-4 transition duration-500">
-            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("transportation")}
-            </div>
+          <SwiperSlide className="">
             <Link href="/companies/contracting">
               <Image
-                src="/images/homepage/sectors/transportation.jpg"
+                src="/images/homepage/sectors/transportation.png"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -265,11 +330,8 @@ export default function Home() {
             </Link>
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
-            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("mixConcrete")}
-            </div>
             <Image
-              src="/images/contracting/projects/al-manhal/al-manahal-1.jpg"
+              src="/images/homepage/sectors/mix-concrete.png"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -277,11 +339,8 @@ export default function Home() {
             />
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
-            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("quarriesWorks")}
-            </div>
             <Image
-              src="/images/homepage/sectors/quarries-works.jpg"
+              src="/images/homepage/sectors/quarries-work.png"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -289,13 +348,10 @@ export default function Home() {
             />
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
-            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("contracting")}
-            </div>
             <Link href="/companies/contracting">
               {" "}
               <Image
-                src="/images/contracting/projects/al-manhal/al-manahal-3.jpg"
+                src="/images/homepage/sectors/contracting.png"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -304,11 +360,8 @@ export default function Home() {
             </Link>
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
-            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("development")}
-            </div>
             <Image
-              src="/images/homepage/sectors/development.jpg"
+              src="/images/homepage/sectors/development.png"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -316,11 +369,8 @@ export default function Home() {
             />
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
-            <div className="uppercase bg-primary text-white h-20 text-2xl flex items-center justify-center">
-              {t("design")}
-            </div>
             <Image
-              src="/images/homepage/sectors/design.jpg"
+              src="/images/homepage/sectors/design.png"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -336,13 +386,14 @@ export default function Home() {
               onSwiper={setSwiper}
               onSlideChange={handleSlideChange}
               // loop={true}
+              effect="fade"
               autoplay={{
-                delay: 5000,
+                delay: 3000,
                 pauseOnMouseEnter: true,
               }}
               slidesPerView={1}
               centeredSlides={true}
-              modules={[Autoplay]}
+              modules={[Autoplay, EffectFade]}
               className="mySwiper"
               style={{ overflow: "hidden" }}
             >

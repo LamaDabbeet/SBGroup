@@ -3,7 +3,14 @@ import { MyAppProps } from "@/components/common/types";
 import "@/styles/globals.css";
 import { appWithTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 
+const DynamicHeader = dynamic(
+  () => import("../../sbg/components/home/projects-slider1"),
+  {
+    ssr: false,
+  }
+);
 function MyApp({ Component, pageProps }: MyAppProps) {
   const Layout = Layouts[Component.Layout] ?? ((page) => page);
   const { locale } = useRouter();

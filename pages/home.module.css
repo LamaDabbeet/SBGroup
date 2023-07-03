@@ -6,11 +6,7 @@
 }
 .slider_img {
   position: relative !important;
-  border-bottom-color: blue !important;
-  border-bottom-width: 2rem !important;
 }
 .slider_img:hover {
   cursor: pointer !important;
-  border-bottom-color: yellow !important;
 }
-

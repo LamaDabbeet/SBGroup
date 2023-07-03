@@ -106,6 +106,36 @@ class MyDocument extends Document {
             content="/favicon/ms-icon-144x144.png"
           />
           <meta name="theme-color" content="#ffffff"></meta>
+          {/* <script
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+            type="text/javascript"
+          ></script> */}
+
+          {/* <script
+            data-require="Flexslider@2.6.4"
+            data-semver="2.6.4"
+            src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/jquery.flexslider-min.js"
+          ></script>
+          <script src="/js/sappleslider.multi.js"></script>
+          <script src="/js/main.js"></script> */}
+
+          <link
+            data-require="Flexslider@2.6.4"
+            data-semver="2.6.4"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/flexslider.min.css"
+          />
+
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+          />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
         </Head>
         <body>
           <Main />
