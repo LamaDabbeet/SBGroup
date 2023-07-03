@@ -94,12 +94,12 @@ export default function Home() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: "100%", height: "90vh" }}
+                style={{ width: "100%", height: "80vh" }}
                 className="relative"
               />
             )}
 
-            <p className="block absolute top-1/3 right-24  text-primary font-semibold text-2xl">
+            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-6 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -121,12 +121,12 @@ export default function Home() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: "100%", height: "90vh" }}
+                style={{ width: "100%", height: "80vh" }}
                 className="relative"
               />
             )}
 
-            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
+            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-6 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -148,12 +148,12 @@ export default function Home() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: "100%", height: "90vh" }}
+                style={{ width: "100%", height: "80vh" }}
                 className="relative"
               />
             )}
 
-            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
+            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-6 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -174,11 +174,11 @@ export default function Home() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: "100%", height: "90vh" }}
+                style={{ width: "100%", height: "80vh" }}
               />
             )}
 
-            <p className="block absolute top-1/3 right-24 text-primary font-semibold text-2xl">
+            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-6  text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
