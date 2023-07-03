@@ -99,7 +99,7 @@ export default function Home() {
               />
             )}
 
-            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-6 text-primary font-semibold text-2xl">
+            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-4 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -126,7 +126,7 @@ export default function Home() {
               />
             )}
 
-            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-6 text-primary font-semibold text-2xl">
+            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-4 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -153,7 +153,7 @@ export default function Home() {
               />
             )}
 
-            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-6 text-primary font-semibold text-2xl">
+            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-4 text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -178,7 +178,7 @@ export default function Home() {
               />
             )}
 
-            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-6  text-primary font-semibold text-2xl">
+            <p className="block absolute md:top-1/3 md:right-24 top-1/4 left-4  text-primary font-semibold text-2xl">
               {t("mainHeaderTitle")}
             </p>
           </SwiperSlide>
@@ -199,8 +199,6 @@ export default function Home() {
         <div className="lg:flex lg:justify-center lg:items-center">
           <div className="w-full">
             <Swiper
-              // onSwiper={setSwiper}
-              // onSlideChange={handleSlideChange}
               loop={true}
               autoplay={{
                 delay: 8000,
@@ -212,7 +210,7 @@ export default function Home() {
             >
               <SwiperSlide>
                 <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
-                  <div className="w-full lg:w-1/2 flex items-center">
+                  <div className="w-full lg:w-1/2 flex items-center md:order-1 order-2 mt-12 md:mt-0">
                     <p
                       className="text-primary font-regular text-justify mb-12 lg:mb-0"
                       style={{ width: "90%" }}
@@ -220,7 +218,7 @@ export default function Home() {
                       {t("groupStrategyDesc")}
                     </p>
                   </div>
-                  <div className="w-full lg:w-1/2">
+                  <div className="w-full lg:w-1/2 md:order-2 order-1">
                     <Image
                       src="/images/homepage/about/about-1.jpg"
                       alt=""
@@ -237,7 +235,13 @@ export default function Home() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
-                  <div className="w-full lg:w-1/2 flex items-center">
+                  <div className="w-full lg:w-1/2 flex  items-center md:order-1 order-2 mt-12 md:mt-0">
+                    {/* <h2
+                      className="text-primary font-bold text-justify mb-8"
+                      style={{ width: "90%" }}
+                    >
+                      Our Values
+                    </h2> */}
                     <p
                       className="text-primary font-regular text-justify mb-12 lg:mb-0"
                       style={{ width: "90%" }}
@@ -245,7 +249,7 @@ export default function Home() {
                       {t("ourValuesDesc")}
                     </p>
                   </div>
-                  <div className="w-full lg:w-1/2">
+                  <div className="w-full lg:w-1/2 md:order-2 order-1">
                     <Image
                       src="/images/homepage/about/about-2.jpg"
                       alt=""
@@ -262,7 +266,7 @@ export default function Home() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
-                  <div className="w-full lg:w-1/2 flex items-center">
+                  <div className="w-full lg:w-1/2 flex items-center md:order-1 order-2 mt-12 md:mt-0">
                     <p
                       className="text-primary font-regular text-justify mb-12 lg:mb-0"
                       style={{ width: "90%" }}
@@ -270,7 +274,7 @@ export default function Home() {
                       {t("scopOfWorkDesc")}
                     </p>
                   </div>
-                  <div className="w-full lg:w-1/2">
+                  <div className="w-full lg:w-1/2 md:order-2 order-1 ">
                     <Image
                       src="/images/homepage/about/about-3.jpg"
                       alt=""
@@ -381,7 +385,7 @@ export default function Home() {
       </section>
       <section className="mt-20" id="news">
         <div className="lg:flex lg:justify-center lg:items-center">
-          <div className="lg:w-1/2 w-full">
+          <div className="lg:w-1/2 w-full  md:order-1 order-2 mt-12 md:mt-0">
             <Swiper
               onSwiper={setSwiper}
               onSlideChange={handleSlideChange}
@@ -444,7 +448,7 @@ export default function Home() {
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className="lg:w-1/2 w-full overflow-hidden">
+          <div className="lg:w-1/2 w-full overflow-hidden  md:order-2 order-1 mt-12 md:mt-0">
             <div
               style={{ width: "100%", height: "45vh" }}
               className="lg:ms-12 ms-8 me-8"
