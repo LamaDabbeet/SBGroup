@@ -1,5 +1,5 @@
-import { Menu, Transition } from "@headlessui/react";
-import React, { Fragment, useState } from "react";
+import { Transition } from "@headlessui/react";
+import React, { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
@@ -84,7 +84,7 @@ function Navbar() {
                       <li className="">
                         <Link
                           className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
-                          href="#"
+                          href="/companies/mix-concrete"
                         >
                           {t("readyMix")}{" "}
                         </Link>
@@ -92,7 +92,7 @@ function Navbar() {
                       <li className="">
                         <Link
                           className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
-                          href="#"
+                          href="/companies/road-link"
                         >
                           {t("roadLink")}
                         </Link>
@@ -100,7 +100,7 @@ function Navbar() {
                       <li className="">
                         <Link
                           className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
-                          href="#"
+                          href="/companies/sbd"
                         >
                           {t("SBD")}
                         </Link>
@@ -220,7 +220,7 @@ function Navbar() {
                       <li className="">
                         <Link
                           className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
-                          href="#"
+                          href="/companies/mix-concrete"
                         >
                           {t("readyMix")}{" "}
                         </Link>
@@ -228,7 +228,7 @@ function Navbar() {
                       <li className="">
                         <Link
                           className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
-                          href="#"
+                          href="/companies/road-link"
                         >
                           {t("roadLink")}
                         </Link>
@@ -236,7 +236,7 @@ function Navbar() {
                       <li className="">
                         <Link
                           className="hover:bg-primary hover:text-white text-gray py-2 px-4 block text-sm"
-                          href="#"
+                          href="/companies/sbd"
                         >
                           {t("SBD")}
                         </Link>

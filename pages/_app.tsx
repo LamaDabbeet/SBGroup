@@ -3,10 +3,10 @@ import { MyAppProps } from "@/components/common/types";
 import "@/styles/globals.css";
 import { appWithTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
 
 function MyApp({ Component, pageProps }: MyAppProps) {
   const Layout = Layouts[Component.Layout] ?? ((page) => page);
+  
   const { locale } = useRouter();
 
   if (typeof document !== "undefined") {
@@ -19,10 +19,11 @@ function MyApp({ Component, pageProps }: MyAppProps) {
     document
       .querySelector("html")
       ?.setAttribute("style", `font-family: ${fontFamily}`);
+      
   }
 
   return (
-    <Layout>
+    <Layout color={Component.LayoutColor} logo={Component.Logo}>
       <Component {...pageProps}></Component>
     </Layout>
   );

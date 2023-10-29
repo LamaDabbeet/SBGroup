@@ -1,6 +1,5 @@
-import { Menu, Transition } from "@headlessui/react";
-import React, { Fragment, useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { Transition } from "@headlessui/react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
@@ -13,7 +12,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-function CompaniesNavbar() {
+function CompaniesNavbar({ color, logo }: any) {
   const { t } = useTranslation("common");
 
   const [isOpen, setIsOpen] = useState(false);
@@ -26,34 +25,37 @@ function CompaniesNavbar() {
             <div className="flex items-center justify-between w-full">
               <div className="flex-shrink-0">
                 <Link href="/">
-                  <Image
-                    src={"/images/sb-contracting-logo.png"}
-                    alt="Workflow"
-                    width={85}
-                    height={38}
-                  />
+                  <Image src={logo} alt="Workflow" width={85} height={38} />
                 </Link>
               </div>
 
               <div className="hidden md:flex h-24  items-center">
                 <ul className="flex">
                   <li>
-                    <div className="hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+                    <div
+                      className={`hover:cursor-pointer bg-${color} hover:bg-white duration-200 ease-in border-2 border-${color} text-white hover:text-${color}  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
+                    >
                       <FontAwesomeIcon icon={faFacebookF} size="sm" />
                     </div>
                   </li>
                   <li>
-                    <div className="hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+                    <div
+                      className={`hover:cursor-pointer bg-${color}  hover:bg-white duration-200 ease-in border-2 border-${color}  text-white hover:text-${color}  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
+                    >
                       <FontAwesomeIcon icon={faInstagram} size="sm" />
                     </div>
                   </li>
                   <li>
-                    <div className="hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+                    <div
+                      className={`hover:cursor-pointer bg-${color}  hover:bg-white duration-200 ease-in border-2 border-${color}  text-white hover:text-${color} p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
+                    >
                       <FontAwesomeIcon icon={faLinkedinIn} size="sm" />
                     </div>
                   </li>
                   <li>
-                    <div className="hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+                    <div
+                      className={`hover:cursor-pointer bg-${color}  hover:bg-white duration-200 ease-in border-2 border-${color}  text-white hover:text-${color}  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
+                    >
                       <FontAwesomeIcon icon={faWhatsapp} size="sm" />
                     </div>
                   </li>
@@ -61,24 +63,27 @@ function CompaniesNavbar() {
 
                 <div className="ml-10 flex items-baseline space-x-4 h-full">
                   <Link
-                    href="/companies/contracting/#about-sbg-contracting"
+                    // href="/companies/contracting/#about-sbg-contracting"
+                    href="/"
                     scroll={false}
-                    className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
+                    className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-${color}  hover:text-${color}  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                   >
                     {t("about")}
                   </Link>
                   <Link
-                    href="/companies/contracting/#contracting-services"
+                    // href="/companies/contracting/#contracting-services"
+                    href="/"
                     scroll={false}
-                    className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
+                    className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-${color}  hover:text-${color}  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                   >
                     {t("services")}
                   </Link>
 
                   <Link
-                    href="/companies/contracting/#contracting-projects"
+                    // href="/companies/contracting/#contracting-projects"
+                    href="/"
                     scroll={false}
-                    className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
+                    className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-${color}  hover:text-${color}  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                   >
                     {t("projects")}
                   </Link>
@@ -86,11 +91,11 @@ function CompaniesNavbar() {
                   <Link
                     href="/companies/contracting/#contact-us"
                     scroll={false}
-                    className="uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan hover:text-cyan border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium"
+                    className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-${color}  hover:text-${color} border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                   >
                     {t("contactUs")}
                   </Link>
-                  <LocaleSwitcher hoverColor="cyan" textColor="gray" />
+                  <LocaleSwitcher hoverColor={color} textColor="gray" />
                 </div>
               </div>
             </div>
@@ -98,7 +103,7 @@ function CompaniesNavbar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-cyan focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white"
+                className={`inline-flex items-center justify-center p-2 rounded-md text-black hover:text-${color} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white`}
                 aria-controls="companies-mobile-menu"
                 aria-expanded="false"
               >
@@ -153,7 +158,8 @@ function CompaniesNavbar() {
             <div className="md:hidden h-screen" id="companies-mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12">
                 <Link
-                  href="/#about-sbg-contracting"
+                  // href="/#about-sbg-contracting"
+                  href=""
                   className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
                   scroll={false}
                 >
@@ -161,7 +167,8 @@ function CompaniesNavbar() {
                 </Link>
 
                 <Link
-                  href="/#contracting-services"
+                  // href="/#contracting-services"
+                  href=""
                   className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                   scroll={false}
                 >
@@ -169,7 +176,8 @@ function CompaniesNavbar() {
                 </Link>
 
                 <Link
-                  href="/#contracting-projects"
+                  // href="/#contracting-projects"
+                  href=""
                   className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
                   scroll={false}
                 >
@@ -177,7 +185,8 @@ function CompaniesNavbar() {
                 </Link>
 
                 <Link
-                  href="/#contact-us"
+                  // href="/#contact-us"
+                  href=""
                   className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                   scroll={false}
                 >

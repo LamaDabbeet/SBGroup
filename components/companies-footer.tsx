@@ -10,14 +10,14 @@ import {
 import { useTranslation } from "next-i18next";
 import LocaleSwitcher from "./common/lanaguage-detector";
 
-function CompaniesFooter() {
+function CompaniesFooter({ color }: any) {
   const { t } = useTranslation("common");
 
   return (
     <footer className="text-white ">
       <div
         id="top-footer"
-        className="bg-cyan px-12 py-16 lg:flex lg:justify-between"
+        className={`bg-${color} px-12 py-16 lg:flex lg:justify-between`}
       >
         <div className="lg:w-2/3 w-full">
           <h1 className="lg:text-3xl text-xl font-bold ">
@@ -28,22 +28,30 @@ function CompaniesFooter() {
           <h2>{t("followUs")}</h2>
           <ul className="flex mt-2">
             <li>
-              <div className="hover:cursor-pointer bg-white hover:bg-cyan duration-200 ease-in border-2 border-white text-cyan hover:text-white p-3.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+              <div
+                className={`hover:cursor-pointer bg-white hover:bg-${color} duration-200 ease-in border-2 border-white text-${color}  hover:text-white p-3.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
+              >
                 <FontAwesomeIcon icon={faFacebookF} />
               </div>
             </li>
             <li>
-              <div className="bg-white hover:bg-cyan duration-200 ease-in border-2 border-white text-cyan hover:text-white p-3.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+              <div
+                className={`bg-white hover:bg-${color}  duration-200 ease-in border-2 border-white text-${color}  hover:text-white p-3.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </div>
             </li>
             <li>
-              <div className="bg-white hover:bg-cyan duration-200 ease-in border-2 border-white text-cyan hover:text-white p-3.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+              <div
+                className={`bg-white hover:bg-${color} duration-200 ease-in border-2 border-white text-${color} hover:text-white p-3.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </div>
             </li>
             <li>
-              <div className="bg-white hover:bg-cyan duration-200 ease-in border-2 border-white text-cyan hover:text-white p-3.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer">
+              <div
+                className={`bg-white hover:bg-${color}  duration-200 ease-in border-2 border-white text-${color}  hover:text-white p-3.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
+              >
                 <FontAwesomeIcon icon={faWhatsapp} />
               </div>
             </li>
@@ -63,39 +71,50 @@ function CompaniesFooter() {
           <div className="lg:w-1/3 w-full mb-8 lg:mb-0">
             <ul>
               <li>
-                <Link href="/companies/contracting" className="hover:text-cyan">
+                <Link
+                  href="/companies/contracting"
+                  className={`hover:text-${color}`}
+                >
                   {t("samiBaroudyContracting")}
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-cyan">
+                <Link
+                  href="/companies/mix-concrete"
+                  className={`hover:text-${color}`}
+                >
                   {t("readyMix")}
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-cyan">
+                <Link
+                  href="/companies/road-link"
+                  className={`hover:text-${color}`}
+                >
                   {t("roadLink")}
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-cyan">
+                <Link href="/companies/sbd" className={`hover:text-${color}`}>
                   {t("SBD")}
                 </Link>
               </li>
             </ul>
           </div>
           <div className="lg:w-1/3 w-full mb-8 lg:mb-0">
-            <h2 className="text-cyan uppercase font-bold">{t("quickLinks")}</h2>
+            <h2 className={`text-${color} uppercase font-bold`}>
+              {t("quickLinks")}
+            </h2>
             <ul className="mt-4">
               <li>
-                <Link href="/" className="hover:text-cyan" scroll={false}>
+                <Link href="/" className={`hover:text-${color}`} scroll={false}>
                   {t("home")}
                 </Link>
               </li>
               <li>
                 <Link
                   href="/companies/contracting/#about-sbg-contracting"
-                  className="hover:text-cyan"
+                  className={`hover:text-${color}`}
                   scroll={false}
                 >
                   {t("about")}
@@ -104,7 +123,7 @@ function CompaniesFooter() {
               <li>
                 <Link
                   href="/companies/contracting/#contracting-services"
-                  className="hover:text-cyan"
+                  className={`hover:text-${color}`}
                   scroll={false}
                 >
                   {t("services")}
@@ -113,7 +132,7 @@ function CompaniesFooter() {
               <li>
                 <Link
                   href="/companies/contracting/#contracting-projects"
-                  className="hover:text-cyan"
+                  className={`hover:text-${color}`}
                   scroll={false}
                 >
                   {t("projects")}
@@ -122,7 +141,7 @@ function CompaniesFooter() {
               <li>
                 <Link
                   href="/companies/contracting/#contact-us"
-                  className="hover:text-cyan"
+                  className={`hover:text-${color}`}
                   scroll={false}
                 >
                   {t("contactUs")}
@@ -130,12 +149,14 @@ function CompaniesFooter() {
               </li>
               <li>
                 {" "}
-                <LocaleSwitcher hoverColor="cyan" textColor="white" />
+                <LocaleSwitcher hoverColor={color} textColor="white" />
               </li>
             </ul>
           </div>
           <div className="lg:w-1/3 w-full">
-            <h4 className="text-cyan uppercase font-bold">{t("contact")}</h4>
+            <h4 className={`text-${color} uppercase font-bold`}>
+              {t("contact")}
+            </h4>
             <ul className="mt-4">
               <li>
                 <span>{t("address")}</span>
@@ -143,12 +164,15 @@ function CompaniesFooter() {
               <li>
                 <a href="tel:+963116116677">
                   {t("callUs")}:
-                  <span className="hover:text-cyan hover:underline" dir="ltr">
+                  <span
+                    className={`hover:text-${color} hover:underline`}
+                    dir="ltr"
+                  >
                     +963 11 611 6677
                   </span>
                 </a>
               </li>
-              <li className="hover:text-cyan hover:underline">
+              <li className={`hover:text-${color} hover:underline`}>
                 <a href="mailto:info@sambgroup.com">info@sambgroup.com</a>
               </li>
             </ul>

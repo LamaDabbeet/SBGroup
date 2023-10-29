@@ -1,6 +1,4 @@
 import { useTranslation } from "next-i18next";
-import $ from "jquery";
-import { useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 

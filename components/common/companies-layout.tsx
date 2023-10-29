@@ -2,11 +2,15 @@ import CompaniesFooter from "../companies-footer";
 import CompaniesNavbar from "../companies-navbar";
 
 export default function CompaniesLayout({ children }: any) {
+  debugger;
   return (
     <>
-      <CompaniesNavbar />
+      {/* <CompaniesNavbar
+        color={children.type.LayoutColor}
+        logo={children.type.Logo}
+      /> */}
       <main>{children}</main>
-      <CompaniesFooter />
+      {/* <CompaniesFooter color={children.type.LayoutColor} /> */}
     </>
   );
 }

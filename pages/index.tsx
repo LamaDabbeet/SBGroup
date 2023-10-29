@@ -38,7 +38,7 @@ export default function Home() {
   const [swiper, setSwiper] = useState<any>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const handleSlideChange = () => {
     if (swiper) {
@@ -506,6 +506,7 @@ export default function Home() {
   );
 }
 Home.Layout = "Main";
+Home.LayoutColor = "default";
 
 export async function getStaticProps({ locale }: any) {
   return {
