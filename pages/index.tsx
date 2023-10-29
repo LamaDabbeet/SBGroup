@@ -506,7 +506,7 @@ export default function Home() {
   );
 }
 Home.Layout = "Main";
-Home.LayoutColor = "default";
+// Home.LayoutColor = "default";
 
 export async function getStaticProps({ locale }: any) {
   return {

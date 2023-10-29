@@ -949,7 +949,7 @@ function RoadLink() {
 export default RoadLink;
 
 RoadLink.Layout = "Companies";
-RoadLink.LayoutColor = "yellow";
+// RoadLink.LayoutColor = "yellow";
 RoadLink.Logo = "/images/road-link/logo.png";
 
 export async function getStaticProps({ locale }: any) {

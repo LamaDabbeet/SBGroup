@@ -608,7 +608,7 @@ function MixConcrete() {
 export default MixConcrete;
 
 MixConcrete.Layout = "Companies";
-MixConcrete.LayoutColor = "red";
+// MixConcrete.LayoutColor = "red";
 
 export async function getStaticProps({ locale }: any) {
   return {

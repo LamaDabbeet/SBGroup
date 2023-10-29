@@ -595,7 +595,7 @@ function SBD() {
 export default SBD;
 
 SBD.Layout = "Companies";
-SBD.LayoutColor = "green";
+// SBD.LayoutColor = "green";
 
 export async function getStaticProps({ locale }: any) {
   return {

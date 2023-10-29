@@ -993,7 +993,7 @@ function ContractingCompany() {
 export default ContractingCompany;
 
 ContractingCompany.Layout = "Companies";
-ContractingCompany.LayoutColor = "cyan";
+// ContractingCompany.LayoutColor = "cyan";
 
 export async function getStaticProps({ locale }: any) {
   return {
