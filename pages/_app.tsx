@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: MyAppProps) {
   }
 
   return (
-    <Layout color={Component.LayoutColor} logo={Component.Logo}>
+    <Layout  >
       <Component {...pageProps}></Component>
     </Layout>
   );
