@@ -37,7 +37,20 @@ function ContractingCompany() {
   });
   const [isOpen, setIsOpen] = useState(false);
   const [open, setOpen] = useState(1);
-
+  const sliderImages = [
+    {
+      mainImage: "/images/contracting/slider/slide1.jpg",
+      mobileImage: "/images/road-link/slider/mobile/slide1.jpg",
+    },
+    {
+      mainImage: "/images/contracting/slider/slide2.jpg",
+      mobileImage: "/images/road-link/slider/mobile/slide2.jpg",
+    },
+    {
+      mainImage: "/images/contracting/slider/slide3.jpg",
+      mobileImage: "/images/road-link/slider/mobile/slide3.jpg",
+    },
+  ];
   const handleOpen = (value: any) => {
     setOpen(open === value ? 0 : value);
   };
@@ -343,7 +356,7 @@ function ContractingCompany() {
         </nav>
       </div>
       <section>
-        <Header color="cyan" />
+        <Header sliderImages={sliderImages} color="cyan" />
       </section>
       <section id="about-sbg-contracting" className="text-center px-16 py-16">
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">

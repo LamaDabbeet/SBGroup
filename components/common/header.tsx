@@ -3,27 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import useWindowDimensions from "@/hooks/use-window-dimensions";
 
-function Header({ color }: any) {
+function Header({ color ,sliderImages}: any) {
   const { width } = useWindowDimensions();
-  const sliderImages = [
-    {
-      mainImage: "/images/road-link/slider/slide1.jpg",
-      mobileImage: "/images/road-link/slider/mobile/slide1.jpg",
-    },
-    {
-      mainImage: "/images/road-link/slider/slide2.jpg",
-      mobileImage: "/images/road-link/slider/mobile/slide2.jpg",
-    },
-    {
-      mainImage: "/images/road-link/slider/slide3.jpg",
-      mobileImage: "/images/road-link/slider/mobile/slide3.jpg",
-    },
-    {
-      mainImage: "/images/road-link/slider/slide4.jpg",
-      mobileImage: "/images/road-link/slider/mobile/slide4.jpg",
-    },
-  ];
-  debugger;
+
   return (
     <Swiper
       modules={[Navigation, Autoplay]}

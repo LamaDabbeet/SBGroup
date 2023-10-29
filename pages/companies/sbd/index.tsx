@@ -124,11 +124,28 @@ function SBD() {
       projectImage.style.opacity = "0";
     }
   }
-
+  const sliderImages = [
+    {
+      mainImage: "/images/contracting/slider/slide1.jpg",
+      mobileImage: "/images/road-link/slider/mobile/slide1.jpg",
+    },
+    {
+      mainImage: "/images/contracting/slider/slide2.jpg",
+      mobileImage: "/images/road-link/slider/mobile/slide2.jpg",
+    },
+    {
+      mainImage: "/images/contracting/slider/slide3.jpg",
+      mobileImage: "/images/road-link/slider/mobile/slide3.jpg",
+    },
+    {
+      mainImage: "/images/contracting/slider/slide4.jpg",
+      mobileImage: "/images/road-link/slider/mobile/slide4.jpg",
+    },
+  ];
   return (
     <>
       <section>
-        <Header color="green" />
+        <Header color="green" sliderImages={sliderImages} />
       </section>
       <section id="about-sbg-contracting" className="text-center px-16 py-16">
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
