@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import useWindowDimensions from "@/hooks/use-window-dimensions";
 
-function Header({ color ,sliderImages}: any) {
+function Header({ color, sliderImages }: any) {
   const { width } = useWindowDimensions();
 
   return (
@@ -11,11 +11,11 @@ function Header({ color ,sliderImages}: any) {
       modules={[Navigation, Autoplay]}
       className={`hover:border-b-4 hover:border-b-${color} hover:border-t-${color} border-t-white border-b-white border-b-4  border-t-4 transition duration-500`}
       loop={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: true,
-        pauseOnMouseEnter: true,
-      }}
+      // autoplay={{
+      //   delay: 2500,
+      //   disableOnInteraction: true,
+      //   pauseOnMouseEnter: true,
+      // }}
     >
       {sliderImages.map((item: any) => {
         return (
@@ -26,9 +26,8 @@ function Header({ color ,sliderImages}: any) {
                 alt=""
                 width={0}
                 height={0}
-                sizes="100vw"
-                style={{ width: "100%", height: "90vh" }}
-                className="relative"
+                sizes="100vh"
+                style={{ width: "100%", height: "auto" }}
               />
             ) : (
               <Image

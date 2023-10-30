@@ -369,8 +369,8 @@ function RoadLink() {
             id="first-arabic-service-block"
           >
             <Image
-              src="/images/constructing-design.jpg"
-              alt="Constructing Design"
+              src="/images/road-link/services/transportation.jpg"
+              alt="Transportation"
               width={0}
               height={0}
               sizes="100vw"
@@ -382,8 +382,8 @@ function RoadLink() {
 
           <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
             <Image
-              src="/images/build.jpg"
-              alt="Build"
+              src="/images/road-link/services/quarries-works.jpg"
+              alt="Quarries Works"
               width={0}
               height={0}
               sizes="100vw"
@@ -394,8 +394,8 @@ function RoadLink() {
           </div>
           <div className="lg:w-1/3 w-full">
             <Image
-              src="/images/general-contracting.jpg"
-              alt="General Contracting"
+              src="/images/road-link/services/rocks.jpg"
+              alt="Rocks industerial"
               width={0}
               height={0}
               sizes="100vw"
