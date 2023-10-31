@@ -43,58 +43,77 @@ function RoadLink() {
   };
   const projects = [
     {
+      // arabicName:
+      //   "من أهم أعمال الشركة تقديم خدمات نقل الرمل و الجص من العديد من المقالع في ريف دمشق و ريف السويداء الى مصانع الاسمنت.",
+      // englishName:
+      //   "Company Projects: Transport sand and gypsum from a number of quarries in rural Damascuse and rural Swaidaa to cement factorys",
       arabicName: "نقل الرمل والجبص",
       englishName: "Gypsum Transportation",
       images: [
-        "/images/road-link/projects/gypsum-transportation/transportation1.jpg",
-        "/images/road-link/projects/gypsum-transportation/transportation2.jpg",
-        "/images/road-link/projects/gypsum-transportation/transportation3.jpg",
-        "/images/road-link/projects/gypsum-transportation/transportation4.jpg",
+        "/images/road-link/projects/gypsum-transportation/main-image.jpg",
+        "/images/road-link/projects/gypsum-transportation/trans1.jpg",
+        "/images/road-link/projects/gypsum-transportation/trans2.jpg",
+        "/images/road-link/projects/gypsum-transportation/trans3.jpg",
       ],
     },
     {
       arabicName: "الصخور",
       englishName: "Rocks Industrial",
+      // arabicName:
+      //   "الحجر و الرخام الوطني : حيث قمنا باستخراج كميات- كبيرة من مقالع مرخصة في الرحيبة و حماه و مصيافكما تمت تلبية متطلبات الزبائن من كافة أنواعالخامات بشكل واسع كالتدمري و الرحيباني و البازلت و الحجر الحلبي و السكري و اللاذقاني .......الخ, /n تختلف مصادر الشركة من الحجر و الرخام و الغرانيت - وفقاً لاحتياجات العملاء و متطلبات الأسواق",
+      // englishName:
+      //   "Company’s stone ,marble, and graniteresources vary according to customers andmarkets requirements./n Local stone and marble: where we have  extracted large quantities of licensed quarriesin Al Rahiba and MasiafAs customers requirement of all types of rawmaterials have been met extensively such asTadmury Basult,Aleppo stone ,SukkaryLattakia etc",
       images: [
-        "/images/road-link/projects/rocks/main.jpg",
-        "/images/road-link/projects/rocks/rocks2.jpg",
-        "/images/road-link/projects/rocks/rocks3.jpg",
-        "/images/road-link/projects/rocks/rocks4.jpg",
+        "/images/road-link/projects/rocks/main-image.jpg",
+        "/images/road-link/projects/rocks/rocks-2.jpg",
+        "/images/road-link/projects/rocks/rocks-3.jpg",
+        "/images/road-link/projects/rocks/rocks-1.jpg",
       ],
     },
     {
       arabicName: "نقل الطف البركاني",
       englishName: "Pozlana Transportation",
+      // arabicName:
+      //   "من أهم أعمال الشركة تقديم خدمات نقل مادة الطف البركاني من العديد من المقالع في ريف دمشق و ريف السويداء الى مصانع الاسمنت.",
+      // englishName:
+      //   "Company Projects: Transport pozlana from a number of quarries in rural Damascuse and rural Swaidaa  to cement factorys",
       images: [
-        "/images/road-link/projects/pozlana-transportation/pozlana-transportation1.jpg",
-        "/images/road-link/projects/pozlana-transportation/pozlana-transportation2.jpg",
-        "/images/road-link/projects/pozlana-transportation/pozlana-transportation3.jpg",
-        "/images/road-link/projects/pozlana-transportation/pozlana-transportation4.jpg",
+        "/images/road-link/projects/pozlana-transportation/main-image.jpg",
+        "/images/road-link/projects/pozlana-transportation/poz-trans1.jpg",
+        "/images/road-link/projects/pozlana-transportation/poz-trans2.jpg",
+        "/images/road-link/projects/pozlana-transportation/poz-trans3.jpg",
       ],
     },
     {
       arabicName: "ابو الشامات",
       englishName: "Abo Al-Shamat",
+      // arabicName:
+      //   "كانت بداية أعمال الشركة مشروع تنفيذ خندق حماية و درء السيول لمعامل اسمنت الباديةو المتحدة للاسمنت في منطقة ابو الشامات ,بطول 14000 م و ارتفاع اجمالي 6 م",
+      // englishName:
+      //   "The Company’s first project was implementing a flood protection trench for Al-Badia Cement and United Cement  Factories in Abu shamat with 14000 m long and total height of the trench and the berm is 6 m",
       images: [
-        "/images/road-link/projects/abo-alshamat/abo-alshamat1.jpg",
-        "/images/road-link/projects/abo-alshamat/abo-alshamat2.jpg",
-        "/images/road-link/projects/abo-alshamat/abo-alshamat3.jpg",
-        "/images/road-link/projects/abo-alshamat/abo-alshamat4.jpg",
+        "/images/road-link/projects/abo-alshamat/abu-alshamat4.jpg",
+        "/images/road-link/projects/abo-alshamat/abu-alshamat2.jpg",
+        "/images/road-link/projects/abo-alshamat/abu-alshamat3.jpg",
+        "/images/road-link/projects/abo-alshamat/abu-alshamat1.jpg",
       ],
     },
     {
       arabicName: "المقالع والمحاجر",
       englishName: "Quarries Works",
+      // arabicName: "المقالع والمحاجر",
+      // englishName:
+      //   "Contracting with Al-Badia Cement Company to provide quarrying services from the extraction, crushing and transfer of limestone and basalt stone from Al-Badia Cement Factory's quarries in Khan Abu Shammat to raw materials' crushers and storage areas in the factoryIn addition to providing the necessary geologicalservices and engineeringconsultancy to complete the work",
       images: [
-        "/images/road-link/projects/quarries/main.jpg",
-        "/images/road-link/projects/quarries/quarries1.jpg",
-        "/images/road-link/projects/quarries/quarries2.jpg",
-        "/images/road-link/projects/quarries/quarries3.jpg",
+        "/images/road-link/projects/quarries/main-image.jpg",
+        "/images/road-link/projects/quarries/quar1.jpg",
+        "/images/road-link/projects/quarries/quar2.jpg",
+        "/images/road-link/projects/quarries/quar3.jpg",
       ],
     },
   ];
-  function openProjectDetails(event: any) {
-    setProject(projects[event.clickedIndex]);
+  function openProjectDetails(index: any) {
+    setProject(projects[index]);
 
     var modal = document.getElementById("myModal");
 
@@ -437,7 +456,6 @@ function RoadLink() {
             },
           }}
           // navigation={true}
-          onClick={openProjectDetails}
           modules={[Navigation, Autoplay]}
         >
           <SwiperSlide>
@@ -445,12 +463,15 @@ function RoadLink() {
               <Image
                 src="/images/road-link/projects/gypsum-transportation/main.jpg"
                 layout="fill"
-                objectFit="cover"
                 alt="Project"
+                objectFit="cover"
                 className={roadLinkStyles.image}
               />
 
-              <div className={roadLinkStyles.overlay}>
+              <div
+                className={roadLinkStyles.overlay}
+                onClick={() => openProjectDetails(0)}
+              >
                 <div className={roadLinkStyles.text}>
                   {t("transportGypsum")}
                 </div>
@@ -466,7 +487,10 @@ function RoadLink() {
                 alt="Project"
                 className={roadLinkStyles.image}
               />
-              <div className={roadLinkStyles.overlay}>
+              <div
+                className={roadLinkStyles.overlay}
+                onClick={() => openProjectDetails(1)}
+              >
                 <div className={roadLinkStyles.text}>{t("rockIndustrial")}</div>
               </div>
             </div>
@@ -476,12 +500,15 @@ function RoadLink() {
               <Image
                 src="/images/road-link/projects/pozlana-transportation/main.jpg"
                 layout="fill"
-                objectFit="cover"
                 alt="Project"
+                objectFit="cover"
                 className={roadLinkStyles.image}
               />
 
-              <div className={roadLinkStyles.overlay}>
+              <div
+                className={roadLinkStyles.overlay}
+                onClick={() => openProjectDetails(2)}
+              >
                 <div className={roadLinkStyles.text}>
                   {t("transportPozlana")}
                 </div>
@@ -493,13 +520,32 @@ function RoadLink() {
               <Image
                 src="/images/road-link/projects/abo-alshamat/main.jpg"
                 layout="fill"
-                objectFit="cover"
                 alt="Project"
                 className={roadLinkStyles.image}
               />
 
-              <div className={roadLinkStyles.overlay}>
+              <div
+                className={roadLinkStyles.overlay}
+                onClick={() => openProjectDetails(3)}
+              >
                 <div className={roadLinkStyles.text}>{t("abuShammat")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={roadLinkStyles.container}>
+              <Image
+                src="/images/road-link/projects/quarries/main.jpg"
+                layout="fill"
+                alt="Project"
+                className={roadLinkStyles.image}
+              />
+
+              <div
+                className={roadLinkStyles.overlay}
+                onClick={() => openProjectDetails(4)}
+              >
+                <div className={roadLinkStyles.text}>{t("quarriesWorks")}</div>
               </div>
             </div>
           </SwiperSlide>
@@ -591,11 +637,11 @@ function RoadLink() {
                   <div
                     className={`${roadLinkStyles.projectContainer5Tile5} bg-yellow flex items-center justify-center`}
                   >
-                    <p className="text-white font-medium px-8">
+                    <div className="text-white font-medium px-8">
                       {locale == "en"
                         ? project.englishName
                         : project.arabicName}
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>

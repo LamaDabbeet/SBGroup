@@ -86,36 +86,6 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "جمعية المستقلة السكنية",
-      englishName: "Al-Mostaqella Association",
-      images: [
-        "/images/contracting/projects/al-mostaqella/mostaqella-2.jpg",
-        "/images/contracting/projects/al-mostaqella/mostaqella-3.jpg",
-        "/images/contracting/projects/al-mostaqella/mostaqella-4.jpg",
-        "/images/contracting/projects/al-mostaqella/mostaqella-5.jpg",
-      ],
-    },
-    {
-      arabicName: "جمعية خزانة تعاقد المهندسين",
-      englishName: "Artouz Engineers Towers",
-      images: [
-        "/images/contracting/projects/artouz/artouz-1.jpg",
-        "/images/contracting/projects/artouz/artouz-2.jpg",
-        "/images/contracting/projects/artouz/artouz-3.jpg",
-        "/images/contracting/projects/artouz/artouz-5.jpg",
-      ],
-    },
-    {
-      arabicName: "جمعية المنهل السكنية",
-      englishName: "Al-Manhal Housing Association",
-      images: [
-        "/images/contracting/projects/al-manhal/al-manahal-1.jpg",
-        "/images/contracting/projects/al-manhal/al-manahal-2.jpg",
-        "/images/contracting/projects/al-manhal/al-manahal-3.jpg",
-        "/images/contracting/projects/al-manhal/al-manahal-4.jpg",
-      ],
-    },
-    {
       arabicName: "مشروع دمر - الجزيرة 27",
       englishName: "Dummar Project-27",
       images: [
@@ -126,8 +96,8 @@ function ContractingCompany() {
       ],
     },
   ];
-  function openProjectDetails(event: any) {
-    setProject(projects[event.clickedIndex]);
+  function openProjectDetails(index: any) {
+    setProject(projects[index]);
 
     var modal = document.getElementById("myModal");
 
@@ -455,7 +425,7 @@ function ContractingCompany() {
             },
           }}
           // navigation={true}
-          onClick={openProjectDetails}
+
           modules={[Navigation, Autoplay]}
         >
           <SwiperSlide>
@@ -468,7 +438,10 @@ function ContractingCompany() {
                 className={contractingStyles.image}
               />
 
-              <div className={contractingStyles.overlay}>
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(0)}
+              >
                 <div className={contractingStyles.text}>
                   {t("mostaqellaProject")}
                 </div>
@@ -484,7 +457,10 @@ function ContractingCompany() {
                 alt="Project"
                 className={contractingStyles.image}
               />
-              <div className={contractingStyles.overlay}>
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(1)}
+              >
                 <div className={contractingStyles.text}>
                   {t("artouzProject")}
                 </div>
@@ -501,7 +477,10 @@ function ContractingCompany() {
                 className={contractingStyles.image}
               />
 
-              <div className={contractingStyles.overlay}>
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(2)}
+              >
                 <div className={contractingStyles.text}>
                   {t("manahelProject")}
                 </div>
@@ -511,50 +490,18 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/images/contracting/projects/al-mostaqella/main.jpg"
+                src="/images/contracting/projects/27-towers/27-towers-6.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
                 className={contractingStyles.image}
               />
 
-              <div className={contractingStyles.overlay}>
-                <div className={contractingStyles.text}>
-                  {t("mostaqellaProject")}
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={contractingStyles.container}>
-              <Image
-                src="/images/contracting/projects/artouz/main.jpg"
-                layout="fill"
-                objectFit="cover"
-                alt="Project"
-                className={contractingStyles.image}
-              />
-              <div className={contractingStyles.overlay}>
-                <div className={contractingStyles.text}>
-                  {t("artouzProject")}
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={contractingStyles.container}>
-              <Image
-                src="/images/contracting/projects/al-manhal/main.jpg"
-                layout="fill"
-                objectFit="cover"
-                alt="Project"
-                className={contractingStyles.image}
-              />
-
-              <div className={contractingStyles.overlay}>
-                <div className={contractingStyles.text}>
-                  {t("manahelProject")}
-                </div>
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(3)}
+              >
+                <div className={contractingStyles.text}>{t("27Towers")}</div>
               </div>
             </div>
           </SwiperSlide>
