@@ -461,7 +461,7 @@ function RoadLink() {
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/gypsum-transportation/main.jpg"
+                src="/images/road-link/projects/gypsum-transportation/main.JPG"
                 layout="fill"
                 alt="Project"
                 objectFit="cover"
