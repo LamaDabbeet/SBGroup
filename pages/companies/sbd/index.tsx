@@ -126,19 +126,19 @@ function SBD() {
   }
   const sliderImages = [
     {
-      mainImage: "/images/contracting/slider/slide1.jpg",
+      mainImage: "/images/contracting/slider/slide-1.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide1.jpg",
     },
     {
-      mainImage: "/images/contracting/slider/slide2.jpg",
+      mainImage: "/images/contracting/slider/slide-2.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide2.jpg",
     },
     {
-      mainImage: "/images/contracting/slider/slide3.jpg",
+      mainImage: "/images/contracting/slider/slide-3.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide3.jpg",
     },
     {
-      mainImage: "/images/contracting/slider/slide4.jpg",
+      mainImage: "/images/contracting/slider/slide-4.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide4.jpg",
     },
   ];

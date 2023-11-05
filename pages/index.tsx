@@ -404,7 +404,7 @@ export default function Home() {
               <SwiperSlide>
                 <div className=" flex align-center justify-center lg:m-12 m-8">
                   <Image
-                    src="/images/contracting/slider/slide1.jpg"
+                    src="/images/contracting/slider/slide-1.jpg"
                     alt=""
                     width={0}
                     height={0}
@@ -419,7 +419,7 @@ export default function Home() {
               <SwiperSlide>
                 <div className=" flex align-center justify-center lg:m-12 m-8">
                   <Image
-                    src="/images/contracting/slider/slide2.jpg"
+                    src="/images/contracting/slider/slide-2.jpg"
                     alt=""
                     width={0}
                     height={0}
@@ -434,7 +434,7 @@ export default function Home() {
               <SwiperSlide>
                 <div className="flex align-center justify-center lg:m-12 m-8">
                   <Image
-                    src="/images/contracting/slider/slide3.jpg"
+                    src="/images/contracting/slider/slide-3.jpg"
                     alt=""
                     width={0}
                     height={0}
