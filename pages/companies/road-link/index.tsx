@@ -95,7 +95,7 @@ function RoadLink() {
         "/images/road-link/projects/abo-alshamat/abu-alshamat4.jpg",
         "/images/road-link/projects/abo-alshamat/abu-alshamat2.jpg",
         "/images/road-link/projects/abo-alshamat/abu-alshamat3.jpg",
-        "/images/road-link/projects/abo-alshamat/abu-alshamat1.jpg",
+        "/images/road-link/projects/abo-alshamat/abu-alshamat5.jpg",
       ],
     },
     {
@@ -107,7 +107,7 @@ function RoadLink() {
       images: [
         "/images/road-link/projects/quarries/main-image.jpg",
         "/images/road-link/projects/quarries/quar1.jpg",
-        "/images/road-link/projects/quarries/quar2.jpg",
+        "/images/road-link/projects/quarries/quar4.jpg",
         "/images/road-link/projects/quarries/quar3.jpg",
       ],
     },
@@ -149,19 +149,19 @@ function RoadLink() {
   }
   const sliderImages = [
     {
-      mainImage: "/images/road-link/slider/slide1.jpg",
+      mainImage: "/images/road-link/slider/slider-1.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide1.jpg",
     },
     {
-      mainImage: "/images/road-link/slider/slide2.jpg",
+      mainImage: "/images/road-link/slider/slider-2.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide2.jpg",
     },
     {
-      mainImage: "/images/road-link/slider/slide3.jpg",
+      mainImage: "/images/road-link/slider/slider-3.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide3.jpg",
     },
     {
-      mainImage: "/images/road-link/slider/slide4.jpg",
+      mainImage: "/images/road-link/slider/slider-4.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide4.jpg",
     },
   ];
@@ -388,7 +388,7 @@ function RoadLink() {
             id="first-arabic-service-block"
           >
             <Image
-              src="/images/road-link/services/transportation.jpg"
+              src="/images/road-link/services/transport.jpg"
               alt="Transportation"
               width={0}
               height={0}
@@ -401,7 +401,7 @@ function RoadLink() {
 
           <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
             <Image
-              src="/images/road-link/services/quarries-works.jpg"
+              src="/images/road-link/services/quarries.jpg"
               alt="Quarries Works"
               width={0}
               height={0}
@@ -413,7 +413,7 @@ function RoadLink() {
           </div>
           <div className="lg:w-1/3 w-full">
             <Image
-              src="/images/road-link/services/rocks.jpg"
+              src="/images/road-link/services/rock.jpg"
               alt="Rocks industerial"
               width={0}
               height={0}

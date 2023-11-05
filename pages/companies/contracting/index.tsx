@@ -39,15 +39,15 @@ function ContractingCompany() {
   const [open, setOpen] = useState(1);
   const sliderImages = [
     {
-      mainImage: "/images/contracting/slider/slide1.jpg",
+      mainImage: "/images/contracting/slider/slide-1.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide1.jpg",
     },
     {
-      mainImage: "/images/contracting/slider/slide2.jpg",
+      mainImage: "/images/contracting/slider/slide-2.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide2.jpg",
     },
     {
-      mainImage: "/images/contracting/slider/slide3.jpg",
+      mainImage: "/images/contracting/slider/slide-3.jpg",
       mobileImage: "/images/road-link/slider/mobile/slide3.jpg",
     },
   ];
@@ -353,7 +353,7 @@ function ContractingCompany() {
             id="first-arabic-service-block"
           >
             <Image
-              src="/images/constructing-design.jpg"
+              src="/images/contracting/services/constructing-design.jpg"
               alt="Constructing Design"
               width={0}
               height={0}
@@ -368,7 +368,7 @@ function ContractingCompany() {
 
           <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
             <Image
-              src="/images/build.jpg"
+              src="/images/contracting/services/build.jpg"
               alt="Build"
               width={0}
               height={0}
@@ -380,7 +380,7 @@ function ContractingCompany() {
           </div>
           <div className="lg:w-1/3 w-full">
             <Image
-              src="/images/general-contracting.jpg"
+              src="/images/contracting/services/gerneral-contracting.jpg"
               alt="General Contracting"
               width={0}
               height={0}
