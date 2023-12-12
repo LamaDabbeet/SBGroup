@@ -376,7 +376,7 @@ function RoadLink() {
         </div>
       </section>
       <section
-        id="contracting-services"
+        id="roadlink-services"
         className="lg:w-2/3  w-full m-auto px-8 py-16"
       >
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
@@ -995,7 +995,6 @@ function RoadLink() {
 export default RoadLink;
 
 RoadLink.Layout = "Companies";
-// RoadLink.LayoutColor = "yellow";
 RoadLink.Logo = "/images/road-link/logo.png";
 
 export async function getStaticProps({ locale }: any) {
