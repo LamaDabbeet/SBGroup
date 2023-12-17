@@ -343,72 +343,77 @@ function MixConcrete() {
       <section>
         <Header color="red" sliderImages={sliderImages} />
       </section>
-      <section id="about-sbg-contracting" className="text-center px-16 py-16">
-        <h2 className="text-center font-semibold uppercase text-2xl mb-12">
-          {t("whoWeAre")}
-        </h2>
-        <div className="flex justify-center">
-          <div id="who-we-are" className="w-8/10">
-            <p>{t("whoWeAreDesc1")}</p>
-            <p>{t("whoWeAreDesc2")}</p>
-            <p>{t("whoWeAreDesc3")}</p>
+      <div className={mixConcreteStyles.logo_background}>
+        <section id="about-sbg-contracting" className="text-center px-16 py-16">
+          <h2 className="text-center font-semibold uppercase text-2xl mb-12">
+            {t("whoWeAre")}
+          </h2>
+          <div className="flex justify-center">
+            <div id="who-we-are" className="w-8/10">
+              <p>{t("whoWeAreDesc1")}</p>
+              <p>{t("whoWeAreDesc2")}</p>
+              <p>{t("whoWeAreDesc3")}</p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section
-        id="mix-concrete-services"
-        className="lg:w-2/3  w-full m-auto px-8 py-16"
-      >
-        <h2 className="text-center font-semibold uppercase text-2xl mb-12">
-          {t("services")}
-        </h2>
-        <div className="lg:flex lg:justify-between lg:space-x-12">
-          <div
-            className="lg:w-1/3 w-full lg:mb-0 mb-20"
-            id="first-arabic-service-block"
-          >
-            <Image
-              src="/images/mix-concrete/services/quality-control.jpg"
-              alt="Quality Control"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <h3 className="font-medium text-xl my-6">{t("qualityControl")}</h3>
-            <p>{t("qualityControlDesc")}</p>
-          </div>
+        </section>
+        <section
+          id="mix-concrete-services"
+          className="lg:w-2/3  w-full m-auto px-8 py-16"
+        >
+          <h2 className="text-center font-semibold uppercase text-2xl mb-12">
+            {t("services")}
+          </h2>
+          <div className="lg:flex lg:justify-between lg:space-x-12">
+            <div
+              className="lg:w-1/3 w-full lg:mb-0 mb-20"
+              id="first-arabic-service-block"
+            >
+              <Image
+                src="/images/mix-concrete/services/quality-control.jpg"
+                alt="Quality Control"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+              <h3 className="font-medium text-xl my-6">
+                {t("qualityControl")}
+              </h3>
+              <p>{t("qualityControlDesc")}</p>
+            </div>
 
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
-            <Image
-              src="/images/mix-concrete/services/delivery-services.jpg"
-              alt="Delivery Services"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <h3 className="font-medium text-xl my-6">
-              {t("deliveryServices")}
-            </h3>
-            <p>{t("deliveryServiceDesc")}</p>
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
+              <Image
+                src="/images/mix-concrete/services/delivery-services.jpg"
+                alt="Delivery Services"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+              <h3 className="font-medium text-xl my-6">
+                {t("deliveryServices")}
+              </h3>
+              <p>{t("deliveryServiceDesc")}</p>
+            </div>
+            <div className="lg:w-1/3 w-full">
+              <Image
+                src="/images/mix-concrete/services/technical-support.jpg"
+                alt="Technical Support"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+              <h3 className="font-medium text-xl my-6">
+                {t("technicalSupport")}
+              </h3>
+              <p>{t("technicalSupportDesc")}</p>
+            </div>
           </div>
-          <div className="lg:w-1/3 w-full">
-            <Image
-              src="/images/mix-concrete/services/technical-support.jpg"
-              alt="Technical Support"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <h3 className="font-medium text-xl my-6">
-              {t("technicalSupport")}
-            </h3>
-            <p>{t("technicalSupportDesc")}</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
       <section
         className="bg-gray-dark w-full lg:px-16 lg:pt-16 lg:pb-8 px-0 pt-16 pb-0"
         id="contracting-projects"

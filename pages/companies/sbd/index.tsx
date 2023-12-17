@@ -117,20 +117,20 @@ function SBD() {
   }
   const sliderImages = [
     {
-      mainImage: "/images/sbd/slider/slider-1.jpg",
-      mobileImage: "/images/sbd/slider/mobile/slider-1.jpg",
+      mainImage: "/images/sbd/slider/slide-1.png",
+      mobileImage: "/images/sbd/slider/mobile/slider-1.png",
     },
     {
-      mainImage: "/images/sbd/slider/slider-2.jpg",
-      mobileImage: "/images/sbd/slider/mobile/slider-2.jpg",
+      mainImage: "/images/sbd/slider/slide-2.png",
+      mobileImage: "/images/sbd/slider/mobile/slide-2.png",
     },
     {
-      mainImage: "/images/sbd/slider/slider-3.jpg",
-      mobileImage: "/images/sbd/slider/mobile/slider-3.jpg",
+      mainImage: "/images/sbd/slider/slide-3.png",
+      mobileImage: "/images/sbd/slider/mobile/slide-3.png",
     },
     {
-      mainImage: "/images/sbd/slider/slider-4.jpg",
-      mobileImage: "/images/sbd/slider/mobile/slider-4.jpg",
+      mainImage: "/images/sbd/slider/slide-4.png",
+      mobileImage: "/images/sbd/slider/mobile/slide-4.png",
     },
   ];
   return (

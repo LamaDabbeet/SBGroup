@@ -20,6 +20,12 @@
   height: 100%;
   object-fit: cover;
 }
+
+.logo_background {
+  background-image: url("../../../public/images/mix-concrete/logo-background.png");
+  background-repeat: no-repeat;
+  background-position: 20rem;
+}
 .projects_swiper {
   height: 50vh;
   width: 70%;
