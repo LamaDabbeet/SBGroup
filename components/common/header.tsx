@@ -27,6 +27,7 @@ function Header({ color, sliderImages }: any) {
                 width={0}
                 height={0}
                 sizes="100vh"
+                unoptimized
                 style={{ width: "100%", height: "auto" }}
               />
             ) : (
@@ -36,6 +37,7 @@ function Header({ color, sliderImages }: any) {
                 width={0}
                 height={0}
                 sizes="100vw"
+                unoptimized
                 style={{ width: "100%", height: "80vh" }}
                 className="relative"
               />
