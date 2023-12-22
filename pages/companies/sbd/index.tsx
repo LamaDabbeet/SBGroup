@@ -152,7 +152,7 @@ function SBD() {
                 </div>
 
                 <div className="hidden md:flex h-24  items-center">
-                  <ul className="flex">
+                  {/* <ul className="flex">
                     <li>
                       <div
                         className={`hover:cursor-pointer bg-green hover:bg-white duration-200 ease-in border-2 border-green text-white hover:text-green  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
@@ -181,20 +181,24 @@ function SBD() {
                         <FontAwesomeIcon icon={faWhatsapp} size="sm" />
                       </div>
                     </li>
-                  </ul>
-
+                  </ul> */}
                   <div className="ml-10 flex items-baseline space-x-4 h-full">
                     <Link
-                      // href="/companies/contracting/#about-sbg-contracting"
                       href="/"
+                      scroll={false}
+                      className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-green  hover:text-green  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
+                    >
+                      {t("home")}
+                    </Link>
+                    <Link
+                      href="/companies/sbd/#about-sbd"
                       scroll={false}
                       className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-green  hover:text-green  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                     >
                       {t("about")}
                     </Link>
                     <Link
-                      // href="/companies/contracting/#contracting-services"
-                      href="/"
+                      href="/companies/sbd/#sbd-services"
                       scroll={false}
                       className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-green  hover:text-green  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                     >
@@ -202,8 +206,7 @@ function SBD() {
                     </Link>
 
                     <Link
-                      // href="/companies/contracting/#contracting-projects"
-                      href="/"
+                      href="/companies/sbd/#sbd-projects"
                       scroll={false}
                       className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-green  hover:text-green  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                     >
@@ -211,7 +214,7 @@ function SBD() {
                     </Link>
 
                     <Link
-                      href="/companies/contracting/#contact-us"
+                      href="/companies/sbd/#contact-us"
                       scroll={false}
                       className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-green  hover:text-green border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                     >
@@ -329,7 +332,7 @@ function SBD() {
       <section>
         <Header color="green" sliderImages={sliderImages} />
       </section>
-      <section id="about-sbg-contracting" className="text-center px-16 py-16">
+      <section id="about-sbd" className="text-center px-16 py-16">
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
           {t("whoWeAre")}
         </h2>
@@ -390,7 +393,7 @@ function SBD() {
       </section>
       <section
         className="bg-gray-dark w-full lg:px-16 lg:pt-16 lg:pb-8 px-0 pt-16 pb-0"
-        id="contracting-projects"
+        id="sbd-projects"
         style={{ height: "60vh" }}
       >
         <h2 className="text-center font-semibold uppercase text-2xl mb-12 text-white">
@@ -756,7 +759,8 @@ function SBD() {
         id="contact-us"
         className="h-80 px-16 py-16 flex flex-col justify-center align-start"
       >
-        <h2 className="text-green uppercase text-3xl font-semibold">
+        <div style={{ height: "4rem", backgroundColor: "white" }}></div>
+        {/* <h2 className="text-green uppercase text-3xl font-semibold">
           {t("brochure")}
         </h2>
         <p>{t("downloadBrochure")}</p>
@@ -769,7 +773,7 @@ function SBD() {
             {t("english")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
-        </ul>
+        </ul> */}
       </section>
       <footer className="text-white ">
         <div
@@ -779,7 +783,7 @@ function SBD() {
           <div className="lg:w-2/3 w-full">
             <h1 className="lg:text-3xl text-xl font-bold ">{t("sbd")}</h1>
           </div>
-          <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
+          {/* <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
             <h2>{t("followUs")}</h2>
             <ul className="flex mt-2">
               <li>
@@ -811,7 +815,7 @@ function SBD() {
                 </div>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div id="main-footer" className="bg-gray-dark px-12 py-16">
           <div className="flex mb-8">

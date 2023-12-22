@@ -1,5 +1,5 @@
-{ 
-  "mixConcrete":"Mix Concrete",
+{
+  "mixConcrete": "Mix Concrete",
   "whoWeAre": "من نحن",
   "services": "الخدمات",
   "qualityControl": "مراقبة الجودة",
@@ -30,6 +30,6 @@
   "samiBaroudyContracting": "سامي البارودي للمقاولات",
   "SBD": "SBD",
   "readyMix": "Ready Mix",
-  "projects": "مشاريعنا"
-
+  "projects": "مشاريعنا",
+  "roadLink": "Road Link"
 }

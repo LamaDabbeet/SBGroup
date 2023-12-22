@@ -151,7 +151,7 @@ function ContractingCompany() {
                 </div>
 
                 <div className="hidden md:flex h-24  items-center">
-                  <ul className="flex">
+                  {/* <ul className="flex">
                     <li>
                       <div
                         className={`hover:cursor-pointer bg-cyan hover:bg-white duration-200 ease-in border-2 border-cyan text-white hover:text-cyan  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
@@ -180,20 +180,25 @@ function ContractingCompany() {
                         <FontAwesomeIcon icon={faWhatsapp} size="sm" />
                       </div>
                     </li>
-                  </ul>
+                  </ul> */}
 
                   <div className="ml-10 flex items-baseline space-x-4 h-full">
                     <Link
-                      // href="/companies/contracting/#about-sbg-contracting"
                       href="/"
+                      scroll={false}
+                      className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan  hover:text-cyan  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
+                    >
+                      {t("home")}
+                    </Link>
+                    <Link
+                      href="/companies/contracting/#about-sbg-contracting"
                       scroll={false}
                       className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan  hover:text-cyan  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                     >
                       {t("about")}
                     </Link>
                     <Link
-                      // href="/companies/contracting/#contracting-services"
-                      href="/"
+                      href="/companies/contracting/#contracting-services"
                       scroll={false}
                       className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan  hover:text-cyan  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                     >
@@ -201,8 +206,7 @@ function ContractingCompany() {
                     </Link>
 
                     <Link
-                      // href="/companies/contracting/#contracting-projects"
-                      href="/"
+                      href="/companies/contracting/#contracting-projects"
                       scroll={false}
                       className={`uppercase h-full flex items-center text-gray px-3 py-2  text-sm font-medium hover:border-t-4 hover:border-t-cyan  hover:text-cyan  border-t-white border-t-4 transition duration-300 px-3 py-2 text-sm font-medium`}
                     >
@@ -282,8 +286,7 @@ function ContractingCompany() {
                   className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12"
                 >
                   <Link
-                    // href="/#about-sbg-contracting"
-                    href=""
+                    href="/#about-sbg-contracting"
                     className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -291,8 +294,7 @@ function ContractingCompany() {
                   </Link>
 
                   <Link
-                    // href="/#contracting-services"
-                    href=""
+                    href="/#contracting-services"
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -300,8 +302,7 @@ function ContractingCompany() {
                   </Link>
 
                   <Link
-                    // href="/#contracting-projects"
-                    href=""
+                    href="/#contracting-projects"
                     className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -309,8 +310,7 @@ function ContractingCompany() {
                   </Link>
 
                   <Link
-                    // href="/#contact-us"
-                    href=""
+                    href="/#contact-us"
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -761,11 +761,9 @@ function ContractingCompany() {
           </div>
         )}
       </section>
-      <section
-        id="contact-us"
-        className="h-80 px-16 py-16 flex flex-col justify-center align-start"
-      >
-        <h2 className="text-cyan uppercase text-3xl font-semibold">
+      <section className="h-80 px-16 py-16 flex flex-col justify-center align-start">
+        <div style={{ height: "4rem", backgroundColor: "white" }}></div>
+        {/* <h2 className="text-cyan uppercase text-3xl font-semibold">
           {t("brochure")}
         </h2>
         <p>{t("downloadBrochure")}</p>
@@ -778,9 +776,9 @@ function ContractingCompany() {
             {t("english")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
-        </ul>
+        </ul> */}
       </section>
-      <footer className="text-white ">
+      <footer className="text-white" id="contact-us">
         <div
           id="top-footer"
           className={`bg-cyan px-12 py-16 lg:flex lg:justify-between`}
@@ -790,7 +788,7 @@ function ContractingCompany() {
               {t("samiBaroudyContracting")}
             </h1>
           </div>
-          <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
+          {/* <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
             <h2>{t("followUs")}</h2>
             <ul className="flex mt-2">
               <li>
@@ -822,14 +820,14 @@ function ContractingCompany() {
                 </div>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div id="main-footer" className="bg-gray-dark px-12 py-16">
           <div className="flex mb-8">
             <Image
               src="/images/sbg-white-logo.png"
-              width={230}
-              height={40}
+              width={260}
+              height={30}
               alt="Sami Al Baroudi Group White Logo"
             />
           </div>
