@@ -118,19 +118,19 @@ function SBD() {
   const sliderImages = [
     {
       mainImage: "/images/sbd/slider/slide-1.png",
-      mobileImage: "/images/sbd/slider/mobile/slider-1.png",
+      mobileImage: "/images/sbd/slider/mobile/slider-1.jpg",
     },
     {
       mainImage: "/images/sbd/slider/slide-2.png",
-      mobileImage: "/images/sbd/slider/mobile/slide-2.png",
+      mobileImage: "/images/sbd/slider/mobile/slide-2.jpg",
     },
     {
       mainImage: "/images/sbd/slider/slide-3.png",
-      mobileImage: "/images/sbd/slider/mobile/slide-3.png",
+      mobileImage: "/images/sbd/slider/mobile/slide-3.jpg",
     },
     {
       mainImage: "/images/sbd/slider/slide-4.png",
-      mobileImage: "/images/sbd/slider/mobile/slide-4.png",
+      mobileImage: "/images/sbd/slider/mobile/slide-2.jpg",
     },
   ];
   return (
@@ -757,7 +757,7 @@ function SBD() {
       </section>
       <section
         id="contact-us"
-        className="h-80 px-16 py-16 flex flex-col justify-center align-start"
+        className="h-40 flex flex-col justify-center align-start"
       >
         <div style={{ height: "4rem", backgroundColor: "white" }}></div>
         {/* <h2 className="text-green uppercase text-3xl font-semibold">

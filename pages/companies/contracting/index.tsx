@@ -40,15 +40,15 @@ function ContractingCompany() {
   const sliderImages = [
     {
       mainImage: "/images/contracting/slider/slide-1.jpg",
-      mobileImage: "/images/road-link/slider/mobile/slide1.jpg",
+      mobileImage: "/images/contracting/slider/mobile/slide-1.jpg",
     },
     {
       mainImage: "/images/contracting/slider/slide-2.jpg",
-      mobileImage: "/images/road-link/slider/mobile/slide2.jpg",
+      mobileImage: "/images/contracting/slider/mobile/slide-2.jpg",
     },
     {
       mainImage: "/images/contracting/slider/slide-3.jpg",
-      mobileImage: "/images/road-link/slider/mobile/slide3.jpg",
+      mobileImage: "/images/contracting/slider/mobile/slide-3.jpg",
     },
   ];
   const handleOpen = (value: any) => {
@@ -761,8 +761,8 @@ function ContractingCompany() {
           </div>
         )}
       </section>
-      <section className="h-80 px-16 py-16 flex flex-col justify-center align-start">
-        <div style={{ height: "4rem", backgroundColor: "white" }}></div>
+      <section className="h-40 flex flex-col justify-center align-start">
+        <div style={{ backgroundColor: "white" }}></div>
         {/* <h2 className="text-cyan uppercase text-3xl font-semibold">
           {t("brochure")}
         </h2>

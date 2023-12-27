@@ -808,7 +808,7 @@ function RoadLink() {
           </div>
         )}
       </section>
-      <section className="h-80 px-16 py-16 flex flex-col justify-center align-start">
+      <section className="h-40 flex flex-col justify-center align-start">
         <div style={{ height: "4rem", backgroundColor: "white" }}></div>
 
         {/* <h2 className="text-yellow uppercase text-3xl font-semibold">

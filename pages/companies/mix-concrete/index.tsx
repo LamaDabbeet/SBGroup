@@ -142,10 +142,10 @@ function MixConcrete() {
       mainImage: "/images/mix-concrete/slider/slider-4.jpg",
       mobileImage: "/images/mix-concrete/slider/mobile/slider-4.jpg",
     },
-    {
-      mainImage: "/images/mix-concrete/slider/slider-5.jpg",
-      mobileImage: "/images/mix-concrete/slider/mobile/slider-5.jpg",
-    },
+    // {
+    //   mainImage: "/images/mix-concrete/slider/slider-5.jpg",
+    //   mobileImage: "/images/mix-concrete/slider/mobile/slider-5.jpg",
+    // },
   ];
   return (
     <>
@@ -373,7 +373,7 @@ function MixConcrete() {
               id="first-arabic-service-block"
             >
               <Image
-                src="/images/mix-concrete/services/quality-control.jpg"
+                src="/images/mix-concrete/services/quality-control1.jpg"
                 alt="Quality Control"
                 width={0}
                 height={0}
@@ -388,7 +388,7 @@ function MixConcrete() {
 
             <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
               <Image
-                src="/images/mix-concrete/services/delivery-services.jpg"
+                src="/images/mix-concrete/services/delivery-services1.jpg"
                 alt="Delivery Services"
                 width={0}
                 height={0}
@@ -402,7 +402,7 @@ function MixConcrete() {
             </div>
             <div className="lg:w-1/3 w-full">
               <Image
-                src="/images/mix-concrete/services/technical-support.jpg"
+                src="/images/mix-concrete/services/technical-support1.jpg"
                 alt="Technical Support"
                 width={0}
                 height={0}
@@ -416,391 +416,393 @@ function MixConcrete() {
             </div>
           </div>
         </section>
-        <section
-          className="bg-gray-dark w-full lg:px-16 lg:pt-16 lg:pb-8 px-0 pt-16 pb-0"
-          id="mix-concrete-projects"
-          style={{ height: "60vh" }}
+      </div>
+
+      <section
+        className="bg-gray-dark w-full lg:px-16 lg:pt-16 lg:pb-8 px-0 pt-16 pb-0"
+        id="mix-concrete-projects"
+        style={{ height: "60vh" }}
+      >
+        <h2 className="text-center font-semibold uppercase text-2xl mb-12 text-white">
+          {t("projects")}
+        </h2>
+        <Swiper
+          className={mixConcreteStyles.projects_swiper}
+          centeredSlides={true}
+          autoplay={{
+            delay: 3500,
+            pauseOnMouseEnter: true,
+          }}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 2,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+          }}
+          // navigation={true}
+          modules={[Navigation, Autoplay]}
         >
-          <h2 className="text-center font-semibold uppercase text-2xl mb-12 text-white">
-            {t("projects")}
-          </h2>
-          <Swiper
-            className={mixConcreteStyles.projects_swiper}
-            centeredSlides={true}
-            autoplay={{
-              delay: 3500,
-              pauseOnMouseEnter: true,
+          <SwiperSlide>
+            <div className={mixConcreteStyles.container}>
+              <Image
+                src="/images/mix-concrete/projects/up-town/1.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={mixConcreteStyles.image}
+              />
+
+              <div
+                className={mixConcreteStyles.overlay}
+                onClick={() => openProjectDetails(0)}
+              >
+                <div className={mixConcreteStyles.text}>{t("uptown")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={mixConcreteStyles.container}>
+              <Image
+                src="/images/mix-concrete/projects/majlis-alshaab/1.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={mixConcreteStyles.image}
+              />
+              <div
+                className={mixConcreteStyles.overlay}
+                onClick={() => openProjectDetails(1)}
+              >
+                <div className={mixConcreteStyles.text}>
+                  {t("majlis-alshaab")}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={mixConcreteStyles.container}>
+              <Image
+                src="/images/mix-concrete/projects/jdidat-artouz/1.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={mixConcreteStyles.image}
+              />
+
+              <div
+                className={mixConcreteStyles.overlay}
+                onClick={() => openProjectDetails(2)}
+              >
+                <div className={mixConcreteStyles.text}>
+                  {t("jdidatArtouz")}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={mixConcreteStyles.container}>
+              <Image
+                src="/images/mix-concrete/projects/dummar-27/1.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={mixConcreteStyles.image}
+              />
+
+              <div
+                className={mixConcreteStyles.overlay}
+                onClick={() => openProjectDetails(3)}
+              >
+                <div className={mixConcreteStyles.text}>{t("dummar27")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={mixConcreteStyles.container}>
+              <Image
+                src="/images/mix-concrete/projects/al-manahel/1.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={mixConcreteStyles.image}
+              />
+
+              <div
+                className={mixConcreteStyles.overlay}
+                onClick={() => openProjectDetails(4)}
+              >
+                <div className={mixConcreteStyles.text}>{t("alManahel")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        {project.images.length === 4 ? (
+          <div
+            onClick={closeProjectDetails}
+            id="myModal"
+            style={{
+              visibility: "hidden",
+              opacity: 0,
+              transition: "visibility 0.3s, opacity 0.3s ease-in",
+              position: "fixed",
+              zIndex: 1,
+              paddingTop: "4%",
+              left: 0,
+              top: 0,
+              width: "100%",
+              height: "100%",
+              overflow: "auto",
+              backgroundColor: "rgba(0,0,0,0.4)",
             }}
-            loop={true}
-            pagination={{
-              clickable: true,
-            }}
-            breakpoints={{
-              768: {
-                slidesPerView: 1,
-              },
-              1024: {
-                slidesPerView: 2,
-              },
-              1200: {
-                slidesPerView: 3,
-              },
-            }}
-            // navigation={true}
-            modules={[Navigation, Autoplay]}
+            className="flex justify-center items-center lg:block"
           >
-            <SwiperSlide>
-              <div className={mixConcreteStyles.container}>
-                <Image
-                  src="/images/mix-concrete/projects/up-town/1.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="Project"
-                  className={mixConcreteStyles.image}
-                />
-
-                <div
-                  className={mixConcreteStyles.overlay}
-                  onClick={() => openProjectDetails(0)}
-                >
-                  <div className={mixConcreteStyles.text}>{t("uptown")}</div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={mixConcreteStyles.container}>
-                <Image
-                  src="/images/mix-concrete/projects/majlis-alshaab/1.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="Project"
-                  className={mixConcreteStyles.image}
-                />
-                <div
-                  className={mixConcreteStyles.overlay}
-                  onClick={() => openProjectDetails(1)}
-                >
-                  <div className={mixConcreteStyles.text}>
-                    {t("majlis-alshaab")}
+            {project ? (
+              <div
+                id="modal-content"
+                style={{
+                  backgroundColor: "#fefefe",
+                  margin: "auto",
+                  border: "1px solid #888",
+                  boxShadow: "-20px 20px 50px 15px black",
+                  height: 0,
+                  width: 0,
+                }}
+              >
+                <div className={mixConcreteStyles.projectDescContainer5}>
+                  <div
+                    className={mixConcreteStyles.projectContainer5Tile1}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      position: "relative",
+                    }}
+                  >
+                    <Image
+                      alt=""
+                      id="project-image"
+                      src={project.images[0]}
+                      layout="fill"
+                      objectFit="cover"
+                      style={{ opacity: 0 }}
+                    ></Image>
+                  </div>
+                  <div className={mixConcreteStyles.projectContainer5Tile2}>
+                    <Image
+                      alt=""
+                      className="project-image"
+                      src={project.images[1]}
+                      height={0}
+                      width={0}
+                      sizes="100%"
+                      style={{ width: "100%", height: "100%" }}
+                    ></Image>
+                  </div>
+                  <div className={mixConcreteStyles.projectContainer5Tile3}>
+                    <Image
+                      alt=""
+                      src={project.images[2]}
+                      className="project-image"
+                      height={0}
+                      width={0}
+                      sizes="100%"
+                      style={{ width: "100%", height: "100%" }}
+                    ></Image>
+                  </div>
+                  <div className={mixConcreteStyles.projectContainer5Tile4}>
+                    {" "}
+                    <Image
+                      alt=""
+                      src={project.images[3]}
+                      className="project-image"
+                      height={0}
+                      width={0}
+                      sizes="100%"
+                      style={{ width: "100%", height: "100%" }}
+                    ></Image>
+                  </div>
+                  <div
+                    className={`${mixConcreteStyles.projectContainer5Tile5} bg-red flex items-center justify-center`}
+                  >
+                    <p className="text-white font-medium px-8">
+                      {locale == "en"
+                        ? project.englishName
+                        : project.arabicName}
+                    </p>
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={mixConcreteStyles.container}>
-                <Image
-                  src="/images/mix-concrete/projects/jdidat-artouz/1.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="Project"
-                  className={mixConcreteStyles.image}
-                />
-
-                <div
-                  className={mixConcreteStyles.overlay}
-                  onClick={() => openProjectDetails(2)}
-                >
-                  <div className={mixConcreteStyles.text}>
-                    {t("jdidatArtouz")}
+            ) : (
+              ""
+            )}
+          </div>
+        ) : project.images.length === 3 ? (
+          <div
+            onClick={closeProjectDetails}
+            id="myModal"
+            style={{
+              visibility: "hidden",
+              opacity: 0,
+              transition: "visibility 0.3s, opacity 0.3s ease-in",
+              position: "fixed",
+              zIndex: 1,
+              paddingTop: "4%",
+              left: 0,
+              top: 0,
+              width: "100%",
+              height: "100%",
+              overflow: "auto",
+              backgroundColor: "rgba(0,0,0,0.4)",
+            }}
+          >
+            {project ? (
+              <div
+                className="modal-content"
+                style={{
+                  backgroundColor: "#fefefe",
+                  margin: "auto",
+                  border: "1px solid #888",
+                  width: "80%",
+                  height: "70vh",
+                  boxShadow: "-20px 20px 50px 15px black",
+                }}
+              >
+                <div className={mixConcreteStyles.projectDescContainer4}>
+                  <div
+                    className={mixConcreteStyles.projectContainer4Tile1}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      position: "relative",
+                    }}
+                  >
+                    <Image
+                      alt=""
+                      src={project.images[0]}
+                      layout="fill"
+                      objectFit="cover"
+                    ></Image>
+                  </div>
+                  <div className={mixConcreteStyles.projectContainer4Tile2}>
+                    <Image
+                      alt=""
+                      src={project.images[1]}
+                      height={0}
+                      width={0}
+                      sizes="100%"
+                      style={{ width: "100%", height: "100%" }}
+                    ></Image>
+                  </div>
+                  <div className={mixConcreteStyles.projectContainer4Tile3}>
+                    <Image
+                      alt=""
+                      src={project.images[2]}
+                      height={0}
+                      width={0}
+                      sizes="100%"
+                      style={{ width: "100%", height: "100%" }}
+                    ></Image>
+                  </div>
+                  <div
+                    className={`${mixConcreteStyles.projectContainer4Tile4} bg-red flex items-center justify-center`}
+                  >
+                    <p className="text-white font-medium px-8">
+                      {locale == "en"
+                        ? project.englishName
+                        : project.arabicName}
+                    </p>
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={mixConcreteStyles.container}>
-                <Image
-                  src="/images/mix-concrete/projects/dummar-27/1.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="Project"
-                  className={mixConcreteStyles.image}
-                />
-
-                <div
-                  className={mixConcreteStyles.overlay}
-                  onClick={() => openProjectDetails(3)}
-                >
-                  <div className={mixConcreteStyles.text}>{t("dummar27")}</div>
+            ) : (
+              ""
+            )}
+          </div>
+        ) : (
+          <div
+            onClick={closeProjectDetails}
+            id="myModal"
+            style={{
+              visibility: "hidden",
+              opacity: 0,
+              transition: "visibility 0.3s, opacity 0.3s ease-in",
+              position: "fixed",
+              zIndex: 1,
+              paddingTop: "4%",
+              left: 0,
+              top: 0,
+              width: "100%",
+              height: "100%",
+              overflow: "auto",
+              backgroundColor: "rgba(0,0,0,0.4)",
+            }}
+          >
+            {project ? (
+              <div
+                className="modal-content"
+                style={{
+                  backgroundColor: "#fefefe",
+                  margin: "auto",
+                  border: "1px solid #888",
+                  width: "80%",
+                  height: "70vh",
+                  boxShadow: "-20px 20px 50px 15px black",
+                }}
+              >
+                <div className={mixConcreteStyles.projectDescContainer3}>
+                  <div
+                    className={mixConcreteStyles.projectContainer3Tile1}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      position: "relative",
+                    }}
+                  >
+                    <Image
+                      alt=""
+                      src={project.images[0]}
+                      layout="fill"
+                      objectFit="cover"
+                    ></Image>
+                  </div>
+                  <div className={mixConcreteStyles.projectContainer3Tile2}>
+                    <Image
+                      alt=""
+                      src={project.images[1]}
+                      height={0}
+                      width={0}
+                      sizes="100%"
+                      style={{ width: "100%", height: "100%" }}
+                    ></Image>
+                  </div>
+                  <div
+                    className={`${mixConcreteStyles.projectContainer4Tile4} bg-red flex items-center justify-center`}
+                  >
+                    <p className="text-white font-medium px-8">
+                      {locale == "en"
+                        ? project.englishName
+                        : project.arabicName}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={mixConcreteStyles.container}>
-                <Image
-                  src="/images/mix-concrete/projects/al-manahel/1.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="Project"
-                  className={mixConcreteStyles.image}
-                />
-
-                <div
-                  className={mixConcreteStyles.overlay}
-                  onClick={() => openProjectDetails(4)}
-                >
-                  <div className={mixConcreteStyles.text}>{t("alManahel")}</div>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-          {project.images.length === 4 ? (
-            <div
-              onClick={closeProjectDetails}
-              id="myModal"
-              style={{
-                visibility: "hidden",
-                opacity: 0,
-                transition: "visibility 0.3s, opacity 0.3s ease-in",
-                position: "fixed",
-                zIndex: 1,
-                paddingTop: "4%",
-                left: 0,
-                top: 0,
-                width: "100%",
-                height: "100%",
-                overflow: "auto",
-                backgroundColor: "rgba(0,0,0,0.4)",
-              }}
-              className="flex justify-center items-center lg:block"
-            >
-              {project ? (
-                <div
-                  id="modal-content"
-                  style={{
-                    backgroundColor: "#fefefe",
-                    margin: "auto",
-                    border: "1px solid #888",
-                    boxShadow: "-20px 20px 50px 15px black",
-                    height: 0,
-                    width: 0,
-                  }}
-                >
-                  <div className={mixConcreteStyles.projectDescContainer5}>
-                    <div
-                      className={mixConcreteStyles.projectContainer5Tile1}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        position: "relative",
-                      }}
-                    >
-                      <Image
-                        alt=""
-                        id="project-image"
-                        src={project.images[0]}
-                        layout="fill"
-                        objectFit="cover"
-                        style={{ opacity: 0 }}
-                      ></Image>
-                    </div>
-                    <div className={mixConcreteStyles.projectContainer5Tile2}>
-                      <Image
-                        alt=""
-                        className="project-image"
-                        src={project.images[1]}
-                        height={0}
-                        width={0}
-                        sizes="100%"
-                        style={{ width: "100%", height: "100%" }}
-                      ></Image>
-                    </div>
-                    <div className={mixConcreteStyles.projectContainer5Tile3}>
-                      <Image
-                        alt=""
-                        src={project.images[2]}
-                        className="project-image"
-                        height={0}
-                        width={0}
-                        sizes="100%"
-                        style={{ width: "100%", height: "100%" }}
-                      ></Image>
-                    </div>
-                    <div className={mixConcreteStyles.projectContainer5Tile4}>
-                      {" "}
-                      <Image
-                        alt=""
-                        src={project.images[3]}
-                        className="project-image"
-                        height={0}
-                        width={0}
-                        sizes="100%"
-                        style={{ width: "100%", height: "100%" }}
-                      ></Image>
-                    </div>
-                    <div
-                      className={`${mixConcreteStyles.projectContainer5Tile5} bg-red flex items-center justify-center`}
-                    >
-                      <p className="text-white font-medium px-8">
-                        {locale == "en"
-                          ? project.englishName
-                          : project.arabicName}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
-          ) : project.images.length === 3 ? (
-            <div
-              onClick={closeProjectDetails}
-              id="myModal"
-              style={{
-                visibility: "hidden",
-                opacity: 0,
-                transition: "visibility 0.3s, opacity 0.3s ease-in",
-                position: "fixed",
-                zIndex: 1,
-                paddingTop: "4%",
-                left: 0,
-                top: 0,
-                width: "100%",
-                height: "100%",
-                overflow: "auto",
-                backgroundColor: "rgba(0,0,0,0.4)",
-              }}
-            >
-              {project ? (
-                <div
-                  className="modal-content"
-                  style={{
-                    backgroundColor: "#fefefe",
-                    margin: "auto",
-                    border: "1px solid #888",
-                    width: "80%",
-                    height: "70vh",
-                    boxShadow: "-20px 20px 50px 15px black",
-                  }}
-                >
-                  <div className={mixConcreteStyles.projectDescContainer4}>
-                    <div
-                      className={mixConcreteStyles.projectContainer4Tile1}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        position: "relative",
-                      }}
-                    >
-                      <Image
-                        alt=""
-                        src={project.images[0]}
-                        layout="fill"
-                        objectFit="cover"
-                      ></Image>
-                    </div>
-                    <div className={mixConcreteStyles.projectContainer4Tile2}>
-                      <Image
-                        alt=""
-                        src={project.images[1]}
-                        height={0}
-                        width={0}
-                        sizes="100%"
-                        style={{ width: "100%", height: "100%" }}
-                      ></Image>
-                    </div>
-                    <div className={mixConcreteStyles.projectContainer4Tile3}>
-                      <Image
-                        alt=""
-                        src={project.images[2]}
-                        height={0}
-                        width={0}
-                        sizes="100%"
-                        style={{ width: "100%", height: "100%" }}
-                      ></Image>
-                    </div>
-                    <div
-                      className={`${mixConcreteStyles.projectContainer4Tile4} bg-red flex items-center justify-center`}
-                    >
-                      <p className="text-white font-medium px-8">
-                        {locale == "en"
-                          ? project.englishName
-                          : project.arabicName}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
-          ) : (
-            <div
-              onClick={closeProjectDetails}
-              id="myModal"
-              style={{
-                visibility: "hidden",
-                opacity: 0,
-                transition: "visibility 0.3s, opacity 0.3s ease-in",
-                position: "fixed",
-                zIndex: 1,
-                paddingTop: "4%",
-                left: 0,
-                top: 0,
-                width: "100%",
-                height: "100%",
-                overflow: "auto",
-                backgroundColor: "rgba(0,0,0,0.4)",
-              }}
-            >
-              {project ? (
-                <div
-                  className="modal-content"
-                  style={{
-                    backgroundColor: "#fefefe",
-                    margin: "auto",
-                    border: "1px solid #888",
-                    width: "80%",
-                    height: "70vh",
-                    boxShadow: "-20px 20px 50px 15px black",
-                  }}
-                >
-                  <div className={mixConcreteStyles.projectDescContainer3}>
-                    <div
-                      className={mixConcreteStyles.projectContainer3Tile1}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        position: "relative",
-                      }}
-                    >
-                      <Image
-                        alt=""
-                        src={project.images[0]}
-                        layout="fill"
-                        objectFit="cover"
-                      ></Image>
-                    </div>
-                    <div className={mixConcreteStyles.projectContainer3Tile2}>
-                      <Image
-                        alt=""
-                        src={project.images[1]}
-                        height={0}
-                        width={0}
-                        sizes="100%"
-                        style={{ width: "100%", height: "100%" }}
-                      ></Image>
-                    </div>
-                    <div
-                      className={`${mixConcreteStyles.projectContainer4Tile4} bg-red flex items-center justify-center`}
-                    >
-                      <p className="text-white font-medium px-8">
-                        {locale == "en"
-                          ? project.englishName
-                          : project.arabicName}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
-          )}
-        </section>
-        <section className="h-80 px-16 py-16 flex flex-col justify-center align-start">
-          <div style={{ height: "4rem", backgroundColor: "white" }}></div>
-          {/* <h2 className="text-red uppercase text-3xl font-semibold">
+            ) : (
+              ""
+            )}
+          </div>
+        )}
+      </section>
+      <section className="h-40 flex flex-col justify-center align-start">
+        <div style={{ height: "2rem", backgroundColor: "white" }}></div>
+        {/* <h2 className="text-red uppercase text-3xl font-semibold">
           {t("brochure")}
         </h2>
         <p>{t("downloadBrochure")}</p>
@@ -814,8 +816,7 @@ function MixConcrete() {
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
         </ul> */}
-        </section>
-      </div>
+      </section>
       <footer className="text-white" id="contact-us">
         <div
           id="top-footer"
@@ -825,6 +826,11 @@ function MixConcrete() {
             <h1 className="lg:text-3xl text-xl font-bold ">
               {t("mixConcrete")}
             </h1>
+            {/* <Image
+              src="/images/mix-concrete/white-logo.png"
+              width={260}
+              height={30}
+              alt="Mix Concrete White Logo" */}
           </div>
           {/* <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
             <h2>{t("followUs")}</h2>
