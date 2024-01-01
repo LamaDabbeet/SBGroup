@@ -344,15 +344,12 @@ function SBD() {
           </div>
         </div>
       </section>
-      <section id="sbd-services" className="lg:w-2/3  w-full m-auto px-8 py-16">
+      <section id="sbd-services" className="lg:w-2/3  w-full m-auto py-16">
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
           {t("services")}
         </h2>
         <div className="lg:flex lg:justify-between lg:space-x-12">
-          <div
-            className="lg:w-1/3 w-full lg:mb-0 mb-20"
-            id="first-arabic-service-block"
-          >
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
             <Image
               src="/images/sbd/services/creative-design.jpg"
               alt="Creative Design"
@@ -365,7 +362,7 @@ function SBD() {
             <p>{t("creativeDesignDesc")}</p>
           </div>
 
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
             <Image
               src="/images/sbd/services/developments.jpg"
               alt="Developments"
@@ -778,10 +775,10 @@ function SBD() {
       <footer className="text-white ">
         <div
           id="top-footer"
-          className={`bg-green lg:flex lg:justify-between`}
+          className={`bg-green flex`}
           style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full h-100 pl-12 flex items-center">
+          <div className="lg:w-2/3 w-full h-100 ps-12 flex items-center">
             <Image
               src="/images/sbd/white-logo.png"
               height={70}

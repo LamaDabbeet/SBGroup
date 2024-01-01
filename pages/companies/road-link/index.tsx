@@ -49,6 +49,7 @@ function RoadLink() {
       //   "Company Projects: Transport sand and gypsum from a number of quarries in rural Damascuse and rural Swaidaa to cement factorys",
       arabicName: "نقل الرمل والجبص",
       englishName: "Gypsum Transportation",
+
       images: [
         "/images/road-link/projects/gypsum-transportation/main-image.jpg",
         "/images/road-link/projects/gypsum-transportation/trans1.jpg",
@@ -380,16 +381,13 @@ function RoadLink() {
       </section>
       <section
         id="road-link-services"
-        className="lg:w-2/3  w-full m-auto px-8 py-16"
+        className="lg:w-2/3  w-full m-auto py-16"
       >
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
           {t("services")}
         </h2>
         <div className="lg:flex lg:justify-between lg:space-x-12">
-          <div
-            className="lg:w-1/3 w-full lg:mb-0 mb-20"
-            id="first-arabic-service-block"
-          >
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
             <Image
               src="/images/road-link/services/transport.jpg"
               alt="Transportation"
@@ -402,7 +400,7 @@ function RoadLink() {
             <p>{t("transportaionDesc")}</p>
           </div>
 
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
             <Image
               src="/images/road-link/services/quarries.jpg"
               alt="Quarries Works"
@@ -829,10 +827,10 @@ function RoadLink() {
       <footer className="text-white" id="contact-us">
         <div
           id="top-footer"
-          className={`bg-yellow  lg:flex lg:justify-between`}
+          className={`bg-yellow flex`}
           style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full h-100 pl-12">
+          <div className="lg:w-2/3 w-full h-100 ps-12">
             <Image
               src="/images/road-link/white-logo.png"
               height={120}

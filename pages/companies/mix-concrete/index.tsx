@@ -362,16 +362,13 @@ function MixConcrete() {
         </section>
         <section
           id="mix-concrete-services"
-          className="lg:w-2/3  w-full m-auto px-8 py-16"
+          className="lg:w-2/3  w-full m-auto py-16"
         >
           <h2 className="text-center font-semibold uppercase text-2xl mb-12">
             {t("services")}
           </h2>
           <div className="lg:flex lg:justify-between lg:space-x-12">
-            <div
-              className="lg:w-1/3 w-full lg:mb-0 mb-20"
-              id="first-arabic-service-block"
-            >
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
               <Image
                 src="/images/mix-concrete/services/quality-control1.jpg"
                 alt="Quality Control"
@@ -386,7 +383,7 @@ function MixConcrete() {
               <p>{t("qualityControlDesc")}</p>
             </div>
 
-            <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
               <Image
                 src="/images/mix-concrete/services/delivery-services1.jpg"
                 alt="Delivery Services"
@@ -820,10 +817,10 @@ function MixConcrete() {
       <footer className="text-white" id="contact-us">
         <div
           id="top-footer"
-          className={`bg-red  lg:flex lg:justify-between`}
+          className={`bg-red flex`}
           style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full h-100 pl-12">
+          <div className="lg:w-2/3 w-full h-100 ps-12 ">
             <Image
               src="/images/mix-concrete/white-logo1.png"
               height={120}

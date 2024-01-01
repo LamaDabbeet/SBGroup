@@ -190,8 +190,8 @@ export default function Home() {
         </h2>
         <div className="flex justify-center">
           <div id="about-content" style={{ width: "80%" }}>
-            <p>{t("aboutSBGDesc1")}</p>
-            <p>{t("aboutSBGDesc2")}</p>
+            <p className="text-lg">{t("aboutSBGDesc1")}</p>
+            <p className="text-lg">{t("aboutSBGDesc2")}</p>
           </div>
         </div>
       </section>
@@ -208,7 +208,7 @@ export default function Home() {
               modules={[Autoplay]}
               className="mySwiper"
             >
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
                   <div className="w-full lg:w-1/2 flex items-center md:order-1 order-2 mt-12 md:mt-0">
                     <p
@@ -232,7 +232,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <SwiperSlide>
                 <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
                   <div className="w-full lg:w-1/2 flex  items-center md:order-1 order-2 mt-12 md:mt-0">
@@ -243,7 +243,7 @@ export default function Home() {
                       Our Values
                     </h2> */}
                     <p
-                      className="text-primary font-regular text-justify mb-12 lg:mb-0"
+                      className="text-primary font-regular text-justify mb-12 lg:mb-0 text-lg"
                       style={{ width: "90%" }}
                     >
                       {t("ourValuesDesc")}
@@ -268,13 +268,13 @@ export default function Home() {
                 <div className="flex align-center justify-center lg:flex-row flex-col lg:m-28 m-8">
                   <div className="w-full lg:w-1/2 flex items-center md:order-1 order-2 mt-12 md:mt-0">
                     <p
-                      className="text-primary font-regular text-justify mb-12 lg:mb-0"
+                      className="text-primary font-regular text-justify mb-12 lg:mb-0 text-lg"
                       style={{ width: "90%" }}
                     >
                       {t("scopOfWorkDesc")}
                     </p>
                   </div>
-                  <div className="w-full lg:w-1/2 md:order-2 order-1 ">
+                  <div className="w-full lg:w-1/2 md:order-2 order-1">
                     <Image
                       src="/images/homepage/about/about-3.jpg"
                       alt=""
@@ -485,9 +485,9 @@ export default function Home() {
       </section>
       <section
         id="contact-us"
-        className="h-80 px-16 py-16 flex flex-col justify-center align-start"
+        className="h-40 flex flex-col justify-center align-start"
       >
-        <h2 className="text-primary uppercase text-3xl font-semibold">
+        {/* <h2 className="text-primary uppercase text-3xl font-semibold">
           {t("brochure")}
         </h2>
         <p>{t("downloadBrochure")}</p>
@@ -500,7 +500,7 @@ export default function Home() {
             {t("english")}
             <FontAwesomeIcon icon={faDownload} className="ms-2" />
           </li>
-        </ul>
+        </ul> */}
       </section>
     </>
   );

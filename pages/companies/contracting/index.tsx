@@ -58,6 +58,7 @@ function ContractingCompany() {
     {
       arabicName: "جمعية المستقلة السكنية",
       englishName: "Al-Mostaqella Association",
+
       images: [
         "/images/contracting/projects/al-mostaqella/mostaqella-2.jpg",
         "/images/contracting/projects/al-mostaqella/mostaqella-3.jpg",
@@ -112,7 +113,7 @@ function ContractingCompany() {
       } else {
         modalContent.style.width = "60%";
       }
-      modalContent.style.height = "40vh";
+      modalContent.style.height = "60vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -342,16 +343,13 @@ function ContractingCompany() {
       </section>
       <section
         id="contracting-services"
-        className="lg:w-2/3  w-full m-auto px-8 py-16"
+        className="lg:w-2/3  w-full m-auto py-16"
       >
         <h2 className="text-center font-semibold uppercase text-2xl mb-12">
           {t("services")}
         </h2>
-        <div className="lg:flex lg:justify-between lg:space-x-12">
-          <div
-            className="lg:w-1/3 w-full lg:mb-0 mb-20"
-            id="first-arabic-service-block"
-          >
+        <div className="lg:flex lg:justify-between">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
             <Image
               src="/images/contracting/services/constructing-design.jpg"
               alt="Constructing Design"
@@ -366,7 +364,7 @@ function ContractingCompany() {
             <p>{t("constructionDesignDesc")}</p>
           </div>
 
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
             <Image
               src="/images/contracting/services/build.jpg"
               alt="Build"
@@ -567,7 +565,7 @@ function ContractingCompany() {
                       style={{ width: "100%", height: "100%" }}
                     ></Image>
                   </div>
-                  <div className={contractingStyles.projectContainer5Tile3}>
+                  <div className={contractingStyles.projectContainer5Tile3} >
                     <Image
                       alt=""
                       src={project.images[2]}
@@ -782,10 +780,10 @@ function ContractingCompany() {
       <footer className="text-white" id="contact-us">
         <div
           id="top-footer"
-          className={`bg-cyan lg:flex lg:justify-between`}
+          className={`bg-cyan flex`}
           style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full h-100 pl-12">
+          <div className="lg:w-2/3 w-full h-100 ps-12">
             <Image
               src="/images/contracting/white-logo.png"
               height={120}
@@ -794,7 +792,7 @@ function ContractingCompany() {
               alt="Mix Concrete White Logo"
             />
           </div>
-          
+
           {/* <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
             <h2>{t("followUs")}</h2>
             <ul className="flex mt-2">
