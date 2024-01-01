@@ -823,7 +823,7 @@ function MixConcrete() {
           className={`bg-red  lg:flex lg:justify-between`}
           style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full h-100 ml-12">
+          <div className="lg:w-2/3 w-full h-100 pl-12">
             <Image
               src="/images/mix-concrete/white-logo1.png"
               height={120}

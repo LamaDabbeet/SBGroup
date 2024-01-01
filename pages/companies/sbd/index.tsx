@@ -781,7 +781,7 @@ function SBD() {
           className={`bg-green lg:flex lg:justify-between`}
           style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full h-100 ml-12 flex items-center">
+          <div className="lg:w-2/3 w-full h-100 pl-12 flex items-center">
             <Image
               src="/images/sbd/white-logo.png"
               height={70}

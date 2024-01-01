@@ -832,7 +832,7 @@ function RoadLink() {
           className={`bg-yellow  lg:flex lg:justify-between`}
           style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full h-100 ml-12">
+          <div className="lg:w-2/3 w-full h-100 pl-12">
             <Image
               src="/images/road-link/white-logo.png"
               height={120}
