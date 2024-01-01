@@ -820,17 +820,17 @@ function MixConcrete() {
       <footer className="text-white" id="contact-us">
         <div
           id="top-footer"
-          className={`bg-red px-12 py-16 lg:flex lg:justify-between`}
+          className={`bg-red  lg:flex lg:justify-between`}
+          style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full">
-            <h1 className="lg:text-3xl text-xl font-bold ">
-              {t("mixConcrete")}
-            </h1>
-            {/* <Image
-              src="/images/mix-concrete/white-logo.png"
-              width={260}
-              height={30}
-              alt="Mix Concrete White Logo" */}
+          <div className="lg:w-2/3 w-full h-100 ml-12">
+            <Image
+              src="/images/mix-concrete/white-logo1.png"
+              height={120}
+              width={120}
+              style={{ objectFit: "contain" }}
+              alt="Mix Concrete White Logo"
+            />
           </div>
           {/* <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
             <h2>{t("followUs")}</h2>

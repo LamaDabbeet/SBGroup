@@ -118,7 +118,7 @@ function SBD() {
   const sliderImages = [
     {
       mainImage: "/images/sbd/slider/slide-1.png",
-      mobileImage: "/images/sbd/slider/mobile/slider-1.jpg",
+      mobileImage: "/images/sbd/slider/mobile/slide-1.jpg",
     },
     {
       mainImage: "/images/sbd/slider/slide-2.png",
@@ -778,10 +778,17 @@ function SBD() {
       <footer className="text-white ">
         <div
           id="top-footer"
-          className={`bg-green px-12 py-16 lg:flex lg:justify-between`}
+          className={`bg-green lg:flex lg:justify-between`}
+          style={{ height: "120px" }}
         >
-          <div className="lg:w-2/3 w-full">
-            <h1 className="lg:text-3xl text-xl font-bold ">{t("sbd")}</h1>
+          <div className="lg:w-2/3 w-full h-100 ml-12 flex items-center">
+            <Image
+              src="/images/sbd/white-logo.png"
+              height={70}
+              width={100}
+              style={{ objectFit: "contain" }}
+              alt="Mix Concrete White Logo"
+            />
           </div>
           {/* <div className="lg:w-1/3 w-full mt-8 lg:mt-0">
             <h2>{t("followUs")}</h2>

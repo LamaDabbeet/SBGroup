@@ -2,7 +2,6 @@ import CompaniesFooter from "../companies-footer";
 import CompaniesNavbar from "../companies-navbar";
 
 export default function CompaniesLayout({ children }: any) {
-  debugger;
   return (
     <>
       {/* <CompaniesNavbar
