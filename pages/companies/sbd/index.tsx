@@ -43,20 +43,20 @@ function SBD() {
       arabicName: "Dummar Heights Interior",
       englishName: "Dummar Heights Interior",
       images: [
-        "/images/sbd/projects/dummar-heights-interior/1.jpg",
-        "/images/sbd/projects/dummar-heights-interior/2.jpg",
-        "/images/sbd/projects/dummar-heights-interior/3.jpg",
-        "/images/sbd/projects/dummar-heights-interior/4.jpg",
+        "/images/sbd/projects/dummar-heights-interior/1-min.jpg",
+        "/images/sbd/projects/dummar-heights-interior/2-min.jpg",
+        "/images/sbd/projects/dummar-heights-interior/3-min.jpg",
+        "/images/sbd/projects/dummar-heights-interior/4-min.jpg",
       ],
     },
     {
       arabicName: "Dummar Heights Exterior",
       englishName: "Dummar Heights Exterior",
       images: [
-        "/images/sbd/projects/dummar-heights-exterior/1.jpg",
-        "/images/sbd/projects/dummar-heights-exterior/2.jpg",
-        "/images/sbd/projects/dummar-heights-exterior/3.jpg",
-        "/images/sbd/projects/dummar-heights-exterior/4.jpg",
+        "/images/sbd/projects/dummar-heights-exterior/1-min.jpg",
+        "/images/sbd/projects/dummar-heights-exterior/2-min.jpg",
+        "/images/sbd/projects/dummar-heights-exterior/3-min.jpg",
+        "/images/sbd/projects/dummar-heights-exterior/4-min.jpg",
       ],
     },
     {
@@ -73,10 +73,30 @@ function SBD() {
       arabicName: "Monte View Exterior",
       englishName: "Monte View Exterior",
       images: [
-        "/images/sbd/projects/mont-view-exterior/1.jpg",
-        "/images/sbd/projects/mont-view-exterior/2.jpg",
-        "/images/sbd/projects/mont-view-exterior/3.jpg",
-        "/images/sbd/projects/mont-view-exterior/4.jpg",
+        "/images/sbd/projects/mont-view-exterior/1-min.jpg",
+        "/images/sbd/projects/mont-view-exterior/2-min.jpg",
+        "/images/sbd/projects/mont-view-exterior/3-min.jpg",
+        "/images/sbd/projects/mont-view-exterior/4-min.jpg",
+      ],
+    },
+    {
+      arabicName: "Monte View Project",
+      englishName: "Monte View Project",
+      images: [
+        "/images/sbd/projects/mont-view-project/1.jpg",
+        "/images/sbd/projects/mont-view-project/2.jpg",
+        "/images/sbd/projects/mont-view-project/3.jpg",
+        "/images/sbd/projects/mont-view-project/4.jpg",
+      ],
+    },
+    {
+      arabicName: "Dummar Heights Project",
+      englishName: "Dummar Heights Project",
+      images: [
+        "/images/sbd/projects/dummar-heights-project/1.jpg",
+        "/images/sbd/projects/dummar-heights-project/2.jpg",
+        "/images/sbd/projects/dummar-heights-project/3.jpg",
+        "/images/sbd/projects/dummar-heights-project/4.jpg",
       ],
     },
   ];
@@ -117,10 +137,6 @@ function SBD() {
   }
   const sliderImages = [
     {
-      mainImage: "/images/sbd/slider/slide-1.png",
-      mobileImage: "/images/sbd/slider/mobile/slide-1.jpg",
-    },
-    {
       mainImage: "/images/sbd/slider/slide-2.png",
       mobileImage: "/images/sbd/slider/mobile/slide-2.jpg",
     },
@@ -130,7 +146,7 @@ function SBD() {
     },
     {
       mainImage: "/images/sbd/slider/slide-4.png",
-      mobileImage: "/images/sbd/slider/mobile/slide-2.jpg",
+      mobileImage: "/images/sbd/slider/mobile/slide-4.jpg",
     },
   ];
   return (
@@ -481,7 +497,7 @@ function SBD() {
           <SwiperSlide>
             <div className={sbdStyles.container}>
               <Image
-                src="/images/sbd/projects/mont-view-exterior/1.jpg"
+                src="/images/sbd/projects/mont-view-exterior/1-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -493,6 +509,44 @@ function SBD() {
                 onClick={() => openProjectDetails(3)}
               >
                 <div className={sbdStyles.text}>{t("monteViewExterior")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={sbdStyles.container}>
+              <Image
+                src="/images/sbd/projects/mont-view-project/1.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={sbdStyles.image}
+              />
+
+              <div
+                className={sbdStyles.overlay}
+                onClick={() => openProjectDetails(4)}
+              >
+                <div className={sbdStyles.text}>{t("monteViewProject")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={sbdStyles.container}>
+              <Image
+                src="/images/sbd/projects/dummar-heights-project/1.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={sbdStyles.image}
+              />
+
+              <div
+                className={sbdStyles.overlay}
+                onClick={() => openProjectDetails(5)}
+              >
+                <div className={sbdStyles.text}>
+                  {t("dummarHeightsProject")}
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -781,7 +835,7 @@ function SBD() {
           <div className="lg:w-2/3 w-full h-100 ps-12 flex items-center">
             <Image
               src="/images/sbd/white-logo.png"
-              height={70}
+              height={55}
               width={100}
               style={{ objectFit: "contain" }}
               alt="Mix Concrete White Logo"

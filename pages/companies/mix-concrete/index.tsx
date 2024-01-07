@@ -6,8 +6,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import mixConcreteStyles from "./mix-concrete.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -15,12 +13,6 @@ import { useRouter } from "next/router";
 import Header from "@/components/common/header";
 import Link from "next/link";
 import { Transition } from "@headlessui/react";
-import {
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
 import LocaleSwitcher from "../../../components/common/lanaguage-detector";
 
 function MixConcrete() {
@@ -40,53 +32,63 @@ function MixConcrete() {
 
   const projects = [
     {
-      arabicName: "الهيكل البيتوني لمدينة اب تاون،مشروع دمر",
-      englishName: "Up Town -Dummar Project",
+      arabicName:
+        " مشروع مدينة أب تاون :تنفيذ الهيكل البيتوني لمدينة (أب تاون) الترفيهية في مشروع دمر-دمشق.",
+      englishName:
+        " UP Town City Project : The concrete structure of “Up Town city” in Mashrou’ Dummar- Damascus.",
       images: [
-        "/images/mix-concrete/projects/up-town/1.jpg",
-        "/images/mix-concrete/projects/up-town/2.jpg",
-        "/images/mix-concrete/projects/up-town/3.jpg",
-        "/images/mix-concrete/projects/up-town/4.jpg",
+        "/images/mix-concrete/projects/up-town/1-min.jpg",
+        "/images/mix-concrete/projects/up-town/2-min.jpg",
+        "/images/mix-concrete/projects/up-town/3-min.jpg",
+        "/images/mix-concrete/projects/up-town/4-min.jpg",
       ],
     },
     {
-      arabicName: "جمعية مجلس الشعب،مشروع دمر",
-      englishName: "Majlis Al-Shaab -Dummar Project",
+      arabicName:
+        " مشروع جمعية أعضاء مجلس الشعب : تنفيذ أعمال الصب لستة أبراج لجمعية أعضاء مجلس الشعب في مشروع دمر-دمشق      ",
+      englishName:
+        "The Association of The Parliament Project: Concrete works of six towers for the association of the Parliament in Mashrou’ Dummar- Damascus.",
       images: [
-        "/images/mix-concrete/projects/majlis-alshaab/1.jpg",
-        "/images/mix-concrete/projects/majlis-alshaab/2.jpg",
-        "/images/mix-concrete/projects/majlis-alshaab/3.jpg",
-        "/images/mix-concrete/projects/majlis-alshaab/4.jpg",
+        "/images/mix-concrete/projects/majlis-alshaab/1-min.jpg",
+        "/images/mix-concrete/projects/majlis-alshaab/2-min.jpg",
+        "/images/mix-concrete/projects/majlis-alshaab/3-min.jpg",
+        "/images/mix-concrete/projects/majlis-alshaab/4-min.jpg",
       ],
     },
     {
-      arabicName: "مشروع واحة المهندسين -منطقة العراقيات",
-      englishName: "Wahet Al-Mohndseen -Aleraqeeat",
+      arabicName:
+        "مشروع جمعية خزانة تقاعد المهندسين : تنفيذ أعمال الصب لثلاثة عشر برج لجمعية خزانة تقاعد المهندسين في منطقة جديدة عرطوز-دمشق.",
+      englishName:
+        " Engineers' Retirement Cabinet Association project: Concrete works of thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz- Damascus.",
       images: [
-        "/images/mix-concrete/projects/jdidat-artouz/1.jpg",
-        "/images/mix-concrete/projects/jdidat-artouz/2.jpg",
-        "/images/mix-concrete/projects/jdidat-artouz/3.jpg",
-        "/images/mix-concrete/projects/jdidat-artouz/4.jpg",
+        "/images/mix-concrete/projects/jdidat-artouz/1-min.jpg",
+        "/images/mix-concrete/projects/jdidat-artouz/2-min.jpg",
+        "/images/mix-concrete/projects/jdidat-artouz/3-min.jpg",
+        "/images/mix-concrete/projects/jdidat-artouz/4-min.jpg",
       ],
     },
     {
-      arabicName: " 27أبراج الجزيرة",
-      englishName: "27 Island Towers-Dummar Project",
+      arabicName:
+        "أبراج دمر : تنفيذ أعمال الصب  لبرجيين سكنيين من مشروع أبراج دمر-دمشق",
+      englishName:
+        " Dummar Heights towers : Concrete works of two towers for Dummar heights project in Mashrou’ Dommar- Damascus.",
       images: [
-        "/images/mix-concrete/projects/dummar-27/1.jpg",
-        "/images/mix-concrete/projects/dummar-27/2.jpg",
-        "/images/mix-concrete/projects/dummar-27/3.jpg",
-        "/images/mix-concrete/projects/dummar-27/4.jpg",
+        "/images/mix-concrete/projects/dummar-27/1-min.jpg",
+        "/images/mix-concrete/projects/dummar-27/2-min.jpg",
+        "/images/mix-concrete/projects/dummar-27/3-min.jpg",
+        "/images/mix-concrete/projects/dummar-27/4-min.jpg",
       ],
     },
     {
-      arabicName: "جمعية المنهل السكنية",
-      englishName: "Al-Manhel project",
+      arabicName:
+        "مشروع جمعية المنهل السكنية : تنفيذ أعمال الصب لجمعية المنهل السكنية في منطقة ضاحية الفيحاء-دمشق",
+      englishName:
+        "Al-Manhal Housing Association Project: Concrete works of Al-Manhal housing association – Mashrou’ Dummar- Damascus.",
       images: [
-        "/images/mix-concrete/projects/al-manahel/1.jpg",
-        "/images/mix-concrete/projects/al-manahel/2.jpg",
-        "/images/mix-concrete/projects/al-manahel/3.jpg",
-        "/images/mix-concrete/projects/al-manahel/4.jpg",
+        "/images/mix-concrete/projects/al-manahel/1-min.jpg",
+        "/images/mix-concrete/projects/al-manahel/2-min.jpg",
+        "/images/mix-concrete/projects/al-manahel/3-min.jpg",
+        "/images/mix-concrete/projects/al-manahel/4-min.jpg",
       ],
     },
   ];
@@ -106,7 +108,7 @@ function MixConcrete() {
       } else {
         modalContent.style.width = "60%";
       }
-      modalContent.style.height = "40vh";
+      modalContent.style.height = "70vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -142,10 +144,6 @@ function MixConcrete() {
       mainImage: "/images/mix-concrete/slider/slider-4.jpg",
       mobileImage: "/images/mix-concrete/slider/mobile/slider-4.jpg",
     },
-    // {
-    //   mainImage: "/images/mix-concrete/slider/slider-5.jpg",
-    //   mobileImage: "/images/mix-concrete/slider/mobile/slider-5.jpg",
-    // },
   ];
   return (
     <>
@@ -451,7 +449,7 @@ function MixConcrete() {
           <SwiperSlide>
             <div className={mixConcreteStyles.container}>
               <Image
-                src="/images/mix-concrete/projects/up-town/1.jpg"
+                src="/images/mix-concrete/projects/up-town/1-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -469,7 +467,7 @@ function MixConcrete() {
           <SwiperSlide>
             <div className={mixConcreteStyles.container}>
               <Image
-                src="/images/mix-concrete/projects/majlis-alshaab/1.jpg"
+                src="/images/mix-concrete/projects/majlis-alshaab/1-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -488,7 +486,7 @@ function MixConcrete() {
           <SwiperSlide>
             <div className={mixConcreteStyles.container}>
               <Image
-                src="/images/mix-concrete/projects/jdidat-artouz/1.jpg"
+                src="/images/mix-concrete/projects/jdidat-artouz/1-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -508,7 +506,7 @@ function MixConcrete() {
           <SwiperSlide>
             <div className={mixConcreteStyles.container}>
               <Image
-                src="/images/mix-concrete/projects/dummar-27/1.jpg"
+                src="/images/mix-concrete/projects/dummar-27/1-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -526,7 +524,7 @@ function MixConcrete() {
           <SwiperSlide>
             <div className={mixConcreteStyles.container}>
               <Image
-                src="/images/mix-concrete/projects/al-manahel/1.jpg"
+                src="/images/mix-concrete/projects/al-manahel/1-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -574,7 +572,114 @@ function MixConcrete() {
                   width: 0,
                 }}
               >
-                <div className={mixConcreteStyles.projectDescContainer5}>
+                <div style={{ display: "flex", width: "100%", height: "100%" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "70%",
+                      marginInlineEnd: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        height: "66.8%",
+                        width: "100%",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        id="project-image"
+                        src={project.images[0]}
+                        layout="fill"
+                        sizes="100vw"
+                        style={{
+                          opacity: 0,
+                        }}
+                      ></Image>
+                    </div>
+                    <div
+                      className="bg-red"
+                      style={{
+                        marginTop: "10px",
+                        height: "33.2%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        color: "white",
+                        padding: "25px",
+                      }}
+                    >
+                      <p
+                        className="project-image "
+                        style={{ wordWrap: "break-word", width: "100%" }}
+                      >
+                        {locale == "en"
+                          ? project.englishName
+                          : project.arabicName}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "30%",
+                      height: "100%",
+                    }}
+                  >
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[1]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>
+                    </div>
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[2]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>{" "}
+                    </div>
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                      }}
+                    >
+                      {" "}
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[3]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>{" "}
+                    </div>
+                  </div>
+                </div>
+                {/* <div className={mixConcreteStyles.projectDescContainer5}>
                   <div
                     className={mixConcreteStyles.projectContainer5Tile1}
                     style={{
@@ -635,7 +740,7 @@ function MixConcrete() {
                         : project.arabicName}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             ) : (
               ""

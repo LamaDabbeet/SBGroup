@@ -325,7 +325,7 @@ export default function Home() {
           <SwiperSlide className="">
             <Link href="/companies/contracting">
               <Image
-                src="/images/homepage/sectors/transportation.png"
+                src="/images/homepage/sectors/transportation1.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -335,7 +335,7 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
             <Image
-              src="/images/homepage/sectors/mix-concrete.png"
+              src="/images/homepage/sectors/mix-concrete1.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -344,7 +344,7 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
             <Image
-              src="/images/homepage/sectors/quarries-work.png"
+              src="/images/homepage/sectors/quarries-work1.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -355,7 +355,7 @@ export default function Home() {
             <Link href="/companies/contracting">
               {" "}
               <Image
-                src="/images/homepage/sectors/contracting.png"
+                src="/images/homepage/sectors/contracting1.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -365,7 +365,7 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
             <Image
-              src="/images/homepage/sectors/development.png"
+              src="/images/homepage/sectors/development1.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"
@@ -374,7 +374,7 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide className="hover:cursor-pointer">
             <Image
-              src="/images/homepage/sectors/design.png"
+              src="/images/homepage/sectors/design1.jpg"
               layout="fill"
               objectFit="cover"
               alt="Project"

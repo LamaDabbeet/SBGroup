@@ -47,42 +47,42 @@ function RoadLink() {
       //   "من أهم أعمال الشركة تقديم خدمات نقل الرمل و الجص من العديد من المقالع في ريف دمشق و ريف السويداء الى مصانع الاسمنت.",
       // englishName:
       //   "Company Projects: Transport sand and gypsum from a number of quarries in rural Damascuse and rural Swaidaa to cement factorys",
-      arabicName: "نقل الرمل والجبص",
-      englishName: "Gypsum Transportation",
+      arabicName: "بواخر الفحم الحجري",
+      englishName: "Coal Ship",
 
       images: [
-        "/images/road-link/projects/gypsum-transportation/main-image.jpg",
-        "/images/road-link/projects/gypsum-transportation/trans1.jpg",
-        "/images/road-link/projects/gypsum-transportation/trans2.jpg",
-        "/images/road-link/projects/gypsum-transportation/trans3.jpg",
+        "/images/road-link/projects/coal-ship/1.jpg",
+        "/images/road-link/projects/coal-ship/2.jpg",
+        "/images/road-link/projects/coal-ship/3.jpg",
+        "/images/road-link/projects/coal-ship/4.jpg",
       ],
     },
     {
-      arabicName: "الصخور",
-      englishName: "Rocks Industrial",
+      arabicName: "Marbel",
+      englishName: "Marbel Quarries",
       // arabicName:
       //   "الحجر و الرخام الوطني : حيث قمنا باستخراج كميات- كبيرة من مقالع مرخصة في الرحيبة و حماه و مصيافكما تمت تلبية متطلبات الزبائن من كافة أنواعالخامات بشكل واسع كالتدمري و الرحيباني و البازلت و الحجر الحلبي و السكري و اللاذقاني .......الخ, /n تختلف مصادر الشركة من الحجر و الرخام و الغرانيت - وفقاً لاحتياجات العملاء و متطلبات الأسواق",
       // englishName:
       //   "Company’s stone ,marble, and graniteresources vary according to customers andmarkets requirements./n Local stone and marble: where we have  extracted large quantities of licensed quarriesin Al Rahiba and MasiafAs customers requirement of all types of rawmaterials have been met extensively such asTadmury Basult,Aleppo stone ,SukkaryLattakia etc",
       images: [
-        "/images/road-link/projects/rocks/main-image.jpg",
-        "/images/road-link/projects/rocks/rocks-2.jpg",
-        "/images/road-link/projects/rocks/rocks-3.jpg",
-        "/images/road-link/projects/rocks/rocks-1.jpg",
+        "/images/road-link/projects/marbel/1.jpg",
+        "/images/road-link/projects/marbel/2.jpg",
+        "/images/road-link/projects/marbel/3.jpg",
+        "/images/road-link/projects/marbel/4.jpg",
       ],
     },
     {
-      arabicName: "نقل الطف البركاني",
-      englishName: "Pozlana Transportation",
+      arabicName: "Transportaion And Logistics",
+      englishName: "Transportaion And Logistics",
       // arabicName:
       //   "من أهم أعمال الشركة تقديم خدمات نقل مادة الطف البركاني من العديد من المقالع في ريف دمشق و ريف السويداء الى مصانع الاسمنت.",
       // englishName:
       //   "Company Projects: Transport pozlana from a number of quarries in rural Damascuse and rural Swaidaa  to cement factorys",
       images: [
-        "/images/road-link/projects/pozlana-transportation/main-image.jpg",
-        "/images/road-link/projects/pozlana-transportation/poz-trans1.jpg",
-        "/images/road-link/projects/pozlana-transportation/poz-trans2.jpg",
-        "/images/road-link/projects/pozlana-transportation/poz-trans3.jpg",
+        "/images/road-link/projects/transport/1.jpg",
+        "/images/road-link/projects/transport/2.jpg",
+        "/images/road-link/projects/transport/3.jpg",
+        "/images/road-link/projects/transport/4.jpg",
       ],
     },
     {
@@ -106,10 +106,10 @@ function RoadLink() {
       // englishName:
       //   "Contracting with Al-Badia Cement Company to provide quarrying services from the extraction, crushing and transfer of limestone and basalt stone from Al-Badia Cement Factory's quarries in Khan Abu Shammat to raw materials' crushers and storage areas in the factoryIn addition to providing the necessary geologicalservices and engineeringconsultancy to complete the work",
       images: [
-        "/images/road-link/projects/quarries/main-image.jpg",
-        "/images/road-link/projects/quarries/quar1.jpg",
-        "/images/road-link/projects/quarries/quar4.jpg",
-        "/images/road-link/projects/quarries/quar3.jpg",
+        "/images/road-link/projects/quarries/1.jpg",
+        "/images/road-link/projects/quarries/2.jpg",
+        "/images/road-link/projects/quarries/3.jpg",
+        "/images/road-link/projects/quarries/4.jpg",
       ],
     },
   ];
@@ -482,7 +482,7 @@ function RoadLink() {
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/rocks/main.jpg"
+                src="/images/road-link/projects/marbel/1.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -492,14 +492,14 @@ function RoadLink() {
                 className={roadLinkStyles.overlay}
                 onClick={() => openProjectDetails(1)}
               >
-                <div className={roadLinkStyles.text}>{t("rockIndustrial")}</div>
+                <div className={roadLinkStyles.text}>{t("marbel")}</div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/pozlana-transportation/main-image.jpg"
+                src="/images/road-link/projects/transport/1.jpg"
                 layout="fill"
                 alt="Project"
                 objectFit="cover"
@@ -511,7 +511,7 @@ function RoadLink() {
                 onClick={() => openProjectDetails(2)}
               >
                 <div className={roadLinkStyles.text}>
-                  {t("transportPozlana")}
+                  {t("transportAndLogistic")}
                 </div>
               </div>
             </div>
@@ -536,7 +536,7 @@ function RoadLink() {
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/quarries/main.JPG"
+                src="/images/road-link/projects/quarries/1.jpg"
                 layout="fill"
                 alt="Project"
                 className={roadLinkStyles.image}

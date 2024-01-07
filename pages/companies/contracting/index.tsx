@@ -58,7 +58,6 @@ function ContractingCompany() {
     {
       arabicName: "جمعية المستقلة السكنية",
       englishName: "Al-Mostaqella Association",
-
       images: [
         "/images/contracting/projects/al-mostaqella/mostaqella-2.jpg",
         "/images/contracting/projects/al-mostaqella/mostaqella-3.jpg",
@@ -87,13 +86,63 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "مشروع دمر - الجزيرة 27",
-      englishName: "Dummar Project-27",
+      arabicName: "كلية الآداب",
+      englishName: "Faculty of Literatures",
       images: [
-        "/images/contracting/projects/27-towers/27-towers-1.jpg",
-        "/images/contracting/projects/27-towers/27-towers-2.jpg",
-        "/images/contracting/projects/27-towers/27-towers-3.jpg",
-        "/images/contracting/projects/27-towers/27-towers-4.jpg",
+        "/images/contracting/projects/adab/adab-1.jpg",
+        "/images/contracting/projects/adab/adab-2.jpg",
+        "/images/contracting/projects/adab/adab-3.jpg",
+        "/images/contracting/projects/adab/adab-4.jpg",
+      ],
+    },
+    {
+      arabicName: "ماسة مول",
+      englishName: "Massa Mall",
+      images: [
+        "/images/contracting/projects/massa-mall/massa-1.jpg",
+        "/images/contracting/projects/massa-mall/massa-2.jpg",
+        "/images/contracting/projects/massa-mall/massa-3.jpg",
+        "/images/contracting/projects/massa-mall/massa-4.jpg",
+      ],
+    },
+    {
+      arabicName: "مشفي المواساة الجديد",
+      englishName: "New Mowasat Hospital’s Emergency Building",
+      images: [
+        "/images/contracting/projects/mwasat/mwasat-1.jpg",
+        "/images/contracting/projects/mwasat/mwasat-2.jpg",
+        "/images/contracting/projects/mwasat/mwasat-3.jpg",
+        "/images/contracting/projects/mwasat/mwasat-4.jpg",
+      ],
+    },
+    {
+      arabicName: "المركز الطبي بحماة",
+      englishName: "Hama Medical Center",
+      images: [
+        "/images/contracting/projects/hama-medical/hama-1.jpg",
+        "/images/contracting/projects/hama-medical/hama-2.jpg",
+        "/images/contracting/projects/hama-medical/hama-3.jpg",
+        "/images/contracting/projects/hama-medical/hama-4.jpg",
+      ],
+    },
+    {
+      arabicName: "مشفي دار الشفاء",
+      englishName: "Dar Al-Shifaa Hospital",
+      images: [
+        "/images/contracting/projects/dar-alshifaa/shifaa-1.jpg",
+        "/images/contracting/projects/dar-alshifaa/shifaa-2.jpg",
+        "/images/contracting/projects/dar-alshifaa/shifaa-3.jpg",
+        "/images/contracting/projects/dar-alshifaa/shifaa-4.jpg",
+      ],
+    },
+    {
+      arabicName: "مول برزة",
+      englishName: "Barzeh Mall",
+      images: [
+        "/images/contracting/projects/barzeh-mall/barzeh-1.jpg",
+        "/images/contracting/projects/barzeh-mall/barzeh-2.jpg",
+        "/images/contracting/projects/barzeh-mall/barzeh-3.jpg",
+        "/images/contracting/projects/barzeh-mall/barzeh-4.jpg",
       ],
     },
   ];
@@ -488,7 +537,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/images/contracting/projects/27-towers/27-towers-6.jpg"
+                src="/images/contracting/projects/adab/adab-2.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -499,7 +548,99 @@ function ContractingCompany() {
                 className={contractingStyles.overlay}
                 onClick={() => openProjectDetails(3)}
               >
-                <div className={contractingStyles.text}>{t("27Towers")}</div>
+                <div className={contractingStyles.text}>{t("adab")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/massa-mall/massa-2.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(4)}
+              >
+                <div className={contractingStyles.text}>{t("massaMall")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/mwasat/mwasat-2.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(5)}
+              >
+                <div className={contractingStyles.text}>{t("mwasat")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/hama-medical/hama-2.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(6)}
+              >
+                <div className={contractingStyles.text}>{t("hamaMedical")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/dar-alshifaa/shifaa-2.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(7)}
+              >
+                <div className={contractingStyles.text}>
+                  {t("dar-alshifaa")}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/barzeh-mall/barzeh-2.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(8)}
+              >
+                <div className={contractingStyles.text}>{t("barzeh")}</div>
               </div>
             </div>
           </SwiperSlide>
@@ -565,7 +706,7 @@ function ContractingCompany() {
                       style={{ width: "100%", height: "100%" }}
                     ></Image>
                   </div>
-                  <div className={contractingStyles.projectContainer5Tile3} >
+                  <div className={contractingStyles.projectContainer5Tile3}>
                     <Image
                       alt=""
                       src={project.images[2]}
