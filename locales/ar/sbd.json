@@ -13,9 +13,11 @@
   "developmentsDesc": "نقدم مجموعة شاملة من الخدمات التي ترعى المشروع من بدايته من خلال البناء والتسويق والإدارة المستدامة.   ",
   "marketingDesc": "تقدم شركتنا مجموعة واسعة من الخدمات ، بما في ذلك التحليلات وإعداد التقارير، وأبحاث السوق.   ",
   "dummarHeightsInterior": "تصميم داخلي لشقق مشروع أبراج دمر",
-  "dummarHeightsExterior": "مشروع أبراج دمر ",
+  "dummarHeightsExterior": "تصميم أبراج دمر ",
+  "dummarHeightsProject": "مشروع أبراج دمر ",
   "monteViewInterior": "تصميم داخلي لفلل مشروع مونتي فيو",
-  "monteViewExterior": "مشروع مونتي فيو",
+  "monteViewExterior": "تصميم مونتي فيو",
+  "monteViewProject": "مشروع مونتي فيو",
   "brochure": "البروشور",
   "downloadBrochure": "حمل البروشور",
   "arabic": "عربي",
@@ -34,6 +36,7 @@
   "address": "المزة -دمشق- سورية",
   "samiBaroudyContracting": "سامي البارودي للمقاولات",
   "SBD": "SBD",
-  "readyMix": "Ready Mix",
+  "roadLink": "رودلينك",
+  "readyMix": "البارودي للبيتون المجبول",
   "projects": "مشاريعنا"
 }

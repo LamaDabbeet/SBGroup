@@ -148,3 +148,11 @@
 .projectContainer3Tile4 {
   grid-area: description;
 }
+.logo_background {
+  background-image: url("../../../public/images/contracting/logo-background.png");
+  background-repeat: no-repeat;
+  background-position: 20rem;
+}
+:lang(ar) .text {
+  left: 55% !important;
+}

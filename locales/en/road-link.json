@@ -1,5 +1,5 @@
 {
-  "roadLink": "Road Link",
+  "roadLink": "رودلينك",
   "whoWeAre": "Who We Are",
   "services": "Services",
   "transportation": "Transportaion",
@@ -36,8 +36,7 @@
   "SBD": "SBD",
   "readyMix": "Ready Mix",
   "projects": "Projects",
-  "marbel": "",
-  "coalShip": "",
-  "transportAndLogistic":""
-
+  "marbel": "Marbel Quarries",
+  "coalShip": "Coal Ship",
+  "transportAndLogistic": "Transportation services"
 }

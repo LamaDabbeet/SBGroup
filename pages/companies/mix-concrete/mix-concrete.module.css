@@ -73,7 +73,9 @@
   text-align: center;
   width: 80%;
 }
-
+:lang(ar) .text {
+  left: 55% !important;
+}
 .projectDescContainer5 {
   display: grid;
   grid-template-areas:
@@ -153,7 +155,5 @@
   grid-area: description;
 }
 
-
-.desktopProjectsModal{
-  
+.desktopProjectsModal {
 }

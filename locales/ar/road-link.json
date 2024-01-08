@@ -1,5 +1,5 @@
 {
-  "roadLink": "Road Link",
+  "roadLink": "رودلينك",
   "whoWeAre": "من نحن",
   "services": "خدماتنا",
   "transportation": "النقل",
@@ -35,9 +35,9 @@
   "address": "المزة -دمشق- سورية",
   "samiBaroudyContracting": "سامي البارودي للمقاولات",
   "SBD": "SBD",
-  "readyMix": "Ready Mix",
+  "readyMix": "البارودي للبيتون المجبول",
   "projects": "مشاريعنا",
-  "marbel": "",
-  "coalShip": "",
-  "transportAndLogistic": ""
+  "marbel": " الرخام و الغرانيت",
+  "coalShip": "توريد و استيراد بواخر الفحم الحجري",
+  "transportAndLogistic": "خدمات نقل الطف البركاني و الرمل و الجص"
 }

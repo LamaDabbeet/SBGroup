@@ -162,39 +162,7 @@ function MixConcrete() {
                     />
                   </Link>
                 </div>
-
                 <div className="hidden md:flex h-24  items-center">
-                  {/* <ul className="flex">
-                    <li>
-                      <div
-                        className={`hover:cursor-pointer bg-red hover:bg-white duration-200 ease-in border-2 border-red text-white hover:text-red  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
-                      >
-                        <FontAwesomeIcon icon={faFacebookF} size="sm" />
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        className={`hover:cursor-pointer bg-red  hover:bg-white duration-200 ease-in border-2 border-red  text-white hover:text-red  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
-                      >
-                        <FontAwesomeIcon icon={faInstagram} size="sm" />
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        className={`hover:cursor-pointer bg-red  hover:bg-white duration-200 ease-in border-2 border-red  text-white hover:text-red p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
-                      >
-                        <FontAwesomeIcon icon={faLinkedinIn} size="sm" />
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        className={`hover:cursor-pointer bg-red  hover:bg-white duration-200 ease-in border-2 border-red  text-white hover:text-red p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
-                      >
-                        <FontAwesomeIcon icon={faWhatsapp} size="sm" />
-                      </div>
-                    </li>
-                  </ul> */}
-
                   <div className="ml-10 flex items-baseline space-x-4 h-full">
                     <Link
                       href="/"

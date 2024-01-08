@@ -40,18 +40,22 @@ function SBD() {
 
   const projects = [
     {
-      arabicName: "Dummar Heights Interior",
-      englishName: "Dummar Heights Interior",
+      arabicName:
+        "مشروع أبراج دمر : تنفيذ برجيين سكنيين من مشروع أبراج دمر -دمشق",
+      englishName:
+        "Dummar Heights Project: Structure works for two towers for Dummar heights project in Mashrou’ Dommar- Damascus.",
       images: [
-        "/images/sbd/projects/dummar-heights-interior/1-min.jpg",
-        "/images/sbd/projects/dummar-heights-interior/2-min.jpg",
-        "/images/sbd/projects/dummar-heights-interior/3-min.jpg",
-        "/images/sbd/projects/dummar-heights-interior/4-min.jpg",
+        "/images/sbd/projects/dummar-heights-project/1.jpg",
+        "/images/sbd/projects/dummar-heights-project/2.jpg",
+        "/images/sbd/projects/dummar-heights-project/3.jpg",
+        "/images/sbd/projects/dummar-heights-project/4.jpg",
       ],
     },
     {
-      arabicName: "Dummar Heights Exterior",
-      englishName: "Dummar Heights Exterior",
+      arabicName:
+        "تصميم مشروع أبراج دمر : تصميم معماري لبرجين من مشروع أبراج دمر",
+      englishName:
+        "Dummar Heights Design : Designs for two towers for Dummar heights project in Mashrou’ Dommar- Damascus.",
       images: [
         "/images/sbd/projects/dummar-heights-exterior/1-min.jpg",
         "/images/sbd/projects/dummar-heights-exterior/2-min.jpg",
@@ -60,18 +64,35 @@ function SBD() {
       ],
     },
     {
-      arabicName: "Monte View Interior",
-      englishName: "Monte View Interior",
+      arabicName:
+        "تصميم داخلي لشقق مشروع أبراج دمر : تصميم داخلي لشقق مشروع أبراج دمر – دمشق",
+      englishName:
+        "Dummar Heights Interior Design: Interior Designs for residential apartments for Dummar heights project in Mashrou’ Dommar- Damascus.",
       images: [
-        "/images/sbd/projects/mont-view-interior/1.jpg",
-        "/images/sbd/projects/mont-view-interior/2.jpg",
-        "/images/sbd/projects/mont-view-interior/3.jpg",
-        "/images/sbd/projects/mont-view-interior/4.jpg",
+        "/images/sbd/projects/dummar-heights-interior/1-min.jpg",
+        "/images/sbd/projects/dummar-heights-interior/2-min.jpg",
+        "/images/sbd/projects/dummar-heights-interior/3-min.jpg",
+        "/images/sbd/projects/dummar-heights-interior/4-min.jpg",
       ],
     },
     {
-      arabicName: "Monte View Exterior",
-      englishName: "Monte View Exterior",
+      arabicName:
+        "مشروع مونتي فيو : تنفيد 25 فيلا سكنية و البنى التحتية من مشروع مونتي فيو -ريف دمشق",
+      englishName:
+        "Monte View Project : Structure works for 25 Villas and Infrastructure for Monte View Project - Damascus Countryside .",
+      images: [
+        "/images/sbd/projects/mont-view-project/1.jpg",
+        "/images/sbd/projects/mont-view-project/2.jpg",
+        "/images/sbd/projects/mont-view-project/3.jpg",
+        "/images/sbd/projects/mont-view-project/4.jpg",
+      ],
+    },
+
+    {
+      arabicName:
+        "تصميم مشروع مونتي فيو : تصميم 25 فيلا سكنية من مشروع مونتي فيو - ريف دمشق",
+      englishName:
+        "Monte View Design: Design for 25 Villas for Monte View Project - Damascus Countryside .",
       images: [
         "/images/sbd/projects/mont-view-exterior/1-min.jpg",
         "/images/sbd/projects/mont-view-exterior/2-min.jpg",
@@ -80,23 +101,15 @@ function SBD() {
       ],
     },
     {
-      arabicName: "Monte View Project",
-      englishName: "Monte View Project",
+      arabicName:
+        "تصميم داخلي لفلل مشروع مونتي فيو : تصميم داخلي ل 25 فيلا سكنية من الداخل لمشروع مونتي فيو - ريف دمشق ",
+      englishName:
+        "Monte View Interior Design: Interior Design for 25 Villas for Monte View Project - Damascus Countryside ",
       images: [
-        "/images/sbd/projects/mont-view-project/1.jpg",
-        "/images/sbd/projects/mont-view-project/2.jpg",
-        "/images/sbd/projects/mont-view-project/3.jpg",
-        "/images/sbd/projects/mont-view-project/4.jpg",
-      ],
-    },
-    {
-      arabicName: "Dummar Heights Project",
-      englishName: "Dummar Heights Project",
-      images: [
-        "/images/sbd/projects/dummar-heights-project/1.jpg",
-        "/images/sbd/projects/dummar-heights-project/2.jpg",
-        "/images/sbd/projects/dummar-heights-project/3.jpg",
-        "/images/sbd/projects/dummar-heights-project/4.jpg",
+        "/images/sbd/projects/mont-view-interior/1.jpg",
+        "/images/sbd/projects/mont-view-interior/2.jpg",
+        "/images/sbd/projects/mont-view-interior/3.jpg",
+        "/images/sbd/projects/mont-view-interior/4.jpg",
       ],
     },
   ];
@@ -116,7 +129,7 @@ function SBD() {
       } else {
         modalContent.style.width = "60%";
       }
-      modalContent.style.height = "40vh";
+      modalContent.style.height = "70vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -440,7 +453,7 @@ function SBD() {
           <SwiperSlide>
             <div className={sbdStyles.container}>
               <Image
-                src="/images/sbd/projects/dummar-heights-interior/1.jpg"
+                src="/images/sbd/projects/dummar-heights-project/1.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -452,7 +465,7 @@ function SBD() {
                 onClick={() => openProjectDetails(0)}
               >
                 <div className={sbdStyles.text}>
-                  {t("dummarHeightsInterior")}
+                  {t("dummarHeightsProject")}
                 </div>
               </div>
             </div>
@@ -479,7 +492,7 @@ function SBD() {
           <SwiperSlide>
             <div className={sbdStyles.container}>
               <Image
-                src="/images/sbd/projects/mont-view-interior/1.jpg"
+                src="/images/sbd/projects/dummar-heights-interior/2.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -490,14 +503,16 @@ function SBD() {
                 className={sbdStyles.overlay}
                 onClick={() => openProjectDetails(2)}
               >
-                <div className={sbdStyles.text}>{t("monteViewInterior")}</div>
+                <div className={sbdStyles.text}>
+                  {t("dummarHeightsInterior")}
+                </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={sbdStyles.container}>
               <Image
-                src="/images/sbd/projects/mont-view-exterior/1-min.jpg"
+                src="/images/sbd/projects/mont-view-project/2.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -508,14 +523,14 @@ function SBD() {
                 className={sbdStyles.overlay}
                 onClick={() => openProjectDetails(3)}
               >
-                <div className={sbdStyles.text}>{t("monteViewExterior")}</div>
+                <div className={sbdStyles.text}>{t("monteViewProject")}</div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={sbdStyles.container}>
               <Image
-                src="/images/sbd/projects/mont-view-project/1.jpg"
+                src="/images/sbd/projects/mont-view-exterior/2-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -526,14 +541,14 @@ function SBD() {
                 className={sbdStyles.overlay}
                 onClick={() => openProjectDetails(4)}
               >
-                <div className={sbdStyles.text}>{t("monteViewProject")}</div>
+                <div className={sbdStyles.text}>{t("monteViewExterior")}</div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={sbdStyles.container}>
               <Image
-                src="/images/sbd/projects/dummar-heights-project/1.jpg"
+                src="/images/sbd/projects/mont-view-interior/2.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -544,9 +559,7 @@ function SBD() {
                 className={sbdStyles.overlay}
                 onClick={() => openProjectDetails(5)}
               >
-                <div className={sbdStyles.text}>
-                  {t("dummarHeightsProject")}
-                </div>
+                <div className={sbdStyles.text}>{t("monteViewInterior")}</div>
               </div>
             </div>
           </SwiperSlide>
@@ -583,7 +596,114 @@ function SBD() {
                   width: 0,
                 }}
               >
-                <div className={sbdStyles.projectDescContainer5}>
+                <div style={{ display: "flex", width: "100%", height: "100%" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "70%",
+                      marginInlineEnd: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        height: "66.8%",
+                        width: "100%",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        id="project-image"
+                        src={project.images[0]}
+                        layout="fill"
+                        sizes="100vw"
+                        style={{
+                          opacity: 0,
+                        }}
+                      ></Image>
+                    </div>
+                    <div
+                      className="bg-green"
+                      style={{
+                        marginTop: "10px",
+                        height: "33.2%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        color: "white",
+                        padding: "25px",
+                      }}
+                    >
+                      <p
+                        className="project-image "
+                        style={{ wordWrap: "break-word", width: "100%" }}
+                      >
+                        {locale == "en"
+                          ? project.englishName
+                          : project.arabicName}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "30%",
+                      height: "100%",
+                    }}
+                  >
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[1]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>
+                    </div>
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[2]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>{" "}
+                    </div>
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                      }}
+                    >
+                      {" "}
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[3]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>{" "}
+                    </div>
+                  </div>
+                </div>
+                {/* <div className={sbdStyles.projectDescContainer5}>
                   <div
                     className={sbdStyles.projectContainer5Tile1}
                     style={{
@@ -644,7 +764,7 @@ function SBD() {
                         : project.arabicName}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             ) : (
               ""

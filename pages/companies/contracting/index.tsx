@@ -56,8 +56,10 @@ function ContractingCompany() {
   };
   const projects = [
     {
-      arabicName: "جمعية المستقلة السكنية",
-      englishName: "Al-Mostaqella Association",
+      arabicName:
+        "مشروع جمعية المستقلة : أعمال الهيكل لجمعية المستقلة في منطقة ضاحية الفيحاء السكنية - دمشق",
+      englishName:
+        "Al-Mostaqella Association Project: Structure works for Al-Mostaqella association - Residential Dahiyat Al-Faihaa - Damascus",
       images: [
         "/images/contracting/projects/al-mostaqella/mostaqella-2.jpg",
         "/images/contracting/projects/al-mostaqella/mostaqella-3.jpg",
@@ -66,8 +68,10 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "جمعية خزانة تعاقد المهندسين",
-      englishName: "Artouz Engineers Towers",
+      arabicName:
+        "مشروع جمعية خزانة تقاعد المهندسين : تنفيذ ثلاثة عشر برج لجمعية خزانة تقاعد المهندسين في منطقة جديدة عرطوز - دمشق",
+      englishName:
+        "Engineers' Retirement Cabinet Association Project: Execute thirteen towers for the Engineers' Retirement Cabinet Association in Jadaydeh Artouz - Damascus.",
       images: [
         "/images/contracting/projects/artouz/artouz-1.jpg",
         "/images/contracting/projects/artouz/artouz-2.jpg",
@@ -76,8 +80,10 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "جمعية المنهل السكنية",
-      englishName: "Al-Manhal Housing Association",
+      arabicName:
+        " مشروع جمعية المنهل السكنية : أعمال الهيكل لجمعية المنهل السكنية في منطقة ضاحية الفيحاء - دمشق ",
+      englishName:
+        "Al-Manhal Housing Association Project: Structure works for Al-Manhal housing association in Residential Dahiyat Al-Faihaa - Damascus.",
       images: [
         "/images/contracting/projects/al-manhal/al-manahal-1.jpg",
         "/images/contracting/projects/al-manhal/al-manahal-2.jpg",
@@ -86,8 +92,22 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "كلية الآداب",
-      englishName: "Faculty of Literatures",
+      arabicName:
+        "مشروع جمعية أعضاء مجلس الشعب : تنفيذ ستة أبراج لجمعية أعضاء مجلس الشعب في منطقة مشروع دمر - دمشق",
+      englishName:
+        " The Association of The Parliament Project: Execute six towers for the association of the Parliament in Mashrou’ Dummar - Damascus.",
+      images: [
+        "/images/contracting/projects/majlis/majlis-1.jpg",
+        "/images/contracting/projects/majlis/majlis-2.jpg",
+        "/images/contracting/projects/majlis/majlis-3.jpg",
+        "/images/contracting/projects/majlis/majlis-4.jpg",
+      ],
+    },
+    {
+      arabicName:
+        "مشروع كلية الاداب :مشروع إكساء توسع كلية الآداب لصالح مؤسسة الإنشاءات العسكرية - دمشق",
+      englishName:
+        "Faculty of Literatures Project  : Cladding project for the expanding of the Faculty of Literatures for the Military Construction Establishment - Damascus.",
       images: [
         "/images/contracting/projects/adab/adab-1.jpg",
         "/images/contracting/projects/adab/adab-2.jpg",
@@ -96,8 +116,10 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "ماسة مول",
-      englishName: "Massa Mall",
+      arabicName:
+        "مشروع ماسة مول : تقديم مواد إكساء لمشروع ماسة مول في منطقة المالكي - دمشق",
+      englishName:
+        "Massa Plaza Mall Project: Submission of cladding materials for Massa Plaza Mall in Al-Maliki - Damascus.",
       images: [
         "/images/contracting/projects/massa-mall/massa-1.jpg",
         "/images/contracting/projects/massa-mall/massa-2.jpg",
@@ -106,8 +128,10 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "مشفي المواساة الجديد",
-      englishName: "New Mowasat Hospital’s Emergency Building",
+      arabicName:
+        "مشروع مشفى المواساة الجديد :أعمال الإكساء الداخلي المبنى الإسعافي لمستشفى المواساة الجديد - دمشق.",
+      englishName:
+        "New Mowasat Hospital’s Emergency Building Project: Internal cladding works for the emergency building of the new Mowasat Hospital - Damascus.",
       images: [
         "/images/contracting/projects/mwasat/mwasat-1.jpg",
         "/images/contracting/projects/mwasat/mwasat-2.jpg",
@@ -116,8 +140,10 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "المركز الطبي بحماة",
-      englishName: "Hama Medical Center",
+      arabicName:
+        "مشروع المركز الطبي في حماه : تنفيذ مستشفى المركز الطبي في مدينة حماه، 6 طوابق، 75 سرير، بمساحة 2000م2 مع ملحق كامل بشراكة من قبل مجموعة البارودي - حماه.",
+      englishName:
+        "Medical Center Hospital Project in Hama: Execute Medical Center Hospital in Hama, 75 beds – 6 floors with full extension /2000 m2/, a percentage owned by SB Group - Hama.",
       images: [
         "/images/contracting/projects/hama-medical/hama-1.jpg",
         "/images/contracting/projects/hama-medical/hama-2.jpg",
@@ -126,8 +152,10 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "مشفي دار الشفاء",
-      englishName: "Dar Al-Shifaa Hospital",
+      arabicName:
+        "مشروع مسـتشـفى دار الشفــاء: إكساء داخلي وخارجي وتوسيع مسـتشـفى دار الشفــاء - دمشق.",
+      englishName:
+        "Dar Al-Shifaa Hospital project :Cladding of Dar Al-Shifaa Hospital - Damascus .",
       images: [
         "/images/contracting/projects/dar-alshifaa/shifaa-1.jpg",
         "/images/contracting/projects/dar-alshifaa/shifaa-2.jpg",
@@ -136,8 +164,10 @@ function ContractingCompany() {
       ],
     },
     {
-      arabicName: "مول برزة",
-      englishName: "Barzeh Mall",
+      arabicName:
+        "مشروع مول برزة : :تنفيذ الأعمال الإنشائية لمشروع المول التجاري في منطقة برزة - دمشق",
+      englishName:
+        "Barzeh Mall Project  :Execute structural works for Barzeh mall in Barzeh area - Damascus.",
       images: [
         "/images/contracting/projects/barzeh-mall/barzeh-1.jpg",
         "/images/contracting/projects/barzeh-mall/barzeh-2.jpg",
@@ -162,7 +192,7 @@ function ContractingCompany() {
       } else {
         modalContent.style.width = "60%";
       }
-      modalContent.style.height = "60vh";
+      modalContent.style.height = "70vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -378,69 +408,71 @@ function ContractingCompany() {
       <section>
         <Header sliderImages={sliderImages} color="cyan" />
       </section>
-      <section id="about-sbg-contracting" className="text-center px-16 py-16">
-        <h2 className="text-center font-semibold uppercase text-2xl mb-12">
-          {t("whoWeAre")}
-        </h2>
-        <div className="flex justify-center">
-          <div id="who-we-are" className="w-8/10">
-            <p>{t("whoWeAreDesc1")}</p>
-            <p>{t("whoWeAreDesc2")}</p>
-            <p>{t("whoWeAreDesc3")}</p>
+      <div className={contractingStyles.logo_background}>
+        <section id="about-sbg-contracting" className="text-center px-16 py-16">
+          <h2 className="text-center font-semibold uppercase text-2xl mb-12">
+            {t("whoWeAre")}
+          </h2>
+          <div className="flex justify-center">
+            <div id="who-we-are" className="w-8/10">
+              <p>{t("whoWeAreDesc1")}</p>
+              <p>{t("whoWeAreDesc2")}</p>
+              <p>{t("whoWeAreDesc3")}</p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section
-        id="contracting-services"
-        className="lg:w-2/3  w-full m-auto py-16"
-      >
-        <h2 className="text-center font-semibold uppercase text-2xl mb-12">
-          {t("services")}
-        </h2>
-        <div className="lg:flex lg:justify-between">
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
-            <Image
-              src="/images/contracting/services/constructing-design.jpg"
-              alt="Constructing Design"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <h3 className="font-medium text-xl my-6">
-              {t("constructionDesign")}
-            </h3>
-            <p>{t("constructionDesignDesc")}</p>
-          </div>
+        </section>
+        <section
+          id="contracting-services"
+          className="lg:w-2/3  w-full m-auto py-16"
+        >
+          <h2 className="text-center font-semibold uppercase text-2xl mb-12">
+            {t("services")}
+          </h2>
+          <div className="lg:flex lg:justify-between">
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+              <Image
+                src="/images/contracting/services/constructing-design.jpg"
+                alt="Constructing Design"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+              <h3 className="font-medium text-xl my-6">
+                {t("constructionDesign")}
+              </h3>
+              <p>{t("constructionDesignDesc")}</p>
+            </div>
 
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
-            <Image
-              src="/images/contracting/services/build.jpg"
-              alt="Build"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <h3 className="font-medium text-xl my-6">{t("build")}</h3>
-            <p>{t("buildDesc")}</p>
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+              <Image
+                src="/images/contracting/services/build.jpg"
+                alt="Build"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+              <h3 className="font-medium text-xl my-6">{t("build")}</h3>
+              <p>{t("buildDesc")}</p>
+            </div>
+            <div className="lg:w-1/3 w-full">
+              <Image
+                src="/images/contracting/services/gerneral-contracting.jpg"
+                alt="General Contracting"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+              <h3 className="font-medium text-xl my-6">
+                {t("generalContracting")}
+              </h3>
+              <p>{t("generalContractingDesc")}</p>
+            </div>
           </div>
-          <div className="lg:w-1/3 w-full">
-            <Image
-              src="/images/contracting/services/gerneral-contracting.jpg"
-              alt="General Contracting"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <h3 className="font-medium text-xl my-6">
-              {t("generalContracting")}
-            </h3>
-            <p>{t("generalContractingDesc")}</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section
         className="bg-gray-dark w-full lg:px-16 lg:pt-16 lg:pb-8 px-0 pt-16 pb-0"
         id="contracting-projects"
@@ -537,7 +569,7 @@ function ContractingCompany() {
           <SwiperSlide>
             <div className={contractingStyles.container}>
               <Image
-                src="/images/contracting/projects/adab/adab-2.jpg"
+                src="/images/contracting/projects/majlis/majlis-1.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -547,6 +579,24 @@ function ContractingCompany() {
               <div
                 className={contractingStyles.overlay}
                 onClick={() => openProjectDetails(3)}
+              >
+                <div className={contractingStyles.text}>{t("majlis")}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={contractingStyles.container}>
+              <Image
+                src="/images/contracting/projects/adab/adab-2.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Project"
+                className={contractingStyles.image}
+              />
+
+              <div
+                className={contractingStyles.overlay}
+                onClick={() => openProjectDetails(4)}
               >
                 <div className={contractingStyles.text}>{t("adab")}</div>
               </div>
@@ -564,7 +614,7 @@ function ContractingCompany() {
 
               <div
                 className={contractingStyles.overlay}
-                onClick={() => openProjectDetails(4)}
+                onClick={() => openProjectDetails(5)}
               >
                 <div className={contractingStyles.text}>{t("massaMall")}</div>
               </div>
@@ -582,7 +632,7 @@ function ContractingCompany() {
 
               <div
                 className={contractingStyles.overlay}
-                onClick={() => openProjectDetails(5)}
+                onClick={() => openProjectDetails(6)}
               >
                 <div className={contractingStyles.text}>{t("mwasat")}</div>
               </div>
@@ -600,7 +650,7 @@ function ContractingCompany() {
 
               <div
                 className={contractingStyles.overlay}
-                onClick={() => openProjectDetails(6)}
+                onClick={() => openProjectDetails(7)}
               >
                 <div className={contractingStyles.text}>{t("hamaMedical")}</div>
               </div>
@@ -618,7 +668,7 @@ function ContractingCompany() {
 
               <div
                 className={contractingStyles.overlay}
-                onClick={() => openProjectDetails(7)}
+                onClick={() => openProjectDetails(8)}
               >
                 <div className={contractingStyles.text}>
                   {t("dar-alshifaa")}
@@ -638,7 +688,7 @@ function ContractingCompany() {
 
               <div
                 className={contractingStyles.overlay}
-                onClick={() => openProjectDetails(8)}
+                onClick={() => openProjectDetails(9)}
               >
                 <div className={contractingStyles.text}>{t("barzeh")}</div>
               </div>
@@ -677,7 +727,114 @@ function ContractingCompany() {
                   width: 0,
                 }}
               >
-                <div className={contractingStyles.projectDescContainer5}>
+                <div style={{ display: "flex", width: "100%", height: "100%" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "70%",
+                      marginInlineEnd: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        height: "66.8%",
+                        width: "100%",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        id="project-image"
+                        src={project.images[0]}
+                        layout="fill"
+                        sizes="100vw"
+                        style={{
+                          opacity: 0,
+                        }}
+                      ></Image>
+                    </div>
+                    <div
+                      className="bg-cyan"
+                      style={{
+                        marginTop: "10px",
+                        height: "33.2%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        color: "white",
+                        padding: "25px",
+                      }}
+                    >
+                      <p
+                        className="project-image "
+                        style={{ wordWrap: "break-word", width: "100%" }}
+                      >
+                        {locale == "en"
+                          ? project.englishName
+                          : project.arabicName}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "30%",
+                      height: "100%",
+                    }}
+                  >
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[1]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>
+                    </div>
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[2]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>{" "}
+                    </div>
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                      }}
+                    >
+                      {" "}
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[3]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>{" "}
+                    </div>
+                  </div>
+                </div>
+                {/* <div className={contractingStyles.projectDescContainer5}>
                   <div
                     className={contractingStyles.projectContainer5Tile1}
                     style={{
@@ -738,7 +895,7 @@ function ContractingCompany() {
                         : project.arabicName}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             ) : (
               ""

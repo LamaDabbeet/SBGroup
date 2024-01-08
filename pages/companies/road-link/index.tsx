@@ -43,12 +43,9 @@ function RoadLink() {
   };
   const projects = [
     {
-      // arabicName:
-      //   "من أهم أعمال الشركة تقديم خدمات نقل الرمل و الجص من العديد من المقالع في ريف دمشق و ريف السويداء الى مصانع الاسمنت.",
-      // englishName:
-      //   "Company Projects: Transport sand and gypsum from a number of quarries in rural Damascuse and rural Swaidaa to cement factorys",
-      arabicName: "بواخر الفحم الحجري",
-      englishName: "Coal Ship",
+      arabicName:
+        "توريد و استيراد بواخر الفحم الحجري بالمواصفات العالية لصالح الزبائن من بلد المنشأ ومن كبرى الشركات العالمية ",
+      englishName: " Importing and supplying steam coal in bulk",
 
       images: [
         "/images/road-link/projects/coal-ship/1.jpg",
@@ -58,12 +55,9 @@ function RoadLink() {
       ],
     },
     {
-      arabicName: "Marbel",
-      englishName: "Marbel Quarries",
-      // arabicName:
-      //   "الحجر و الرخام الوطني : حيث قمنا باستخراج كميات- كبيرة من مقالع مرخصة في الرحيبة و حماه و مصيافكما تمت تلبية متطلبات الزبائن من كافة أنواعالخامات بشكل واسع كالتدمري و الرحيباني و البازلت و الحجر الحلبي و السكري و اللاذقاني .......الخ, /n تختلف مصادر الشركة من الحجر و الرخام و الغرانيت - وفقاً لاحتياجات العملاء و متطلبات الأسواق",
-      // englishName:
-      //   "Company’s stone ,marble, and graniteresources vary according to customers andmarkets requirements./n Local stone and marble: where we have  extracted large quantities of licensed quarriesin Al Rahiba and MasiafAs customers requirement of all types of rawmaterials have been met extensively such asTadmury Basult,Aleppo stone ,SukkaryLattakia etc",
+      arabicName: "استخراج ,تصنيع,استيراد و تصدير الحجر و الرخام و الغرانيت",
+      englishName:
+        "Extracting, manufacturing, importing and exporting stone, marble and granite",
       images: [
         "/images/road-link/projects/marbel/1.jpg",
         "/images/road-link/projects/marbel/2.jpg",
@@ -72,12 +66,10 @@ function RoadLink() {
       ],
     },
     {
-      arabicName: "Transportaion And Logistics",
-      englishName: "Transportaion And Logistics",
-      // arabicName:
-      //   "من أهم أعمال الشركة تقديم خدمات نقل مادة الطف البركاني من العديد من المقالع في ريف دمشق و ريف السويداء الى مصانع الاسمنت.",
-      // englishName:
-      //   "Company Projects: Transport pozlana from a number of quarries in rural Damascuse and rural Swaidaa  to cement factorys",
+      arabicName:
+        "تقديم خدمات نقل الطف البركاني و الرمل و الجص من العديد من المقالع الى مصنع اسمنت البادية ,بالإضافة إلى عقود نقل داخلي لتخديم المصنع .",
+      englishName:
+        " Transportation services of cement, pozzolana ,sand and gypsum materials from the quarries to Al-Badia Cement Factory , in addition to the internal transportation services in the factory.",
       images: [
         "/images/road-link/projects/transport/1.jpg",
         "/images/road-link/projects/transport/2.jpg",
@@ -86,12 +78,10 @@ function RoadLink() {
       ],
     },
     {
-      arabicName: "ابو الشامات",
-      englishName: "Abo Al-Shamat",
-      // arabicName:
-      //   "كانت بداية أعمال الشركة مشروع تنفيذ خندق حماية و درء السيول لمعامل اسمنت الباديةو المتحدة للاسمنت في منطقة ابو الشامات ,بطول 14000 م و ارتفاع اجمالي 6 م",
-      // englishName:
-      //   "The Company’s first project was implementing a flood protection trench for Al-Badia Cement and United Cement  Factories in Abu shamat with 14000 m long and total height of the trench and the berm is 6 m",
+      arabicName:
+        "شروع تنفيذ خندق لمعامل إسمنت البادية والمتحدة للإسمنت في منطقة أبو الشامات بطول 1400 م وارتفاع إجمالي 6 م",
+      englishName:
+        "The Construction of a Trench for Al-Badia Cement Factory and United Cement factory in Abu Al-Shamat area. With 1400 m length and a total height of 6 m.",
       images: [
         "/images/road-link/projects/abo-alshamat/abu-alshamat4.jpg",
         "/images/road-link/projects/abo-alshamat/abu-alshamat2.jpg",
@@ -100,11 +90,10 @@ function RoadLink() {
       ],
     },
     {
-      arabicName: "المقالع والمحاجر",
-      englishName: "Quarries Works",
-      // arabicName: "المقالع والمحاجر",
-      // englishName:
-      //   "Contracting with Al-Badia Cement Company to provide quarrying services from the extraction, crushing and transfer of limestone and basalt stone from Al-Badia Cement Factory's quarries in Khan Abu Shammat to raw materials' crushers and storage areas in the factoryIn addition to providing the necessary geologicalservices and engineeringconsultancy to complete the work",
+      arabicName:
+        "التعاقد مع شركة إسمنت البادية لتقديم الخدمات المقلعية لاستخراج وتكسير ونقل مادتي الحجر الكلسي والحجر البازلتي من مقالع مصنع اسمنت البادية في منطقة خان أبو الشامات إلى كسارات المواد الأولية وساحات التخزين في المصنع",
+      englishName:
+        " A contract with Al-Badia Cement Factory to provide quarrying services including extraction, crushing, and transportation of limestone and basalt materials from the quarries in Khan Abu Al-Shamat area to the crushers and the storage yards at the factory.",
       images: [
         "/images/road-link/projects/quarries/1.jpg",
         "/images/road-link/projects/quarries/2.jpg",
@@ -129,7 +118,7 @@ function RoadLink() {
       } else {
         modalContent.style.width = "60%";
       }
-      modalContent.style.height = "40vh";
+      modalContent.style.height = "70vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -462,7 +451,7 @@ function RoadLink() {
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/gypsum-transportation/main.jpg"
+                src="/images/road-link/projects/coal-ship/3.jpg"
                 layout="fill"
                 alt="Project"
                 objectFit="cover"
@@ -473,16 +462,14 @@ function RoadLink() {
                 className={roadLinkStyles.overlay}
                 onClick={() => openProjectDetails(0)}
               >
-                <div className={roadLinkStyles.text}>
-                  {t("transportGypsum")}
-                </div>
+                <div className={roadLinkStyles.text}>{t("coalShip")}</div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/marbel/1.jpg"
+                src="/images/road-link/projects/marbel/2.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -499,7 +486,7 @@ function RoadLink() {
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/transport/1.jpg"
+                src="/images/road-link/projects/transport/2.jpg"
                 layout="fill"
                 alt="Project"
                 objectFit="cover"
@@ -519,7 +506,7 @@ function RoadLink() {
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/abo-alshamat/main.jpg"
+                src="/images/road-link/projects/abo-alshamat/abu-alshamat2.jpg"
                 layout="fill"
                 alt="Project"
                 className={roadLinkStyles.image}
@@ -536,7 +523,7 @@ function RoadLink() {
           <SwiperSlide>
             <div className={roadLinkStyles.container}>
               <Image
-                src="/images/road-link/projects/quarries/1.jpg"
+                src="/images/road-link/projects/quarries/2.jpg"
                 layout="fill"
                 alt="Project"
                 className={roadLinkStyles.image}
@@ -583,7 +570,114 @@ function RoadLink() {
                   width: 0,
                 }}
               >
-                <div className={roadLinkStyles.projectDescContainer5}>
+                <div style={{ display: "flex", width: "100%", height: "100%" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "70%",
+                      marginInlineEnd: "8px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        height: "66.8%",
+                        width: "100%",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        id="project-image"
+                        src={project.images[0]}
+                        layout="fill"
+                        sizes="100vw"
+                        style={{
+                          opacity: 0,
+                        }}
+                      ></Image>
+                    </div>
+                    <div
+                      className="bg-yellow"
+                      style={{
+                        marginTop: "10px",
+                        height: "33.2%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        color: "white",
+                        padding: "25px",
+                      }}
+                    >
+                      <p
+                        className="project-image "
+                        style={{ wordWrap: "break-word", width: "100%" }}
+                      >
+                        {locale == "en"
+                          ? project.englishName
+                          : project.arabicName}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "30%",
+                      height: "100%",
+                    }}
+                  >
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[1]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>
+                    </div>
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[2]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>{" "}
+                    </div>
+                    <div
+                      style={{
+                        height: "33.33%",
+                        position: "relative",
+                        width: "100%",
+                      }}
+                    >
+                      {" "}
+                      <Image
+                        alt=""
+                        className="project-image"
+                        src={project.images[3]}
+                        layout="fill"
+                        sizes="100vw"
+                      ></Image>{" "}
+                    </div>
+                  </div>
+                </div>
+                {/* <div className={roadLinkStyles.projectDescContainer5}>
                   <div
                     className={roadLinkStyles.projectContainer5Tile1}
                     style={{
@@ -644,7 +738,7 @@ function RoadLink() {
                         : project.arabicName}
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             ) : (
               ""

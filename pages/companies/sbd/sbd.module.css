@@ -146,6 +146,8 @@
 .projectContainer3Tile4 {
   grid-area: description;
 }
-#first-arabic-service-block{
-
+#first-arabic-service-block {
+}
+:lang(ar) .text {
+  left: 55% !important;
 }
