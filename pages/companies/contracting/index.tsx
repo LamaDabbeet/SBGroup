@@ -433,7 +433,7 @@ function ContractingCompany() {
             {t("services")}
           </h2>
           <div className="lg:flex lg:justify-between">
-            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
               <Image
                 src="/images/contracting/services/constructing-design.jpg"
                 alt="Constructing Design"
@@ -447,8 +447,7 @@ function ContractingCompany() {
               </h3>
               <p>{t("constructionDesignDesc")}</p>
             </div>
-
-            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
               <Image
                 src="/images/contracting/services/build.jpg"
                 alt="Build"
@@ -460,7 +459,7 @@ function ContractingCompany() {
               <h3 className="font-medium text-xl my-6">{t("build")}</h3>
               <p>{t("buildDesc")}</p>
             </div>
-            <div className="lg:w-1/3 w-full">
+            <div className="lg:w-1/3 w-full px-10 lg:px-0">
               <Image
                 src="/images/contracting/services/gerneral-contracting.jpg"
                 alt="General Contracting"

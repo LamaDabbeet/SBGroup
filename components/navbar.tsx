@@ -196,6 +196,7 @@ function Navbar() {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12">
                 <Link
                   href="/#about"
+                  onClick={() => setIsOpen(false)}
                   className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("about")}
@@ -246,6 +247,7 @@ function Navbar() {
                 </Accordion>
                 <Link
                   href="/#contact-us"
+                  onClick={() => setIsOpen(false)}
                   className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("contact")}
@@ -253,6 +255,7 @@ function Navbar() {
 
                 <Link
                   href="/#news"
+                  onClick={() => setIsOpen(false)}
                   className="text-gray  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("news")}
@@ -260,6 +263,7 @@ function Navbar() {
 
                 <Link
                   href="/careers"
+                  onClick={() => setIsOpen(false)}
                   className="text-gray hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                 >
                   {t("careers")}

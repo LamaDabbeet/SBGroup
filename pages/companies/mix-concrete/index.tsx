@@ -334,7 +334,7 @@ function MixConcrete() {
             {t("services")}
           </h2>
           <div className="lg:flex lg:justify-between lg:space-x-12">
-            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
               <Image
                 src="/images/mix-concrete/services/quality-control1.jpg"
                 alt="Quality Control"
@@ -349,7 +349,7 @@ function MixConcrete() {
               <p>{t("qualityControlDesc")}</p>
             </div>
 
-            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+            <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
               <Image
                 src="/images/mix-concrete/services/delivery-services1.jpg"
                 alt="Delivery Services"
@@ -363,7 +363,7 @@ function MixConcrete() {
               </h3>
               <p>{t("deliveryServiceDesc")}</p>
             </div>
-            <div className="lg:w-1/3 w-full">
+            <div className="lg:w-1/3 w-full px-10 lg:px-0">
               <Image
                 src="/images/mix-concrete/services/technical-support1.jpg"
                 alt="Technical Support"
@@ -991,7 +991,7 @@ function MixConcrete() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#about-sbg-contracting"
+                    href="/companies/mix-concrete/#about-mix-concrete"
                     className={`hover:text-red`}
                     scroll={false}
                   >
@@ -1000,7 +1000,7 @@ function MixConcrete() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contracting-services"
+                    href="/companies/mix-concrete/#mix-concrete-services"
                     className={`hover:text-red`}
                     scroll={false}
                   >
@@ -1009,7 +1009,7 @@ function MixConcrete() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contracting-projects"
+                    href="/companies/mix-concrete/#mix-concrete-projects"
                     className={`hover:text-red`}
                     scroll={false}
                   >
@@ -1018,7 +1018,7 @@ function MixConcrete() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contact-us"
+                    href="/companies/mix-concrete/#contact-us"
                     className={`hover:text-red`}
                     scroll={false}
                   >

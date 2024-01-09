@@ -309,7 +309,6 @@ function RoadLink() {
                   className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12"
                 >
                   <Link
-                    // href="/#about-sbg-contracting"
                     href="/companies/road-link/#about-road-link"
                     onClick={() => setIsOpen(false)}
                     className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
@@ -377,7 +376,7 @@ function RoadLink() {
           {t("services")}
         </h2>
         <div className="lg:flex lg:justify-between lg:space-x-12">
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
             <Image
               src="/images/road-link/services/transport.jpg"
               alt="Transportation"
@@ -389,8 +388,7 @@ function RoadLink() {
             <h3 className="font-medium text-xl my-6">{t("transportation")}</h3>
             <p>{t("transportaionDesc")}</p>
           </div>
-
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
             <Image
               src="/images/road-link/services/quarries.jpg"
               alt="Quarries Works"
@@ -402,7 +400,7 @@ function RoadLink() {
             <h3 className="font-medium text-xl my-6">{t("quarriesWorks")}</h3>
             <p>{t("quarriesWorkDesc")}</p>
           </div>
-          <div className="lg:w-1/3 w-full">
+          <div className="lg:w-1/3 w-full px-10 lg:px-0">
             <Image
               src="/images/road-link/services/rock.jpg"
               alt="Rocks industerial"
@@ -1023,7 +1021,7 @@ function RoadLink() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/road-link/#about-link-projects"
+                    href="/companies/road-link/#about-road-link"
                     className={`hover:text-yellow`}
                     scroll={false}
                   >
@@ -1032,7 +1030,7 @@ function RoadLink() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/road-link/#road-link-projects"
+                    href="/companies/road-link/#road-link-services"
                     className={`hover:text-yellow`}
                     scroll={false}
                   >

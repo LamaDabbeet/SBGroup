@@ -341,7 +341,7 @@ function SBD() {
           {t("services")}
         </h2>
         <div className="lg:flex lg:justify-between lg:space-x-12">
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
             <Image
               src="/images/sbd/services/creative-design.jpg"
               alt="Creative Design"
@@ -353,8 +353,7 @@ function SBD() {
             <h3 className="font-medium text-xl my-6">{t("creativeDesign")}</h3>
             <p>{t("creativeDesignDesc")}</p>
           </div>
-
-          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10">
+          <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
             <Image
               src="/images/sbd/services/developments.jpg"
               alt="Developments"
@@ -366,7 +365,7 @@ function SBD() {
             <h3 className="font-medium text-xl my-6">{t("developments")}</h3>
             <p>{t("developmentsDesc")}</p>
           </div>
-          <div className="lg:w-1/3 w-full">
+          <div className="lg:w-1/3 w-full px-10 lg:px-0">
             <Image
               src="/images/sbd/services/marketing.jpg"
               alt="Marketing"
@@ -1013,7 +1012,7 @@ function SBD() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#about-sbg-contracting"
+                    href="/companies/sbd/#about-sbd"
                     className={`hover:text-green`}
                     scroll={false}
                   >
@@ -1022,7 +1021,7 @@ function SBD() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contracting-services"
+                    href="/companies/sbd/#sbd-services"
                     className={`hover:text-green`}
                     scroll={false}
                   >
@@ -1031,7 +1030,7 @@ function SBD() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contracting-projects"
+                    href="/companies/sbd/#sbd-projects"
                     className={`hover:text-green`}
                     scroll={false}
                   >
@@ -1040,7 +1039,7 @@ function SBD() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contact-us"
+                    href="/companies/sbd/#contact-us"
                     className={`hover:text-green`}
                     scroll={false}
                   >
