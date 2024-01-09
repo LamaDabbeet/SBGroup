@@ -116,9 +116,9 @@ function RoadLink() {
       if (screen.width < 768) {
         modalContent.style.width = "85%";
       } else {
-        modalContent.style.width = "60%";
+        modalContent.style.width = "55%";
       }
-      modalContent.style.height = "70vh";
+      modalContent.style.height = "85vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -310,7 +310,8 @@ function RoadLink() {
                 >
                   <Link
                     // href="/#about-sbg-contracting"
-                    href=""
+                    href="/companies/road-link/#about-road-link"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -318,8 +319,8 @@ function RoadLink() {
                   </Link>
 
                   <Link
-                    // href="/#contracting-services"
-                    href=""
+                    href="/companies/road-link/#road-link-services"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -327,8 +328,8 @@ function RoadLink() {
                   </Link>
 
                   <Link
-                    // href="/#contracting-projects"
-                    href=""
+                    href="/companies/road-link/#road-link-projects"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -336,8 +337,8 @@ function RoadLink() {
                   </Link>
 
                   <Link
-                    // href="/#contact-us"
-                    href=""
+                    href="/companies/road-link/#contact-us"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -770,8 +771,8 @@ function RoadLink() {
                   backgroundColor: "#fefefe",
                   margin: "auto",
                   border: "1px solid #888",
-                  width: "80%",
-                  height: "70vh",
+                  width: "55%",
+                  height: "85vh",
                   boxShadow: "-20px 20px 50px 15px black",
                 }}
               >
@@ -1022,7 +1023,7 @@ function RoadLink() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#about-road-link"
+                    href="/companies/road-link/#about-link-projects"
                     className={`hover:text-yellow`}
                     scroll={false}
                   >
@@ -1031,7 +1032,7 @@ function RoadLink() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contracting-services"
+                    href="/companies/road-link/#road-link-projects"
                     className={`hover:text-yellow`}
                     scroll={false}
                   >
@@ -1040,7 +1041,8 @@ function RoadLink() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contracting-projects"
+                    href="/companies/road-link/#road-link-projects"
+                    onClick={() => setIsOpen(false)}
                     className={`hover:text-yellow`}
                     scroll={false}
                   >
@@ -1049,7 +1051,8 @@ function RoadLink() {
                 </li>
                 <li>
                   <Link
-                    href="/companies/contracting/#contact-us"
+                    href="/companies/road-link/#contact-us"
+                    onClick={() => setIsOpen(false)}
                     className={`hover:text-yellow`}
                     scroll={false}
                   >

@@ -106,9 +106,9 @@ function MixConcrete() {
       if (screen.width < 768) {
         modalContent.style.width = "85%";
       } else {
-        modalContent.style.width = "60%";
+        modalContent.style.width = "55%";
       }
-      modalContent.style.height = "70vh";
+      modalContent.style.height = "85vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -142,7 +142,7 @@ function MixConcrete() {
     },
     {
       mainImage: "/images/mix-concrete/slider/slider-4.jpg",
-      mobileImage: "/images/mix-concrete/slider/mobile/slider-4.jpg",
+      mobileImage: "/images/mix-concrete/slider/mobile/slider-2.jpg",
     },
   ];
   return (
@@ -267,8 +267,8 @@ function MixConcrete() {
                   className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12"
                 >
                   <Link
-                    // href="/#about-sbg-contracting"
-                    href=""
+                    href="/companies/mix-concrete/#about-mix-concrete"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -276,8 +276,8 @@ function MixConcrete() {
                   </Link>
 
                   <Link
-                    // href="/#contracting-services"
-                    href=""
+                    href="/companies/mix-concrete/#mix-concrete-services"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -285,8 +285,8 @@ function MixConcrete() {
                   </Link>
 
                   <Link
-                    // href="/#contracting-projects"
-                    href=""
+                    href="/companies/mix-concrete/#mix-concrete-projects"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -294,8 +294,8 @@ function MixConcrete() {
                   </Link>
 
                   <Link
-                    // href="/#contact-us"
-                    href=""
+                    href="/companies/mix-concrete/#contact-us"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -822,8 +822,8 @@ function MixConcrete() {
                   backgroundColor: "#fefefe",
                   margin: "auto",
                   border: "1px solid #888",
-                  width: "80%",
-                  height: "70vh",
+                  width: "55%",
+                  height: "85vh",
                   boxShadow: "-20px 20px 50px 15px black",
                 }}
               >

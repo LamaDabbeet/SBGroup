@@ -190,9 +190,9 @@ function ContractingCompany() {
       if (screen.width < 768) {
         modalContent.style.width = "85%";
       } else {
-        modalContent.style.width = "60%";
+        modalContent.style.width = "55%";
       }
-      modalContent.style.height = "70vh";
+      modalContent.style.height = "85vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -366,7 +366,8 @@ function ContractingCompany() {
                   className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12"
                 >
                   <Link
-                    href="/#about-sbg-contracting"
+                    href="/companies/contracting/#about-sbg-contracting"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -374,7 +375,8 @@ function ContractingCompany() {
                   </Link>
 
                   <Link
-                    href="/#contracting-services"
+                    href="/companies/contracting/#contracting-services"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -382,7 +384,8 @@ function ContractingCompany() {
                   </Link>
 
                   <Link
-                    href="/#contracting-projects"
+                    href="/companies/contracting/#contracting-projects"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -390,7 +393,8 @@ function ContractingCompany() {
                   </Link>
 
                   <Link
-                    href="/#contact-us"
+                    href="/companies/contracting/#contact-us"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >

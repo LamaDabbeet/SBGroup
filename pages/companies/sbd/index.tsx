@@ -15,12 +15,6 @@ import { useRouter } from "next/router";
 import Header from "@/components/common/header";
 import Link from "next/link";
 import { Transition } from "@headlessui/react";
-import {
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
 import LocaleSwitcher from "../../../components/common/lanaguage-detector";
 
 function SBD() {
@@ -127,9 +121,9 @@ function SBD() {
       if (screen.width < 768) {
         modalContent.style.width = "85%";
       } else {
-        modalContent.style.width = "60%";
+        modalContent.style.width = "55%";
       }
-      modalContent.style.height = "70vh";
+      modalContent.style.height = "85vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -151,15 +145,15 @@ function SBD() {
   const sliderImages = [
     {
       mainImage: "/images/sbd/slider/slide-2.png",
-      mobileImage: "/images/sbd/slider/mobile/slide-2.jpg",
+      mobileImage: "/images/sbd/slider/mobile/slide-1.jpg",
     },
     {
       mainImage: "/images/sbd/slider/slide-3.png",
-      mobileImage: "/images/sbd/slider/mobile/slide-3.jpg",
+      mobileImage: "/images/sbd/slider/mobile/slide-2.jpg",
     },
     {
       mainImage: "/images/sbd/slider/slide-4.png",
-      mobileImage: "/images/sbd/slider/mobile/slide-4.jpg",
+      mobileImage: "/images/sbd/slider/mobile/slide-3.jpg",
     },
   ];
   return (
@@ -179,38 +173,7 @@ function SBD() {
                     />
                   </Link>
                 </div>
-
                 <div className="hidden md:flex h-24  items-center">
-                  {/* <ul className="flex">
-                    <li>
-                      <div
-                        className={`hover:cursor-pointer bg-green hover:bg-white duration-200 ease-in border-2 border-green text-white hover:text-green  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
-                      >
-                        <FontAwesomeIcon icon={faFacebookF} size="sm" />
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        className={`hover:cursor-pointer bg-green  hover:bg-white duration-200 ease-in border-2 border-green  text-white hover:text-green  p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
-                      >
-                        <FontAwesomeIcon icon={faInstagram} size="sm" />
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        className={`hover:cursor-pointer bg-green  hover:bg-white duration-200 ease-in border-2 border-green  text-white hover:text-green p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
-                      >
-                        <FontAwesomeIcon icon={faLinkedinIn} size="sm" />
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        className={`hover:cursor-pointer bg-green  hover:bg-white duration-200 ease-in border-2 border-green  text-white hover:text-green p-2.5 flex items-center justify-center w-6 h-6 rounded-full me-2 hover:cursor-pointer`}
-                      >
-                        <FontAwesomeIcon icon={faWhatsapp} size="sm" />
-                      </div>
-                    </li>
-                  </ul> */}
                   <div className="ml-10 flex items-baseline space-x-4 h-full">
                     <Link
                       href="/"
@@ -315,8 +278,8 @@ function SBD() {
                   className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-12"
                 >
                   <Link
-                    // href="/#about-sbg-contracting"
-                    href=""
+                    href="/companies/sbd/#about-sbd"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray  block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -324,8 +287,8 @@ function SBD() {
                   </Link>
 
                   <Link
-                    // href="/#contracting-services"
-                    href=""
+                    href="/companies/sbd/#sbd-services"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -333,8 +296,8 @@ function SBD() {
                   </Link>
 
                   <Link
-                    // href="/#contracting-projects"
-                    href=""
+                    href="/companies/sbd/#sbd-projects"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray   block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -342,8 +305,8 @@ function SBD() {
                   </Link>
 
                   <Link
-                    // href="/#contact-us"
-                    href=""
+                    href="/companies/sbd/#contact-us"
+                    onClick={() => setIsOpen(false)}
                     className="text-gray block px-3 py-2 rounded-md text-base font-medium"
                     scroll={false}
                   >
@@ -796,8 +759,8 @@ function SBD() {
                   backgroundColor: "#fefefe",
                   margin: "auto",
                   border: "1px solid #888",
-                  width: "80%",
-                  height: "70vh",
+                  width: "55%",
+                  height: "85vh",
                   boxShadow: "-20px 20px 50px 15px black",
                 }}
               >
