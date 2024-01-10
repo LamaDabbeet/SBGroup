@@ -125,7 +125,7 @@ function SBD() {
       } else {
         modalContent.style.width = "49%";
       }
-      modalContent.style.height = "65vh";
+      modalContent.style.height = "70vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
