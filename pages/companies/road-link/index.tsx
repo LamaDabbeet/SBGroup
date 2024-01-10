@@ -116,7 +116,7 @@ function RoadLink() {
       if (screen.width < 768) {
         modalContent.style.width = "85%";
       } else {
-        modalContent.style.width = "55%";
+        modalContent.style.width = "50%";
       }
       modalContent.style.height = "85vh";
       modalContent.style.transition = "height 1s ,width 1s";
@@ -644,7 +644,7 @@ function RoadLink() {
                     </div>
                     <div
                       style={{
-                        height: "33.33%",
+                        height: "33.3%",
                         position: "relative",
                         width: "100%",
                         marginBottom: "8px",
@@ -769,7 +769,7 @@ function RoadLink() {
                   backgroundColor: "#fefefe",
                   margin: "auto",
                   border: "1px solid #888",
-                  width: "55%",
+                  width: "50%",
                   height: "85vh",
                   boxShadow: "-20px 20px 50px 15px black",
                 }}
