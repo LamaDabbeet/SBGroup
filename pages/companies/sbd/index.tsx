@@ -437,7 +437,7 @@ function SBD() {
           <SwiperSlide>
             <div className={sbdStyles.container}>
               <Image
-                src="/images/sbd/projects/dummar-heights-exterior/1.jpg"
+                src="/images/sbd/projects/dummar-heights-exterior/1-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
@@ -456,7 +456,7 @@ function SBD() {
           <SwiperSlide>
             <div className={sbdStyles.container}>
               <Image
-                src="/images/sbd/projects/dummar-heights-interior/2.jpg"
+                src="/images/sbd/projects/dummar-heights-interior/2-min.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="Project"
