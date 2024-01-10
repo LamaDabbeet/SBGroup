@@ -700,11 +700,11 @@ function SBD() {
                 </div>
                 <div
                   style={{
-                    height: "33.3%",
+                    height: "33.7%",
                     width: "100%",
                     position: "relative",
                     display: "flex",
-                    marginTop: "8px",
+                    marginTop: "1.5%",
                   }}
                 >
                   <div
@@ -736,7 +736,7 @@ function SBD() {
                   className="bg-green"
                   style={{
                     marginTop: "1.5%",
-                    height: "33%",
+                    height: "31.5%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",

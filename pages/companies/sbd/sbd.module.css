@@ -67,7 +67,11 @@
   text-align: center;
   width: 80%;
 }
-
+@media screen and (max-width: 1200px) {
+  .text {
+    left: 38%;
+  }
+}
 .projectDescContainer5 {
   display: grid;
   grid-template-areas:
