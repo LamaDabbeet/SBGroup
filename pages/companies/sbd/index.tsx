@@ -65,7 +65,7 @@ function SBD() {
       englishName:
         "Dummar Heights Interior Design: Interior Designs for residential apartments for Dummar heights project in Mashrou’ Dommar- Damascus.",
       images: [
-        "/images/sbd/projects/dummar-heights-interior/1-min.jpg",
+        "/images/sbd/projects/dummar-heights-interior/1.jpg",
         "/images/sbd/projects/dummar-heights-interior/2-min.jpg",
         "/images/sbd/projects/dummar-heights-interior/3-min.jpg",
         "/images/sbd/projects/dummar-heights-interior/4-min.jpg",
@@ -102,7 +102,7 @@ function SBD() {
       englishName:
         "Monte View Interior Design: Interior Design for 25 Villas for Monte View Project - Damascus Countryside ",
       images: [
-        "/images/sbd/projects/mont-view-interior/1.jpg",
+        "/images/sbd/projects/mont-view-interior/1-new.jpg",
         "/images/sbd/projects/mont-view-interior/2.jpg",
         "/images/sbd/projects/mont-view-interior/3.jpg",
         "/images/sbd/projects/mont-view-interior/4.jpg",
@@ -122,10 +122,12 @@ function SBD() {
       modal.style.opacity = "1";
       if (screen.width < 768) {
         modalContent.style.width = "85%";
+        modalContent.style.height = "60vh";
       } else {
         modalContent.style.width = "49%";
+        modalContent.style.height = "70vh";
       }
-      modalContent.style.height = "70vh";
+
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -564,7 +566,7 @@ function SBD() {
                   style={{
                     display: "flex",
                     flexDirection: "column",
-                    width: "70%",
+                    width: "75%",
                     marginInlineEnd: "9px",
                   }}
                 >
@@ -589,7 +591,7 @@ function SBD() {
                   <div
                     className="bg-green"
                     style={{
-                      marginTop: "1.5%",
+                      marginTop: "7px",
                       height: "33%",
                       display: "flex",
                       justifyContent: "center",
@@ -612,7 +614,7 @@ function SBD() {
                   style={{
                     display: "flex",
                     flexDirection: "column",
-                    width: "30%",
+                    width: "25%",
                     height: "100%",
                   }}
                 >
@@ -621,7 +623,7 @@ function SBD() {
                       height: "32.83%",
                       position: "relative",
                       width: "100%",
-                      marginBottom: "3%",
+                      marginBottom: "7px",
                     }}
                   >
                     <Image
@@ -637,7 +639,7 @@ function SBD() {
                       height: "32.83%",
                       position: "relative",
                       width: "100%",
-                      marginBottom: "3%",
+                      marginBottom: "7px",
                     }}
                   >
                     <Image
