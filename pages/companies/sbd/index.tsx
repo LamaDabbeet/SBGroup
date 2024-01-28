@@ -763,20 +763,6 @@ function SBD() {
         className="h-40 flex flex-col justify-center align-start"
       >
         <div style={{ height: "4rem", backgroundColor: "white" }}></div>
-        {/* <h2 className="text-green uppercase text-3xl font-semibold">
-          {t("brochure")}
-        </h2>
-        <p>{t("downloadBrochure")}</p>
-        <ul className="mt-2">
-          <li className="hover:text-green hover:font-bold hover:cursor-pointer">
-            {t("arabic")}
-            <FontAwesomeIcon icon={faDownload} className="ms-2" />
-          </li>
-          <li className="hover:text-green hover:font-bold hover:cursor-pointer">
-            {t("english")}
-            <FontAwesomeIcon icon={faDownload} className="ms-2" />
-          </li>
-        </ul> */}
       </section>
       <footer className="text-white ">
         <div

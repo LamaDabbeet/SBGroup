@@ -22,6 +22,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import LocaleSwitcher from "../../../components/common/lanaguage-detector";
+import useWindowDimensions from "@/hooks/use-window-dimensions";
 
 function ContractingCompany() {
   const { t } = useTranslation("common");
@@ -35,6 +36,7 @@ function ContractingCompany() {
     arabicName: "",
     englishName: "",
   });
+  const { width } = useWindowDimensions();
   const [isOpen, setIsOpen] = useState(false);
   const [open, setOpen] = useState(1);
   const sliderImages = [
@@ -699,308 +701,233 @@ function ContractingCompany() {
             </div>
           </SwiperSlide>
         </Swiper>
-        {project.images.length === 4 ? (
-          <div
-            onClick={closeProjectDetails}
-            id="myModal"
-            style={{
-              visibility: "hidden",
-              opacity: 0,
-              transition: "visibility 0.3s, opacity 0.3s ease-in",
-              position: "fixed",
-              zIndex: 1,
-              paddingTop: "4%",
-              left: 0,
-              top: 0,
-              width: "100%",
-              height: "100%",
-              overflow: "auto",
-              backgroundColor: "rgba(0,0,0,0.4)",
-            }}
-            className="flex justify-center items-center lg:block"
-          >
-            {project ? (
-              <div
-                id="modal-content"
-                style={{
-                  backgroundColor: "#fefefe",
-                  margin: "auto",
-                  border: "1px solid #888",
-                  boxShadow: "-20px 20px 50px 15px black",
-                  height: 0,
-                  width: 0,
-                }}
-              >
-                <div style={{ display: "flex", width: "100%", height: "100%" }}>
+        <div
+          onClick={closeProjectDetails}
+          id="myModal"
+          style={{
+            visibility: "hidden",
+            opacity: 0,
+            transition: "visibility 0.3s, opacity 0.3s ease-in",
+            position: "fixed",
+            zIndex: 1,
+            paddingTop: "4%",
+            left: 0,
+            top: 0,
+            width: "100%",
+            height: "100%",
+            overflow: "auto",
+            backgroundColor: "rgba(0,0,0,0.4)",
+          }}
+          className="flex justify-center items-center lg:block"
+        >
+          {width && width > 768 ? (
+            <div
+              id="modal-content"
+              style={{
+                backgroundColor: "#fefefe",
+                margin: "auto",
+                border: "1px solid #888",
+                boxShadow: "-20px 20px 50px 15px black",
+                height: 0,
+                width: 0,
+              }}
+            >
+              <div style={{ display: "flex", width: "100%", height: "100%" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    width: "75%",
+                    marginInlineEnd: "9px",
+                  }}
+                >
                   <div
                     style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      width: "75%",
-                      marginInlineEnd: "9px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        height: "67%",
-                        width: "100%",
-                      }}
-                    >
-                      <Image
-                        alt=""
-                        id="project-image"
-                        src={project.images[0]}
-                        layout="fill"
-                        sizes="100vw"
-                        style={{
-                          opacity: 0,
-                        }}
-                      ></Image>
-                    </div>
-                    <div
-                      className="bg-cyan"
-                      style={{
-                        marginTop: "7px",
-                        height: "33%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        color: "white",
-                        padding: "25px",
-                      }}
-                    >
-                      <p
-                        className="project-image "
-                        style={{ wordWrap: "break-word", width: "100%" }}
-                      >
-                        {locale == "en"
-                          ? project.englishName
-                          : project.arabicName
-                          }
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      width: "25%",
-                      height: "100%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        height: "32.83%",
-                        position: "relative",
-                        width: "100%",
-                        marginBottom: "7px",
-                      }}
-                    >
-                      <Image
-                        alt=""
-                        className="project-image"
-                        src={project.images[1]}
-                        layout="fill"
-                        sizes="100vw"
-                      ></Image>
-                    </div>
-                    <div
-                      style={{
-                        height: "32.83%",
-                        position: "relative",
-                        width: "100%",
-                        marginBottom: "7px",
-                                            }}
-                    >
-                      <Image
-                        alt=""
-                        className="project-image"
-                        src={project.images[2]}
-                        layout="fill"
-                        sizes="100vw"
-                      ></Image>{" "}
-                    </div>
-                    <div
-                      style={{
-                        height: "32.83%",
-                        position: "relative",
-                        width: "100%",
-                        marginBottom: "7px",
-                      }}
-                    >
-                      {" "}
-                      <Image
-                        alt=""
-                        className="project-image"
-                        src={project.images[3]}
-                        layout="fill"
-                        sizes="100vw"
-                      ></Image>{" "}
-                    </div>
-                  </div>
-                </div>
-              
-              </div>
-            ) : (
-              ""
-            )}
-          </div>
-        ) : project.images.length === 3 ? (
-          <div
-            onClick={closeProjectDetails}
-            id="myModal"
-            style={{
-              visibility: "hidden",
-              opacity: 0,
-              transition: "visibility 0.3s, opacity 0.3s ease-in",
-              position: "fixed",
-              zIndex: 1,
-              paddingTop: "4%",
-              left: 0,
-              top: 0,
-              width: "100%",
-              height: "100%",
-              overflow: "auto",
-              backgroundColor: "rgba(0,0,0,0.4)",
-            }}
-          >
-            {project ? (
-              <div
-                className="modal-content"
-                style={{
-                  backgroundColor: "#fefefe",
-                  margin: "auto",
-                  border: "1px solid #888",
-                  width: "80%",
-                  height: "70vh",
-                  boxShadow: "-20px 20px 50px 15px black",
-                }}
-              >
-                <div className={contractingStyles.projectDescContainer4}>
-                  <div
-                    className={contractingStyles.projectContainer4Tile1}
-                    style={{
-                      width: "100%",
-                      height: "100%",
                       position: "relative",
+                      height: "67%",
+                      width: "100%",
                     }}
                   >
                     <Image
                       alt=""
+                      id="project-image"
                       src={project.images[0]}
                       layout="fill"
-                      objectFit="cover"
+                      sizes="100vw"
+                      style={{
+                        opacity: 0,
+                      }}
                     ></Image>
                   </div>
-                  <div className={contractingStyles.projectContainer4Tile2}>
+                  <div
+                    className="bg-cyan"
+                    style={{
+                      marginTop: "7px",
+                      height: "33%",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "white",
+                      padding: "25px",
+                    }}
+                  >
+                    <p
+                      className="project-image"
+                      style={{ wordWrap: "break-word", width: "100%" }}
+                    >
+                      {locale == "en"
+                        ? project.englishName
+                        : project.arabicName}
+                    </p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    width: "25%",
+                    height: "100%",
+                  }}
+                >
+                  <div
+                    style={{
+                      height: "32.83%",
+                      position: "relative",
+                      width: "100%",
+                      marginBottom: "7px",
+                    }}
+                  >
                     <Image
                       alt=""
+                      className="project-image"
                       src={project.images[1]}
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
+                      layout="fill"
+                      sizes="100vw"
                     ></Image>
                   </div>
-                  <div className={contractingStyles.projectContainer4Tile3}>
+                  <div
+                    style={{
+                      height: "32.83%",
+                      position: "relative",
+                      width: "100%",
+                      marginBottom: "7px",
+                    }}
+                  >
                     <Image
                       alt=""
+                      className="project-image"
                       src={project.images[2]}
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
+                      layout="fill"
+                      sizes="100vw"
+                    ></Image>{" "}
                   </div>
                   <div
-                    className={`${contractingStyles.projectContainer4Tile4} bg-cyan flex items-center justify-center`}
+                    style={{
+                      height: "32.83%",
+                      position: "relative",
+                      width: "100%",
+                    }}
                   >
-                    <p className="text-white font-medium px-8">
-                      {locale == "en"
-                        ? project.englishName
-                        : project.arabicName}
-                    </p>
+                    {" "}
+                    <Image
+                      alt=""
+                      className="project-image"
+                      src={project.images[3]}
+                      layout="fill"
+                      sizes="100vw"
+                    ></Image>{" "}
                   </div>
                 </div>
               </div>
-            ) : (
-              ""
-            )}
-          </div>
-        ) : (
-          <div
-            onClick={closeProjectDetails}
-            id="myModal"
-            style={{
-              visibility: "hidden",
-              opacity: 0,
-              transition: "visibility 0.3s, opacity 0.3s ease-in",
-              position: "fixed",
-              zIndex: 1,
-              paddingTop: "4%",
-              left: 0,
-              top: 0,
-              width: "100%",
-              height: "100%",
-              overflow: "auto",
-              backgroundColor: "rgba(0,0,0,0.4)",
-            }}
-          >
-            {project ? (
-              <div
-                className="modal-content"
-                style={{
-                  backgroundColor: "#fefefe",
-                  margin: "auto",
-                  border: "1px solid #888",
-                  width: "80%",
-                  height: "70vh",
-                  boxShadow: "-20px 20px 50px 15px black",
-                }}
-              >
-                <div className={contractingStyles.projectDescContainer3}>
-                  <div
-                    className={contractingStyles.projectContainer3Tile1}
+            </div>
+          ) : (
+            <div
+              id="modal-content"
+              style={{
+                backgroundColor: "#fefefe",
+                margin: "auto",
+                border: "1px solid #888",
+                boxShadow: "-20px 20px 50px 15px black",
+                height: 0,
+                width: 0,
+              }}
+            >
+              <div style={{ height: "100%" }}>
+                <div
+                  style={{
+                    height: "33.3%",
+                    width: "100%",
+                    position: "relative",
+                  }}
+                >
+                  <Image
+                    alt=""
+                    id="project-image"
+                    src={project.images[0]}
+                    layout="fill"
+                    sizes="100vw"
                     style={{
-                      width: "100%",
-                      height: "100%",
+                      opacity: 0,
+                    }}
+                  ></Image>
+                </div>
+                <div
+                  style={{
+                    height: "33.7%",
+                    width: "100%",
+                    position: "relative",
+                    display: "flex",
+                    marginTop: "1.5%",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "50%",
                       position: "relative",
+                      marginInlineEnd: "8px",
                     }}
                   >
                     <Image
                       alt=""
-                      src={project.images[0]}
+                      className="project-image"
+                      src={project.images[1]}
                       layout="fill"
-                      objectFit="cover"
+                      sizes="100vw"
                     ></Image>
                   </div>
-                  <div className={contractingStyles.projectContainer3Tile2}>
+                  <div style={{ width: "50%", position: "relative" }}>
                     <Image
                       alt=""
-                      src={project.images[1]}
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
-                  </div>
-                  <div
-                    className={`${contractingStyles.projectContainer4Tile4} bg-cyan flex items-center justify-center`}
-                  >
-                    <p className="text-white font-medium px-8">
-                      {locale == "en"
-                        ? project.englishName
-                        : project.arabicName}
-                    </p>
+                      className="project-image"
+                      src={project.images[2]}
+                      layout="fill"
+                      sizes="100vw"
+                    ></Image>{" "}
                   </div>
                 </div>
+                <div
+                  className="bg-cyan"
+                  style={{
+                    marginTop: "1.5%",
+                    height: "31.5%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    color: "white",
+                    padding: "25px",
+                  }}
+                >
+                  <p
+                    className="project-image"
+                    style={{ wordWrap: "break-word", width: "100%" }}
+                  >
+                    {locale == "en" ? project.englishName : project.arabicName}
+                  </p>
+                </div>
               </div>
-            ) : (
-              ""
-            )}
-          </div>
-        )}
+            </div>
+          )}
+        </div>
       </section>
       <section className="h-40 flex flex-col justify-center align-start">
         <div style={{ backgroundColor: "white" }}></div>

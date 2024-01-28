@@ -14,11 +14,13 @@ import Header from "@/components/common/header";
 import Link from "next/link";
 import { Transition } from "@headlessui/react";
 import LocaleSwitcher from "../../../components/common/lanaguage-detector";
+import useWindowDimensions from "@/hooks/use-window-dimensions";
 
 function MixConcrete() {
   const { t } = useTranslation("mix-concrete");
   const { locale } = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const { width } = useWindowDimensions();
 
   const [project, setProject] = useState<{
     images: string[];
@@ -105,10 +107,12 @@ function MixConcrete() {
       modal.style.opacity = "1";
       if (screen.width < 768) {
         modalContent.style.width = "85%";
+        modalContent.style.height = "60vh";
       } else {
-        modalContent.style.width = "55%";
+        modalContent.style.width = "49%";
+        modalContent.style.height = "70vh";
       }
-      modalContent.style.height = "85vh";
+
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -348,7 +352,6 @@ function MixConcrete() {
               </h3>
               <p>{t("qualityControlDesc")}</p>
             </div>
-
             <div className="lg:w-1/3 w-full lg:mb-0 mb-20 lg:me-10 px-10 lg:px-0">
               <Image
                 src="/images/mix-concrete/services/delivery-services1.jpg"
@@ -508,152 +511,51 @@ function MixConcrete() {
             </div>
           </SwiperSlide>
         </Swiper>
-        {project.images.length === 4 ? (
-          <div
-            onClick={closeProjectDetails}
-            id="myModal"
-            style={{
-              visibility: "hidden",
-              opacity: 0,
-              transition: "visibility 0.3s, opacity 0.3s ease-in",
-              position: "fixed",
-              zIndex: 1,
-              paddingTop: "4%",
-              left: 0,
-              top: 0,
-              width: "100%",
-              height: "100%",
-              overflow: "auto",
-              backgroundColor: "rgba(0,0,0,0.4)",
-            }}
-            className="flex justify-center items-center lg:block"
-          >
-            {project ? (
-              <div
-                id="modal-content"
-                style={{
-                  backgroundColor: "#fefefe",
-                  margin: "auto",
-                  border: "1px solid #888",
-                  boxShadow: "-20px 20px 50px 15px black",
-                  height: 0,
-                  width: 0,
-                }}
-              >
-                <div style={{ display: "flex", width: "100%", height: "100%" }}>
+        <div
+          onClick={closeProjectDetails}
+          id="myModal"
+          style={{
+            visibility: "hidden",
+            opacity: 0,
+            transition: "visibility 0.3s, opacity 0.3s ease-in",
+            position: "fixed",
+            zIndex: 1,
+            paddingTop: "4%",
+            left: 0,
+            top: 0,
+            width: "100%",
+            height: "100%",
+            overflow: "auto",
+            backgroundColor: "rgba(0,0,0,0.4)",
+          }}
+          className="flex justify-center items-center lg:block"
+        >
+          {width && width > 768 ? (
+            <div
+              id="modal-content"
+              style={{
+                backgroundColor: "#fefefe",
+                margin: "auto",
+                border: "1px solid #888",
+                boxShadow: "-20px 20px 50px 15px black",
+                height: 0,
+                width: 0,
+              }}
+            >
+              <div style={{ display: "flex", width: "100%", height: "100%" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    width: "75%",
+                    marginInlineEnd: "9px",
+                  }}
+                >
                   <div
                     style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      width: "70%",
-                      marginInlineEnd: "8px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        height: "66.8%",
-                        width: "100%",
-                      }}
-                    >
-                      <Image
-                        alt=""
-                        id="project-image"
-                        src={project.images[0]}
-                        layout="fill"
-                        sizes="100vw"
-                        style={{
-                          opacity: 0,
-                        }}
-                      ></Image>
-                    </div>
-                    <div
-                      className="bg-red"
-                      style={{
-                        marginTop: "10px",
-                        height: "33.2%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        color: "white",
-                        padding: "25px",
-                      }}
-                    >
-                      <p
-                        className="project-image "
-                        style={{ wordWrap: "break-word", width: "100%" }}
-                      >
-                        {locale == "en"
-                          ? project.englishName
-                          : project.arabicName}
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      width: "30%",
-                      height: "100%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        height: "33.33%",
-                        position: "relative",
-                        width: "100%",
-                        marginBottom: "8px",
-                      }}
-                    >
-                      <Image
-                        alt=""
-                        className="project-image"
-                        src={project.images[1]}
-                        layout="fill"
-                        sizes="100vw"
-                      ></Image>
-                    </div>
-                    <div
-                      style={{
-                        height: "33.33%",
-                        position: "relative",
-                        width: "100%",
-                        marginBottom: "8px",
-                      }}
-                    >
-                      <Image
-                        alt=""
-                        className="project-image"
-                        src={project.images[2]}
-                        layout="fill"
-                        sizes="100vw"
-                      ></Image>{" "}
-                    </div>
-                    <div
-                      style={{
-                        height: "33.33%",
-                        position: "relative",
-                        width: "100%",
-                      }}
-                    >
-                      {" "}
-                      <Image
-                        alt=""
-                        className="project-image"
-                        src={project.images[3]}
-                        layout="fill"
-                        sizes="100vw"
-                      ></Image>{" "}
-                    </div>
-                  </div>
-                </div>
-                {/* <div className={mixConcreteStyles.projectDescContainer5}>
-                  <div
-                    className={mixConcreteStyles.projectContainer5Tile1}
-                    style={{
-                      width: "100%",
-                      height: "100%",
                       position: "relative",
+                      height: "67%",
+                      width: "100%",
                     }}
                   >
                     <Image
@@ -661,214 +563,181 @@ function MixConcrete() {
                       id="project-image"
                       src={project.images[0]}
                       layout="fill"
-                      objectFit="cover"
-                      style={{ opacity: 0 }}
+                      sizes="100vw"
+                      style={{
+                        opacity: 0,
+                      }}
                     ></Image>
                   </div>
-                  <div className={mixConcreteStyles.projectContainer5Tile2}>
+                  <div
+                    className="bg-red"
+                    style={{
+                      marginTop: "7px",
+                      height: "33%",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "white",
+                      padding: "25px",
+                    }}
+                  >
+                    <p
+                      className="project-image"
+                      style={{ wordWrap: "break-word", width: "100%" }}
+                    >
+                      {locale == "en"
+                        ? project.englishName
+                        : project.arabicName}
+                    </p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    width: "25%",
+                    height: "100%",
+                  }}
+                >
+                  <div
+                    style={{
+                      height: "32.83%",
+                      position: "relative",
+                      width: "100%",
+                      marginBottom: "7px",
+                    }}
+                  >
                     <Image
                       alt=""
                       className="project-image"
                       src={project.images[1]}
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
+                      layout="fill"
+                      sizes="100vw"
                     ></Image>
                   </div>
-                  <div className={mixConcreteStyles.projectContainer5Tile3}>
+                  <div
+                    style={{
+                      height: "32.83%",
+                      position: "relative",
+                      width: "100%",
+                      marginBottom: "7px",
+                    }}
+                  >
                     <Image
                       alt=""
-                      src={project.images[2]}
                       className="project-image"
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
+                      src={project.images[2]}
+                      layout="fill"
+                      sizes="100vw"
+                    ></Image>{" "}
                   </div>
-                  <div className={mixConcreteStyles.projectContainer5Tile4}>
+                  <div
+                    style={{
+                      height: "32.83%",
+                      position: "relative",
+                      width: "100%",
+                    }}
+                  >
                     {" "}
                     <Image
                       alt=""
-                      src={project.images[3]}
                       className="project-image"
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
+                      src={project.images[3]}
+                      layout="fill"
+                      sizes="100vw"
+                    ></Image>{" "}
                   </div>
-                  <div
-                    className={`${mixConcreteStyles.projectContainer5Tile5} bg-red flex items-center justify-center`}
-                  >
-                    <p className="text-white font-medium px-8">
-                      {locale == "en"
-                        ? project.englishName
-                        : project.arabicName}
-                    </p>
-                  </div>
-                </div> */}
+                </div>
               </div>
-            ) : (
-              ""
-            )}
-          </div>
-        ) : project.images.length === 3 ? (
-          <div
-            onClick={closeProjectDetails}
-            id="myModal"
-            style={{
-              visibility: "hidden",
-              opacity: 0,
-              transition: "visibility 0.3s, opacity 0.3s ease-in",
-              position: "fixed",
-              zIndex: 1,
-              paddingTop: "4%",
-              left: 0,
-              top: 0,
-              width: "100%",
-              height: "100%",
-              overflow: "auto",
-              backgroundColor: "rgba(0,0,0,0.4)",
-            }}
-          >
-            {project ? (
-              <div
-                className="modal-content"
-                style={{
-                  backgroundColor: "#fefefe",
-                  margin: "auto",
-                  border: "1px solid #888",
-                  width: "80%",
-                  height: "70vh",
-                  boxShadow: "-20px 20px 50px 15px black",
-                }}
-              >
-                <div className={mixConcreteStyles.projectDescContainer4}>
-                  <div
-                    className={mixConcreteStyles.projectContainer4Tile1}
+            </div>
+          ) : (
+            <div
+              id="modal-content"
+              style={{
+                backgroundColor: "#fefefe",
+                margin: "auto",
+                border: "1px solid #888",
+                boxShadow: "-20px 20px 50px 15px black",
+                height: 0,
+                width: 0,
+              }}
+            >
+              <div style={{ height: "100%" }}>
+                <div
+                  style={{
+                    height: "33.3%",
+                    width: "100%",
+                    position: "relative",
+                  }}
+                >
+                  <Image
+                    alt=""
+                    id="project-image"
+                    src={project.images[0]}
+                    layout="fill"
+                    sizes="100vw"
                     style={{
-                      width: "100%",
-                      height: "100%",
+                      opacity: 0,
+                    }}
+                  ></Image>
+                </div>
+                <div
+                  style={{
+                    height: "33.7%",
+                    width: "100%",
+                    position: "relative",
+                    display: "flex",
+                    marginTop: "1.5%",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "50%",
                       position: "relative",
+                      marginInlineEnd: "8px",
                     }}
                   >
                     <Image
                       alt=""
-                      src={project.images[0]}
-                      layout="fill"
-                      objectFit="cover"
-                    ></Image>
-                  </div>
-                  <div className={mixConcreteStyles.projectContainer4Tile2}>
-                    <Image
-                      alt=""
+                      className="project-image"
                       src={project.images[1]}
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
+                      layout="fill"
+                      sizes="100vw"
                     ></Image>
                   </div>
-                  <div className={mixConcreteStyles.projectContainer4Tile3}>
+                  <div style={{ width: "50%", position: "relative" }}>
                     <Image
                       alt=""
+                      className="project-image"
                       src={project.images[2]}
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
-                  </div>
-                  <div
-                    className={`${mixConcreteStyles.projectContainer4Tile4} bg-red flex items-center justify-center`}
-                  >
-                    <p className="text-white font-medium px-8">
-                      {locale == "en"
-                        ? project.englishName
-                        : project.arabicName}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-          </div>
-        ) : (
-          <div
-            onClick={closeProjectDetails}
-            id="myModal"
-            style={{
-              visibility: "hidden",
-              opacity: 0,
-              transition: "visibility 0.3s, opacity 0.3s ease-in",
-              position: "fixed",
-              zIndex: 1,
-              paddingTop: "4%",
-              left: 0,
-              top: 0,
-              width: "100%",
-              height: "100%",
-              overflow: "auto",
-              backgroundColor: "rgba(0,0,0,0.4)",
-            }}
-          >
-            {project ? (
-              <div
-                className="modal-content"
-                style={{
-                  backgroundColor: "#fefefe",
-                  margin: "auto",
-                  border: "1px solid #888",
-                  width: "55%",
-                  height: "85vh",
-                  boxShadow: "-20px 20px 50px 15px black",
-                }}
-              >
-                <div className={mixConcreteStyles.projectDescContainer3}>
-                  <div
-                    className={mixConcreteStyles.projectContainer3Tile1}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      position: "relative",
-                    }}
-                  >
-                    <Image
-                      alt=""
-                      src={project.images[0]}
                       layout="fill"
-                      objectFit="cover"
-                    ></Image>
-                  </div>
-                  <div className={mixConcreteStyles.projectContainer3Tile2}>
-                    <Image
-                      alt=""
-                      src={project.images[1]}
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
-                  </div>
-                  <div
-                    className={`${mixConcreteStyles.projectContainer4Tile4} bg-red flex items-center justify-center`}
-                  >
-                    <p className="text-white font-medium px-8">
-                      {locale == "en"
-                        ? project.englishName
-                        : project.arabicName}
-                    </p>
+                      sizes="100vw"
+                    ></Image>{" "}
                   </div>
                 </div>
+                <div
+                  className="bg-red"
+                  style={{
+                    marginTop: "1.5%",
+                    height: "31.5%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    color: "white",
+                    padding: "25px",
+                  }}
+                >
+                  <p
+                    className="project-image"
+                    style={{ wordWrap: "break-word", width: "100%" }}
+                  >
+                    {locale == "en" ? project.englishName : project.arabicName}
+                  </p>
+                </div>
               </div>
-            ) : (
-              ""
-            )}
-          </div>
-        )}
+            </div>
+          )}
+        </div>
       </section>
       <section className="h-40 flex flex-col justify-center align-start">
         <div style={{ height: "2rem", backgroundColor: "white" }}></div>
