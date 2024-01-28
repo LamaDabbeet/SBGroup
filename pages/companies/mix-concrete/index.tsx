@@ -718,13 +718,13 @@ function MixConcrete() {
                 <div
                   className="bg-red"
                   style={{
-                    marginTop: "1.5%",
-                    height: "31.5%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    color: "white",
-                    padding: "25px",
+                    marginTop: "7px",
+                      height: "33%",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "white",
+                      padding: "25px",
                   }}
                 >
                   <p

@@ -908,8 +908,8 @@ function ContractingCompany() {
                 <div
                   className="bg-cyan"
                   style={{
-                    marginTop: "1.5%",
-                    height: "31.5%",
+                    marginTop: "7px",
+                    height: "33%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",

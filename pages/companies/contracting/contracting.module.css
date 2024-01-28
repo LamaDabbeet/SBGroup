@@ -156,3 +156,11 @@
 :lang(ar) .text {
   left: 55% !important;
 }
+@media screen and (max-width: 1200px) {
+  .text {
+    left: 38%;
+  }
+  .project-desc{
+    height: 42%;
+  }
+}

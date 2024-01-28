@@ -70,6 +70,10 @@
 @media screen and (max-width: 1200px) {
   .text {
     left: 38%;
+    padding: 2rem;
+  }
+  .project-desc{
+    height: 42%;
   }
 }
 .projectDescContainer5 {

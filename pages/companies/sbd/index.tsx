@@ -601,7 +601,7 @@ function SBD() {
                     }}
                   >
                     <p
-                      className="project-image"
+                      className="project-desc"
                       style={{ wordWrap: "break-word", width: "100%" }}
                     >
                       {locale == "en"

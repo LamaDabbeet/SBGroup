@@ -73,6 +73,14 @@
   text-align: center;
   width: 80%;
 }
+@media screen and (max-width: 1200px) {
+  .text {
+    left: 38%;
+  }
+  .project-desc{
+    height: 42%;
+  }
+}
 :lang(ar) .text {
   left: 55% !important;
 }
