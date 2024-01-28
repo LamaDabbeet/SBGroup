@@ -77,7 +77,9 @@
   .text {
     left: 38%;
   }
-
+  .project-desc{
+    height: 42%;
+  }
 }
 :lang(ar) .text {
   left: 55% !important;
