@@ -159,8 +159,7 @@
 @media screen and (max-width: 1200px) {
   .text {
     left: 38%;
+    font-size: small;
   }
-  .project-desc{
-    height: 42%;
-  }
+
 }

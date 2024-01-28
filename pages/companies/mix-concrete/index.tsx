@@ -729,7 +729,7 @@ function MixConcrete() {
                 >
                   <p
                     className="project-image"
-                    style={{ wordWrap: "break-word", width: "100%" }}
+                    style={{ wordWrap: "break-word", width: "100%",fontSize:'small' }}
                   >
                     {locale == "en" ? project.englishName : project.arabicName}
                   </p>
