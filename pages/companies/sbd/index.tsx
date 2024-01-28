@@ -65,7 +65,7 @@ function SBD() {
       englishName:
         "Dummar Heights Interior Design: Interior Designs for residential apartments for Dummar heights project in Mashrou’ Dommar- Damascus.",
       images: [
-        "/images/sbd/projects/dummar-heights-interior/1.jpg",
+        "/images/sbd/projects/dummar-heights-interior/new.jpg",
         "/images/sbd/projects/dummar-heights-interior/2-min.jpg",
         "/images/sbd/projects/dummar-heights-interior/3-min.jpg",
         "/images/sbd/projects/dummar-heights-interior/4-min.jpg",
@@ -102,7 +102,7 @@ function SBD() {
       englishName:
         "Monte View Interior Design: Interior Design for 25 Villas for Monte View Project - Damascus Countryside ",
       images: [
-        "/images/sbd/projects/mont-view-interior/1-new.jpg",
+        "/images/sbd/projects/mont-view-interior/new.jpg",
         "/images/sbd/projects/mont-view-interior/2.jpg",
         "/images/sbd/projects/mont-view-interior/3.jpg",
         "/images/sbd/projects/mont-view-interior/4.jpg",

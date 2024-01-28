@@ -189,10 +189,11 @@ function ContractingCompany() {
       modal.style.opacity = "1";
       if (screen.width < 768) {
         modalContent.style.width = "85%";
+        modalContent.style.height = "60vh";
       } else {
-        modalContent.style.width = "55%";
+        modalContent.style.width = "49%";
+        modalContent.style.height = "70vh";
       }
-      modalContent.style.height = "85vh";
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
       projectImage.style.transition = "opacity 1s";
@@ -735,14 +736,14 @@ function ContractingCompany() {
                     style={{
                       display: "flex",
                       flexDirection: "column",
-                      width: "70%",
-                      marginInlineEnd: "8px",
+                      width: "75%",
+                      marginInlineEnd: "9px",
                     }}
                   >
                     <div
                       style={{
                         position: "relative",
-                        height: "66.8%",
+                        height: "67%",
                         width: "100%",
                       }}
                     >
@@ -760,8 +761,8 @@ function ContractingCompany() {
                     <div
                       className="bg-cyan"
                       style={{
-                        marginTop: "10px",
-                        height: "33.2%",
+                        marginTop: "7px",
+                        height: "33%",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
@@ -775,7 +776,8 @@ function ContractingCompany() {
                       >
                         {locale == "en"
                           ? project.englishName
-                          : project.arabicName}
+                          : project.arabicName
+                          }
                       </p>
                     </div>
                   </div>
@@ -783,16 +785,16 @@ function ContractingCompany() {
                     style={{
                       display: "flex",
                       flexDirection: "column",
-                      width: "30%",
+                      width: "25%",
                       height: "100%",
                     }}
                   >
                     <div
                       style={{
-                        height: "33.33%",
+                        height: "32.83%",
                         position: "relative",
                         width: "100%",
-                        marginBottom: "8px",
+                        marginBottom: "7px",
                       }}
                     >
                       <Image
@@ -805,11 +807,11 @@ function ContractingCompany() {
                     </div>
                     <div
                       style={{
-                        height: "33.33%",
+                        height: "32.83%",
                         position: "relative",
                         width: "100%",
-                        marginBottom: "8px",
-                      }}
+                        marginBottom: "7px",
+                                            }}
                     >
                       <Image
                         alt=""
@@ -821,9 +823,10 @@ function ContractingCompany() {
                     </div>
                     <div
                       style={{
-                        height: "33.33%",
+                        height: "32.83%",
                         position: "relative",
                         width: "100%",
+                        marginBottom: "7px",
                       }}
                     >
                       {" "}
@@ -837,68 +840,7 @@ function ContractingCompany() {
                     </div>
                   </div>
                 </div>
-                {/* <div className={contractingStyles.projectDescContainer5}>
-                  <div
-                    className={contractingStyles.projectContainer5Tile1}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      position: "relative",
-                    }}
-                  >
-                    <Image
-                      alt=""
-                      id="project-image"
-                      src={project.images[0]}
-                      layout="fill"
-                      objectFit="cover"
-                      style={{ opacity: 0 }}
-                    ></Image>
-                  </div>
-                  <div className={contractingStyles.projectContainer5Tile2}>
-                    <Image
-                      alt=""
-                      className="project-image"
-                      src={project.images[1]}
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
-                  </div>
-                  <div className={contractingStyles.projectContainer5Tile3}>
-                    <Image
-                      alt=""
-                      src={project.images[2]}
-                      className="project-image"
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
-                  </div>
-                  <div className={contractingStyles.projectContainer5Tile4}>
-                    {" "}
-                    <Image
-                      alt=""
-                      src={project.images[3]}
-                      className="project-image"
-                      height={0}
-                      width={0}
-                      sizes="100%"
-                      style={{ width: "100%", height: "100%" }}
-                    ></Image>
-                  </div>
-                  <div
-                    className={`${contractingStyles.projectContainer5Tile5} bg-cyan flex items-center justify-center`}
-                  >
-                    <p className="text-white font-medium px-8">
-                      {locale == "en"
-                        ? project.englishName
-                        : project.arabicName}
-                    </p>
-                  </div>
-                </div> */}
+              
               </div>
             ) : (
               ""
