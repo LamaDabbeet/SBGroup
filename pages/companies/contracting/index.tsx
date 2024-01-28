@@ -855,7 +855,7 @@ function ContractingCompany() {
               <div style={{ height: "100%" }}>
                 <div
                   style={{
-                    height: "30%",
+                    height: "33.3%",
                     width: "100%",
                     position: "relative",
                   }}
@@ -873,7 +873,7 @@ function ContractingCompany() {
                 </div>
                 <div
                   style={{
-                    height: "30%",
+                    height: "33.7%",
                     width: "100%",
                     position: "relative",
                     display: "flex",
@@ -909,7 +909,7 @@ function ContractingCompany() {
                   className="bg-cyan"
                   style={{
                     marginTop: "7px",
-                    height: "40%",
+                    height: "33%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",

@@ -125,7 +125,7 @@ function SBD() {
         modalContent.style.height = "60vh";
       } else {
         modalContent.style.width = "49%";
-        modalContent.style.height = "80vh";
+        modalContent.style.height = "70vh";
       }
 
       modalContent.style.transition = "height 1s ,width 1s";
@@ -684,7 +684,7 @@ function SBD() {
               <div style={{ height: "100%" }}>
                 <div
                   style={{
-                    height: "30%",
+                    height: "33.3%",
                     width: "100%",
                     position: "relative",
                   }}
@@ -702,7 +702,7 @@ function SBD() {
                 </div>
                 <div
                   style={{
-                    height: "30%",
+                    height: "33.7%",
                     width: "100%",
                     position: "relative",
                     display: "flex",
@@ -738,7 +738,7 @@ function SBD() {
                   className="bg-green"
                   style={{
                     marginTop: "1.5%",
-                    height: "40%",
+                    height: "31.5%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
