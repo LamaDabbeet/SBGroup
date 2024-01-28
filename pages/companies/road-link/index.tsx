@@ -120,7 +120,7 @@ function RoadLink() {
         modalContent.style.height = "60vh";
       } else {
         modalContent.style.width = "49%";
-        modalContent.style.height = "70vh";
+        modalContent.style.height = "80vh";
       }
       modalContent.style.transition = "height 1s ,width 1s";
       projectImage.style.opacity = "1";
@@ -694,7 +694,7 @@ function RoadLink() {
               <div style={{ height: "100%" }}>
                 <div
                   style={{
-                    height: "33.3%",
+                    height: "30%",
                     width: "100%",
                     position: "relative",
                   }}
@@ -712,7 +712,7 @@ function RoadLink() {
                 </div>
                 <div
                   style={{
-                    height: "33.7%",
+                    height: "30%",
                     width: "100%",
                     position: "relative",
                     display: "flex",
@@ -748,7 +748,7 @@ function RoadLink() {
                   className="bg-yellow"
                   style={{
                     marginTop: "1.5%",
-                    height: "31.5%",
+                    height: "40%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",

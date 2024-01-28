@@ -110,7 +110,7 @@ function MixConcrete() {
         modalContent.style.height = "60vh";
       } else {
         modalContent.style.width = "49%";
-        modalContent.style.height = "70vh";
+        modalContent.style.height = "80vh";
       }
 
       modalContent.style.transition = "height 1s ,width 1s";
@@ -665,7 +665,7 @@ function MixConcrete() {
               <div style={{ height: "100%" }}>
                 <div
                   style={{
-                    height: "33.3%",
+                    height: "30%",
                     width: "100%",
                     position: "relative",
                   }}
@@ -683,7 +683,7 @@ function MixConcrete() {
                 </div>
                 <div
                   style={{
-                    height: "33.7%",
+                    height: "30%",
                     width: "100%",
                     position: "relative",
                     display: "flex",
@@ -719,7 +719,7 @@ function MixConcrete() {
                   className="bg-red"
                   style={{
                     marginTop: "7px",
-                      height: "33%",
+                      height: "40%",
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
